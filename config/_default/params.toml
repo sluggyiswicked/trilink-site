@@ -1,0 +1,24 @@
+[company]
+name = "Your Accounting Co."
+phone = "+1 (555) 123-4567"
+email = "hello@yourdomain.com"
+address = "123 Business St, Suite 100, City, ST 12345"
+
+[social]
+linkedin = ""
+facebook = ""
+
+[theme]
+primary_color = "#0B1F3B"
+accent_color = "#2AA198"
+neutral_color = "#F5F7FA"
+border_radius = "1rem"
+box_shadow = "0 10px 20px rgba(0,0,0,0.06)"
+
+[fonts]
+headings = "Spectral"
+body = "Inter"
+
+[analytics]
+gtm_container_id = "GTM-YYYYYYY"
+ga4_measurement_id = "G-XXXXXXX"

@@ -1,0 +1,44 @@
+[[main]]
+name = "Home"
+url = "/"
+weight = 10
+
+[[main]]
+name = "Services"
+url = "/services/"
+weight = 20
+
+[[main]]
+name = "Industries"
+url = "/industries/"
+weight = 30
+
+[[main]]
+name = "Pricing"
+url = "/pricing/"
+weight = 40
+
+[[main]]
+name = "Resources"
+url = "/resources/"
+weight = 50
+
+[[main]]
+name = "About"
+url = "/about/"
+weight = 60
+
+[[main]]
+name = "Contact"
+url = "/contact/"
+weight = 70
+
+[[footer]]
+name = "Privacy Policy"
+url = "/legal/privacy/"
+weight = 10
+
+[[footer]]
+name = "Terms of Service"
+url = "/legal/terms/"
+weight = 20

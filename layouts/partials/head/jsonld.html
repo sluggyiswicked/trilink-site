@@ -1,0 +1,62 @@
+{{ if .IsHome }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "AccountingService",
+  "name": "{{ .Site.Params.company.name }}",
+  "description": "Professional accounting services including bookkeeping, tax preparation, and CFO services for growing businesses",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}images/logo.png",
+  "telephone": "{{ .Site.Params.company.phone }}",
+  "email": "{{ .Site.Params.company.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ .Site.Params.company.address }}"
+  },
+  "sameAs": [
+    "{{ .Site.Params.social.linkedin }}",
+    "{{ .Site.Params.social.facebook }}"
+  ],
+  "serviceType": [
+    "Bookkeeping",
+    "Tax Preparation", 
+    "Fractional CFO Services",
+    "Payroll Services"
+  ],
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  },
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Accounting Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Bookkeeping Services",
+          "description": "Complete bookkeeping solutions for small and medium businesses"
+        }
+      },
+      {
+        "@type": "Offer", 
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Tax Preparation",
+          "description": "Professional tax preparation and planning services"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service", 
+          "name": "Fractional CFO Services",
+          "description": "Part-time CFO services for growing businesses"
+        }
+      }
+    ]
+  }
+}
+</script>
+{{ end }}

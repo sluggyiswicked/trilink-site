@@ -1,0 +1,23 @@
+{
+  "name": "trilink-site",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run watch:css",
+    "watch:css": "npx postcss assets/css/tailwind.css -o assets/css/bundle.css --watch",
+    "build:css": "npx postcss assets/css/tailwind.css -o assets/css/bundle.css",
+    "build": "npm run build:css && hugo --minify",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^9.2.1",
+    "postcss": "^8.5.6",
+    "postcss-cli": "^11.0.1",
+    "tailwindcss": "^3.4.17"
+  }
+}

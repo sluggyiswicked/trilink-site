@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="{{ .Site.LanguageCode | default "en" }}">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- SEO partial -->
+  {{ partial "head/seo.html" . }}
+  
+  <!-- JSON-LD structured data -->
+  {{ partial "head/jsonld.html" . }}
+  
+  <!-- GTM partial -->
+  {{ partial "head/gtm.html" . }}
+  
+  <!-- Compiled CSS Bundle -->
+  {{ $bundle := resources.Get "css/bundle.css" }}
+  {{ if hugo.IsProduction }}
+    {{ $bundle = $bundle | minify | fingerprint }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $bundle.RelPermalink }}">
+  
+  <!-- Theme CSS -->
+  {{ $theme := resources.Get "css/theme.css" }}
+  {{ if hugo.IsProduction }}
+    {{ $theme = $theme | minify | fingerprint }}
+  {{ end }}
+  <link rel="stylesheet" href="{{ $theme.RelPermalink }}">
+</head>
+<body class="bg-neutral text-gray-900 antialiased">
+  <!-- GTM noscript -->
+  {{ partial "head/gtm-noscript.html" . }}
+  
+  <!-- Header -->
+  {{ partial "header.html" . }}
+  
+  <!-- Main content -->
+  <main>
+    {{ block "main" . }}{{ end }}
+  </main>
+  
+  <!-- Footer -->
+  {{ partial "footer.html" . }}
+  
+  <!-- JavaScript -->
+  {{ $js := resources.Get "js/main.js" }}
+  {{ if hugo.IsProduction }}
+    {{ $js = $js | minify | fingerprint }}
+  {{ end }}
+  <script src="{{ $js.RelPermalink }}" defer></script>
+</body>
+</html>

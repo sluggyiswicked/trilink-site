@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .btn-hero-primary {
+    @apply bg-transparent hover:bg-white/10 text-white px-8 py-4 text-lg font-semibold border-2 border-white hover:border-white/80 transition-all duration-300;
+    border-radius: 1rem;
+  }
+
+  .btn-hero-secondary {
+    @apply bg-transparent hover:bg-white/10 text-white px-8 py-4 text-lg font-semibold border-2 border-white/40 hover:border-white/60 transition-all duration-300;
+    border-radius: 1rem;
+  }
+
+  .btn-cta {
+    @apply bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 inline-block hover:shadow-lg;
+    border-radius: 1rem;
+  }
+}

@@ -1,0 +1,32 @@
+{{ define "main" }}
+<div class="container mx-auto px-4 py-8">
+  {{ partial "breadcrumbs.html" . }}
+  
+  <header class="mb-12 text-center">
+    <h1 class="text-4xl font-bold text-primary mb-4">{{ .Title }}</h1>
+    {{ if .Params.description }}
+      <p class="text-xl text-gray-600 max-w-3xl mx-auto">{{ .Params.description }}</p>
+    {{ end }}
+  </header>
+  
+  {{ .Content }}
+  
+  {{ if .Pages }}
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mt-12">
+    {{ range .Pages }}
+      <article class="card hover:shadow-lg transition-shadow">
+        <h2 class="text-xl font-semibold text-primary mb-3">
+          <a href="{{ .RelPermalink }}" class="hover:text-accent transition-colors">{{ .Title }}</a>
+        </h2>
+        {{ if .Params.description }}
+          <p class="text-gray-600 mb-4">{{ .Params.description }}</p>
+        {{ end }}
+        <a href="{{ .RelPermalink }}" class="text-accent font-medium hover:text-accent/80 transition-colors">
+          Learn more →
+        </a>
+      </article>
+    {{ end }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}
