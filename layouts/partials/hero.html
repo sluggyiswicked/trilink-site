@@ -1,13 +1,13 @@
-<section class="bg-gradient-to-br from-primary to-primary/90 text-white py-20">
-  <div class="container mx-auto px-4">
-    <div class="max-w-4xl mx-auto text-center">
-      <h1 class="text-5xl md:text-6xl font-bold mb-6">
+<section class="hero-section">
+  <div class="hero-container">
+    <div class="hero-content">
+      <h1 class="hero-title">
         {{ .Params.hero.title | default "Expert Accounting Services for Growing Businesses" }}
       </h1>
-      <p class="text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto">
+      <p class="hero-subtitle">
         {{ .Params.hero.subtitle | default "Streamline your finances with professional bookkeeping, tax preparation, and CFO services tailored to your business needs." }}
       </p>
-      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+      <div class="hero-buttons">
         <a href="/contact/" class="btn-hero-primary">
           {{ .Params.hero.cta_primary | default "Get Started Today" }}
         </a>

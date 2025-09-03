@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 @layer components {
+  /* Button Components */
   .btn-hero-primary {
     @apply bg-transparent hover:bg-white/10 text-white px-8 py-4 text-lg font-semibold border-2 border-white hover:border-white/80 transition-all duration-300;
     border-radius: 1rem;
@@ -16,5 +17,162 @@
   .btn-cta {
     @apply bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 inline-block hover:shadow-lg;
     border-radius: 1rem;
+  }
+
+  /* Hero Section Components */
+  .hero-section {
+    @apply bg-gradient-to-br from-primary to-primary/90 text-white py-20;
+  }
+
+  .hero-container {
+    @apply container mx-auto px-4;
+  }
+
+  .hero-content {
+    @apply max-w-4xl mx-auto text-center;
+  }
+
+  .hero-title {
+    @apply text-5xl md:text-6xl font-bold mb-6;
+  }
+
+  .hero-subtitle {
+    @apply text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto;
+  }
+
+  .hero-buttons {
+    @apply flex flex-col sm:flex-row gap-4 justify-center;
+  }
+
+  /* Service Section Components */
+  .services-section {
+    @apply py-20 bg-white;
+  }
+
+  .services-container {
+    @apply container mx-auto px-4;
+  }
+
+  .services-header {
+    @apply text-center mb-16;
+  }
+
+  .services-title {
+    @apply text-4xl font-bold text-primary mb-6;
+  }
+
+  .services-subtitle {
+    @apply text-xl text-gray-600 max-w-3xl mx-auto;
+  }
+
+  .services-grid {
+    @apply grid md:grid-cols-3 gap-8 mb-12;
+  }
+
+  .service-card {
+    @apply bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .service-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  }
+
+  .service-image {
+    @apply w-full h-48 object-cover;
+    transition: transform 0.3s ease;
+  }
+
+  .service-card:hover .service-image {
+    transform: scale(1.015);
+  }
+
+  .service-content {
+    @apply p-6;
+  }
+
+  .service-title {
+    @apply text-xl font-semibold mb-3 text-gray-900;
+    transition: color 0.3s ease;
+  }
+
+  .service-card:hover .service-title {
+    color: var(--color-primary);
+  }
+
+  .service-description {
+    @apply text-gray-600 leading-relaxed;
+  }
+
+  .services-cta {
+    @apply text-center;
+  }
+
+  /* CTA Section Components */
+  .cta-section {
+    @apply bg-gradient-to-r from-accent/10 to-accent/5 py-20;
+  }
+
+  .cta-container {
+    @apply container mx-auto px-4 text-center;
+  }
+
+  .cta-title {
+    @apply text-4xl font-bold text-primary mb-6;
+  }
+
+  .cta-description {
+    @apply text-xl text-gray-600 mb-12 max-w-3xl mx-auto;
+  }
+
+  /* Header Components */
+  .site-header {
+    @apply bg-white shadow-sm sticky top-0 z-50;
+  }
+
+  .header-container {
+    @apply container mx-auto px-4;
+  }
+
+  .header-nav {
+    @apply flex items-center justify-between py-4;
+  }
+
+  .header-logo {
+    @apply text-2xl font-bold text-primary;
+  }
+
+  .header-menu {
+    @apply hidden md:flex space-x-8;
+  }
+
+  .header-link {
+    @apply text-gray-700 hover:text-primary font-medium transition-colors duration-200;
+  }
+
+  /* Footer Components */
+  .site-footer {
+    @apply bg-primary text-white py-12;
+  }
+
+  .footer-container {
+    @apply container mx-auto px-4;
+  }
+
+  .footer-content {
+    @apply grid md:grid-cols-3 gap-8;
+  }
+
+  .footer-section-title {
+    @apply text-lg font-semibold mb-4;
+  }
+
+  .footer-link {
+    @apply text-white/80 hover:text-white transition-colors duration-200;
+  }
+
+  .footer-bottom {
+    @apply border-t border-white/20 pt-8 mt-8 text-center text-white/60;
   }
 }

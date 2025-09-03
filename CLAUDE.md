@@ -31,8 +31,10 @@ This is a Hugo-based static site for an accounting services business using Tailw
   - `partials/` - Reusable components (header, footer, hero, cta, SEO partials)
   - `shortcodes/` - Custom Hugo shortcodes for content
 
-### Styling
-- **TailwindCSS**: Primary styling framework
+### Styling Strategy
+- **Semantic CSS Architecture**: All components use semantic class names for single-source-of-truth maintenance
+- **TailwindCSS with @apply**: Utility classes abstracted into semantic components using `@layer components`
+- **No Inline Utilities**: HTML templates use only semantic class names (`.hero-title`, `.service-card`, etc.)
 - **Custom theme** defined in `tailwind.config.js`:
   - Primary color: `#0B1F3B` (dark blue)
   - Accent color: `#2AA198` (teal)
@@ -65,21 +67,49 @@ This is a Hugo-based static site for an accounting services business using Tailw
 - Production builds include minification and asset fingerprinting
 - No test framework configured (test command returns error)
 
+## Styling Architecture Guidelines
+
+### Core Principles
+1. **Single Source of Truth**: All styling changes happen in `assets/css/tailwind.css` 
+2. **Semantic Class Names**: HTML uses descriptive class names (`.hero-title`, not `.text-5xl`)
+3. **Component-Based**: Each UI component has its own semantic class hierarchy
+4. **Maintainable**: Changing a style affects all instances across the site
+
+### CSS Class Structure
+```css
+/* Section-level classes */
+.hero-section, .services-section, .cta-section
+
+/* Container classes */
+.hero-container, .services-container, .cta-container
+
+/* Content classes */
+.hero-title, .services-title, .service-card, .service-title
+
+/* Interactive elements */
+.btn-hero-primary, .btn-hero-secondary, .btn-cta
+```
+
+### Making Style Changes
+- **Typography**: Edit `.hero-title`, `.services-title`, `.service-title` classes
+- **Spacing**: Edit `.hero-section`, `.services-section` padding/margins
+- **Colors**: Edit button classes or add CSS custom properties
+- **Hover Effects**: Edit `:hover` states in semantic classes
+- **Responsive**: Use Tailwind responsive prefixes in `@apply` directives
+
 ## Recent Work Completed
 
-### Theme Refinement (Step 3 Progress)
-- **Button Styling System**: Implemented semantic CSS classes using Tailwind's `@apply`:
-  - `.btn-hero-primary` - Primary hero buttons (white border)
-  - `.btn-hero-secondary` - Secondary hero buttons (translucent border)
-  - `.btn-cta` - Call-to-action buttons (brand colored background)
-- **Service Card Interactions**: Added subtle hover effects with shadows and transforms
-- **CSS Architecture**: Fixed compilation pipeline to use compiled bundle.css instead of raw tailwind.css
-- **Template Structure**: Proper Hugo template separation (layouts vs content)
-- **Responsive Design**: Maintained mobile-first approach with consistent typography
+### Semantic CSS Architecture Implementation
+- **Complete Semantic System**: All components now use semantic classes
+- **Hero Section**: `.hero-section`, `.hero-title`, `.hero-subtitle`, `.hero-buttons`
+- **Services Section**: `.services-section`, `.service-card`, `.service-title`, etc.
+- **Button System**: `.btn-hero-primary`, `.btn-hero-secondary`, `.btn-cta`
+- **Template Updates**: All HTML templates use semantic classes only
+- **Single Source of Truth**: All styling changes happen in one CSS file
 
 ### Current Status
-- Homepage is fully functional with proper styling and interactions
-- Button styles are properly compiled and applied
-- Service cards have professional hover effects
-- Typography and spacing follow design system
-- Ready to proceed with remaining content pages or SEO implementation
+- Complete semantic CSS architecture implemented
+- All styling centralized in `assets/css/tailwind.css`
+- No inline Tailwind utilities in templates
+- Easy maintenance with single-source-of-truth approach
+- Ready to extend this pattern to new pages and components
