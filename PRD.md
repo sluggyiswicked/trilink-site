@@ -5,8 +5,8 @@
 
 **Objective**: Build a professional Hugo-based static website for an accounting services company, deployed on AWS Amplify with full analytics and lead tracking.
 
-**Timeline**: 7-step implementation plan
-**Status**: ~40% Complete (Steps 1-3 mostly done)
+**Timeline**: 8-step implementation plan
+**Status**: ~30% Complete (Steps 1-2 done, Step 3 next)
 
 ### 2. Technical Requirements
 
@@ -100,7 +100,14 @@ THEME_SHADOW="0 10px 20px rgba(0,0,0,0.06)"
 - Visual approval gate
 - Design system implementation
 
-#### STEP 3: Pages & IA 🔄 PARTIALLY COMPLETE
+#### STEP 3: Company Branding & Identity ❌ NOT STARTED
+- Company name finalization and implementation
+- Logo design and integration
+- Brand asset creation (favicons, social media images)
+- Brand guidelines documentation
+- Asset optimization and placement
+
+#### STEP 4: Pages & IA 🔄 PARTIALLY COMPLETE
 - ✅ Homepage with hero and services
 - ✅ Theme refinement and button styling system
 - ✅ Service card hover effects and interaction design
@@ -109,24 +116,24 @@ THEME_SHADOW="0 10px 20px rgba(0,0,0,0.06)"
 - ❌ Industry pages
 - ❌ About, pricing, resources, legal pages
 
-#### STEP 4: SEO & Analytics 🔄 PARTIALLY COMPLETE
+#### STEP 5: SEO & Analytics 🔄 PARTIALLY COMPLETE
 - ✅ SEO partials structure
 - ❌ Complete meta tag implementation
 - ❌ JSON-LD structured data
 - ❌ GTM with Consent Mode v2
 - ❌ Cookie banner
 
-#### STEP 5: Lead Tracking ❌ NOT STARTED
+#### STEP 6: Lead Tracking ❌ NOT STARTED
 - Contact form with dataLayer integration
 - Analytics event implementation
 - Lead tracking validation
 
-#### STEP 6: Amplify Deployment ❌ NOT STARTED
+#### STEP 7: Amplify Deployment ❌ NOT STARTED
 - `amplify.yml` configuration
 - Environment variables setup
 - Staging/production branches
 
-#### STEP 7: Acceptance Testing ❌ NOT STARTED
+#### STEP 8: Acceptance Testing ❌ NOT STARTED
 - Performance validation
 - Lighthouse audits
 - Analytics verification

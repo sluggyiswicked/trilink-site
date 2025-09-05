@@ -37,7 +37,8 @@
   }
 
   .hero-subtitle {
-    @apply text-xl md:text-2xl mb-8 text-white/90 max-w-3xl mx-auto;
+    @apply text-xl md:text-2xl mb-8 max-w-3xl mx-auto;
+    color: #D4AF37;
   }
 
   .hero-buttons {
@@ -137,6 +138,18 @@
 
   .header-nav {
     @apply flex items-center justify-between py-4;
+  }
+
+  .site-logo {
+    @apply h-6 w-auto transition-all duration-200;
+  }
+
+  .site-logo-link {
+    @apply block hover:opacity-80;
+  }
+
+  .site-logo-text {
+    @apply text-xl font-bold text-primary;
   }
 
   .header-logo {

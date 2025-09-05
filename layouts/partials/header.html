@@ -3,8 +3,11 @@
     <div class="flex justify-between items-center h-16">
       <!-- Logo -->
       <div class="flex-shrink-0">
-        <a href="/" class="text-2xl font-bold text-primary">
-          {{ .Site.Params.company.name }}
+        <a href="/" class="site-logo-link">
+          <div class="flex items-center space-x-3">
+            <img src="/images/trilinklogo.png" alt="{{ .Site.Params.company.name }}" class="site-logo">
+            <span class="site-logo-text">{{ .Site.Params.company.name }}</span>
+          </div>
         </a>
       </div>
       
