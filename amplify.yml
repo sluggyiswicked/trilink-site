@@ -4,10 +4,7 @@ frontend:
     preBuild:
       commands:
         - wget https://github.com/gohugoio/hugo/releases/download/v0.121.0/hugo_extended_0.121.0_Linux-64bit.tar.gz
-        - ls -la
-        - tar -tf hugo_extended_0.121.0_Linux-64bit.tar.gz
         - tar -xf hugo_extended_0.121.0_Linux-64bit.tar.gz
-        - ls -la
         - chmod +x hugo
         - ./hugo version
         - npm ci
