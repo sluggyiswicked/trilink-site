@@ -49,21 +49,37 @@ THEME_SHADOW="0 10px 20px rgba(0,0,0,0.06)"
 ### 4. Functional Requirements
 
 #### 4.1 Page Structure & Information Architecture
-- **Homepage**: Hero, services overview, testimonials, CTA
-- **Services**: 
-  - Expert Bookkeeping and Accounting (`/services/bookkeeping/`)
-  - Business Process Automation (BPA) (`/services/business-process-automation/`)
-  - Operations & Growth Strategy (`/services/operations-growth-strategy/`)
-- **Industries**:
-  - E-commerce (`/industries/ecommerce/`)
-  - Contractors (`/industries/contractors/`)
-  - Medical (`/industries/medical/`)
-- **Core Pages**:
-  - Pricing (`/pricing/`)
-  - About (`/about/`)
-  - Contact (`/contact/`)
-  - Resources (`/resources/`)
-- **Legal**: Privacy Policy, Terms of Service
+
+##### **Core Pages** (5 pages)
+- **Homepage** (`/`): Value prop, services overview, outcomes, proof, CTA to consultation
+- **Services Overview** (`/services/`): H1: "Accounting + Automation that scales" 
+- **Pricing** (`/pricing/`): Foundation, Operate, Automate, Strategy packages
+- **About** (`/about/`): Team, certifications, approach, values
+- **Contact** (`/contact/`): "Book a consultation" form and contact info
+- **Resources** (`/resources/`): Case studies, FAQ, guides
+
+##### **Accounting Services** (6 detailed pages)
+- **Account Setup & Consulting** (`/services/accounting/account-setup-consulting/`)
+- **Account Cleanup (Catch-Up)** (`/services/accounting/account-cleanup/`)
+- **Software Training** (`/services/accounting/software-training/`)
+- **Payroll Setup & Processing** (`/services/accounting/payroll/`)
+- **Ongoing Bookkeeping & Monthly Close** (`/services/accounting/bookkeeping-monthly-close/`)
+- **Year-End Adjustments** (`/services/accounting/year-end-adjustments/`)
+
+##### **Business Process Automation** (4 detailed pages)
+- **Custom Interfaces & Internal Tools** (`/services/automation/custom-interfaces/`)
+- **Integrations** (`/services/automation/integrations/`)
+- **Cost Allocation Automations** (`/services/automation/cost-allocation/`)
+- **Dashboards & Reporting** (`/services/automation/dashboards-reporting/`)
+
+##### **Operations & Growth Strategy** (1 detailed page)
+- **Operations & Growth Strategy** (`/services/operations-strategy/`)
+
+##### **Legal Pages** (2 pages)
+- **Privacy Policy** (`/legal/privacy/`)
+- **Terms of Service** (`/legal/terms/`)
+
+**Total Site Pages**: 19 pages
 
 #### 4.2 SEO Requirements
 - **Meta Tags**: Proper title, description, canonical on all pages
@@ -99,21 +115,43 @@ THEME_SHADOW="0 10px 20px rgba(0,0,0,0.06)"
 - Visual approval gate
 - Design system implementation
 
-#### STEP 3: Company Branding & Identity ❌ NOT STARTED
-- Company name finalization and implementation
-- Logo design and integration
-- Brand asset creation (favicons, social media images)
-- Brand guidelines documentation
-- Asset optimization and placement
+#### STEP 3: Company Branding & Identity ✅ COMPLETE
+- ✅ Company name finalization and implementation ("Trilink Collaborative LLC")
+- ✅ Logo design and integration (header with company name)
+- ✅ Brand asset creation and optimization
+- ✅ Updated hero messaging and service positioning
+- ✅ Semantic CSS classes for branding consistency
 
-#### STEP 4: Pages & IA 🔄 PARTIALLY COMPLETE
-- ✅ Homepage with hero and services
-- ✅ Theme refinement and button styling system
-- ✅ Service card hover effects and interaction design
+#### STEP 4: Pages & IA 🔄 IN PROGRESS (Expanded Scope)
+**Phase 1: Foundation** 
+- ✅ Homepage with updated hero and services cards
+- ✅ Services cards transformed to new offerings
 - ✅ Semantic CSS architecture with Tailwind @apply
-- ❌ Individual service pages
-- ❌ Industry pages
-- ❌ About, pricing, resources, legal pages
+- ❌ Services overview page (`/services/`)
+- ❌ Pricing page with 4 packages
+- ❌ Contact/consultation booking page
+
+**Phase 2: Accounting Services Detail Pages (6 pages)**
+- ❌ Account Setup & Consulting page
+- ❌ Account Cleanup (Catch-Up) page  
+- ❌ Software Training page
+- ❌ Payroll Setup & Processing page
+- ❌ Ongoing Bookkeeping & Monthly Close page
+- ❌ Year-End Adjustments page
+
+**Phase 3: Automation Services Detail Pages (4 pages)**
+- ❌ Custom Interfaces & Internal Tools page
+- ❌ Integrations page
+- ❌ Cost Allocation Automations page
+- ❌ Dashboards & Reporting page
+
+**Phase 4: Strategy & Supporting Pages (4 pages)**
+- ❌ Operations & Growth Strategy page
+- ❌ About page
+- ❌ Resources page (case studies, FAQ)
+- ❌ Legal pages (privacy, terms)
+
+**Progress**: 3 of 19 pages complete (16%)
 
 #### STEP 5: SEO & Analytics 🔄 PARTIALLY COMPLETE
 - ✅ SEO partials structure
@@ -230,7 +268,76 @@ THEME_SHADOW="0 10px 20px rgba(0,0,0,0.06)"
 - [ ] Cross-browser compatibility tested
 - [ ] Accessibility audit passed
 
-### 10. Future Enhancements (Post-Launch)
+### 10. Detailed Implementation Checklist
+
+#### **Phase 1: Foundation Pages (Priority 1)**
+- [ ] **Services Overview** (`/services/`)
+  - [ ] Create Hugo content file with frontmatter
+  - [ ] H1: "Accounting + Automation that scales with your business"
+  - [ ] Service category sections with overview content
+  - [ ] Primary/secondary CTAs and trust elements
+  - [ ] SEO meta tags and structured data
+
+- [ ] **Pricing Page** (`/pricing/`) 
+  - [ ] 4 pricing packages: Foundation, Operate, Automate, Strategy
+  - [ ] Package descriptions, "starting at" pricing, quote CTAs
+  - [ ] Trust elements and value propositions
+
+- [ ] **Contact Page** (`/contact/`)
+  - [ ] "Book a consultation" form with proper fields
+  - [ ] Contact information and office details
+  - [ ] Form submission handling and validation
+
+#### **Phase 2: Accounting Services Detail Pages (Priority 2)**
+- [ ] **Account Setup & Consulting** (`/services/accounting/account-setup-consulting/`)
+- [ ] **Account Cleanup** (`/services/accounting/account-cleanup/`)
+- [ ] **Software Training** (`/services/accounting/software-training/`)
+- [ ] **Payroll Setup & Processing** (`/services/accounting/payroll/`)
+- [ ] **Ongoing Bookkeeping** (`/services/accounting/bookkeeping-monthly-close/`)
+- [ ] **Year-End Adjustments** (`/services/accounting/year-end-adjustments/`)
+
+*Each accounting page includes: Ideal for, Outcomes, Deliverables, SEO optimization*
+
+#### **Phase 3: Automation Services Detail Pages (Priority 2)**
+- [ ] **Custom Interfaces** (`/services/automation/custom-interfaces/`)
+- [ ] **Integrations** (`/services/automation/integrations/`)
+- [ ] **Cost Allocation** (`/services/automation/cost-allocation/`)
+- [ ] **Dashboards & Reporting** (`/services/automation/dashboards-reporting/`)
+
+*Each automation page includes: Technical specs, integration examples, ROI benefits*
+
+#### **Phase 4: Strategy & Supporting Pages (Priority 3)**
+- [ ] **Operations & Growth Strategy** (`/services/operations-strategy/`)
+- [ ] **About Page** (`/about/`) - Team, certifications, approach
+- [ ] **Resources Page** (`/resources/`) - Case studies, FAQ, guides
+- [ ] **Legal Pages** (`/legal/privacy/`, `/legal/terms/`)
+
+#### **Navigation & SEO (Ongoing)**
+- [ ] Update main navigation menu structure
+- [ ] Implement breadcrumbs for deep pages
+- [ ] Create XML sitemap with all pages
+- [ ] Add internal linking strategy
+- [ ] Implement canonical URLs
+- [ ] Add Open Graph meta tags
+
+#### **Content & Copy Requirements**
+- [ ] Expand TLAs (QBO, GAAP, BPA, etc.) once per page
+- [ ] Add 3-5 FAQs per service page
+- [ ] Include trust elements (certifications, client quotes)
+- [ ] Optimize for search intent keywords
+- [ ] Create consistent CTA messaging
+
+#### **Technical Implementation**
+- [ ] Create Hugo layouts for service detail pages
+- [ ] Add semantic CSS classes for new page types
+- [ ] Implement form handling for consultation booking
+- [ ] Add analytics tracking for new pages
+- [ ] Test mobile responsiveness on all pages
+- [ ] Optimize images and assets
+
+**Current Status**: Phase 1 Foundation - 16% complete (3/19 pages)
+
+### 11. Future Enhancements (Post-Launch)
 - Blog/resources content management
 - Client portal integration
 - Online appointment booking
