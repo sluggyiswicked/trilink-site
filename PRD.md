@@ -51,10 +51,9 @@ THEME_SHADOW="0 10px 20px rgba(0,0,0,0.06)"
 #### 4.1 Page Structure & Information Architecture
 - **Homepage**: Hero, services overview, testimonials, CTA
 - **Services**: 
-  - Bookkeeping (`/services/bookkeeping/`)
-  - Fractional CFO (`/services/fractional-cfo/`)
-  - Tax Preparation (`/services/tax-prep/`)
-  - Payroll (`/services/payroll/`)
+  - Expert Bookkeeping and Accounting (`/services/bookkeeping/`)
+  - Business Process Automation (BPA) (`/services/business-process-automation/`)
+  - Operations & Growth Strategy (`/services/operations-growth-strategy/`)
 - **Industries**:
   - E-commerce (`/industries/ecommerce/`)
   - Contractors (`/industries/contractors/`)
