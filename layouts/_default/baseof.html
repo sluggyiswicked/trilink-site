@@ -25,19 +25,15 @@
   {{ end }}
   <link rel="stylesheet" href="{{ $bundle.RelPermalink }}">
   
-  <!-- Theme CSS -->
-  {{ $theme := resources.Get "css/theme.css" }}
-  {{ if hugo.IsProduction }}
-    {{ $theme = $theme | minify | fingerprint }}
-  {{ end }}
-  <link rel="stylesheet" href="{{ $theme.RelPermalink }}">
+  <!-- AlpineJS -->
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 </head>
 <body class="bg-neutral text-gray-900 antialiased">
   <!-- GTM noscript -->
   {{ partial "head/gtm-noscript.html" . }}
   
   <!-- Header -->
-  {{ partial "header.html" . }}
+  {{ partial "header-new.html" . }}
   
   <!-- Main content -->
   <main>

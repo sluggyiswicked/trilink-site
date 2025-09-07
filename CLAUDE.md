@@ -43,10 +43,10 @@ This is a Hugo-based static site for an accounting services business using Tailw
   - Custom border radius and shadow utilities
 
 ### Asset Pipeline
-- **CSS**: `assets/css/tailwind.css` compiled to `assets/css/bundle.css`
+- **CSS**: Single consolidated `assets/css/tailwind.css` compiled to `assets/css/bundle.css`
 - **PostCSS**: Configured with autoprefixer
-- **Semantic CSS**: Button classes defined in `@layer components` in tailwind.css
-- **Production**: Assets are minified and fingerprinted
+- **Unified Architecture**: All styles (base, components, utilities) in one file using Tailwind's @layer system
+- **Production**: Assets are minified and fingerprinted via Hugo's asset pipeline
 - **JavaScript**: Single `assets/js/main.js` file
 
 ### Content Structure
@@ -74,6 +74,7 @@ This is a Hugo-based static site for an accounting services business using Tailw
 2. **Semantic Class Names**: HTML uses descriptive class names (`.hero-title`, not `.text-5xl`)
 3. **Component-Based**: Each UI component has its own semantic class hierarchy
 4. **Maintainable**: Changing a style affects all instances across the site
+5. **Unified Architecture**: CSS custom properties, base styles, components, and utilities all in one consolidated file
 
 ### CSS Class Structure
 ```css
@@ -108,8 +109,17 @@ This is a Hugo-based static site for an accounting services business using Tailw
 - **Single Source of Truth**: All styling changes happen in one CSS file
 
 ### Current Status
-- Complete semantic CSS architecture implemented
-- All styling centralized in `assets/css/tailwind.css`
+- Complete semantic CSS architecture implemented and **conflicts resolved**
+- All styling consolidated into single `assets/css/tailwind.css` file
+- Unified @layer system: base styles, CSS custom properties, semantic components, and utilities
 - No inline Tailwind utilities in templates
-- Easy maintenance with single-source-of-truth approach
+- Clean asset pipeline with single CSS file processed by Hugo
+- Easy maintenance with true single-source-of-truth approach
 - Ready to extend this pattern to new pages and components
+
+### Recent Fixes Completed
+- **Resolved CSS Conflicts**: Eliminated duplicate styles between theme.css and tailwind.css
+- **Consolidated Architecture**: Merged all styles into single tailwind.css with proper @layer structure  
+- **Clean Asset Pipeline**: Removed static/css/bundle.css, using only Hugo-processed assets
+- **Template Optimization**: Updated baseof.html to load single consolidated CSS bundle
+- **Preserved Functionality**: Maintained all original semantic classes and design intent

@@ -2,6 +2,52 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base {
+  :root {
+    --color-primary: #0B1F3B;
+    --color-accent: #2AA198;
+    --color-neutral: #F5F7FA;
+    --radius-theme: 1rem;
+    --shadow-theme: 0 10px 20px rgba(0,0,0,0.06);
+    --font-headings: 'Spectral', serif;
+    --font-body: 'Inter', sans-serif;
+  }
+
+  /* Base typography */
+  body {
+    font-family: var(--font-body);
+    line-height: 1.6;
+    font-weight: 400;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-weight: 700;
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+  }
+
+  /* Improved readability */
+  p {
+    max-width: 70ch;
+    line-height: 1.7;
+  }
+}
+
 @layer components {
   /* Button Components */
   .btn-hero-primary {
@@ -17,6 +63,34 @@
   .btn-cta {
     @apply bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold transition-all duration-300 inline-block hover:shadow-lg;
     border-radius: 1rem;
+  }
+
+  /* Improved button utilities from theme.css */
+  .btn-primary {
+    @apply bg-primary hover:bg-primary/90 text-white px-8 py-4 font-semibold transition-all duration-300 transform hover:scale-105 hover:shadow-lg;
+    border-radius: var(--radius-theme);
+    box-shadow: var(--shadow-theme);
+  }
+
+  .btn-secondary {
+    @apply bg-transparent hover:bg-white/10 text-white px-8 py-4 font-semibold border-2 border-white/30 hover:border-white/50 transition-all duration-300;
+    border-radius: var(--radius-theme);
+  }
+
+  /* Utility card class */
+  .card {
+    @apply bg-white transition-all duration-300 hover:shadow-xl;
+    border-radius: var(--radius-theme);
+    box-shadow: var(--shadow-theme);
+  }
+
+  /* Focus styles for accessibility */
+  .btn-primary:focus,
+  .btn-secondary:focus,
+  .btn-hero-primary:focus,
+  .btn-hero-secondary:focus,
+  .btn-cta:focus {
+    @apply outline-none ring-2 ring-offset-2 ring-accent;
   }
 
   /* Hero Section Components */
@@ -162,6 +236,110 @@
 
   .header-link {
     @apply text-gray-700 hover:text-primary font-medium transition-colors duration-200;
+  }
+
+  /* Dropdown Menu Components */
+  .dropdown {
+    @apply relative;
+  }
+
+  .dropdown-trigger {
+    @apply flex items-center text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-all duration-200 rounded-md;
+  }
+
+  .dropdown-trigger:hover {
+    @apply bg-primary/5 text-primary;
+  }
+
+  .dropdown-trigger.active {
+    @apply bg-primary/10 text-primary;
+  }
+
+  .dropdown-icon {
+    @apply ml-1 w-4 h-4 transition-transform duration-200;
+  }
+
+  .dropdown-trigger:hover .dropdown-icon,
+  .dropdown-trigger.active .dropdown-icon {
+    @apply transform rotate-180;
+  }
+
+  .dropdown-menu {
+    @apply absolute left-0 top-full mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 opacity-0 invisible transform translate-y-2 transition-all duration-200;
+  }
+
+  .dropdown:hover .dropdown-menu,
+  .dropdown.active .dropdown-menu {
+    @apply opacity-100 visible translate-y-0;
+  }
+
+  .dropdown-item {
+    @apply block px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all duration-150 border-l-4 border-transparent;
+  }
+
+  .dropdown-item:hover {
+    @apply border-l-primary bg-gradient-to-r from-primary/5 to-transparent;
+  }
+
+  .dropdown-submenu {
+    @apply relative;
+  }
+
+  .dropdown-submenu-trigger {
+    @apply flex items-center justify-between px-4 py-2 text-sm text-gray-700 hover:bg-primary/5 hover:text-primary transition-all duration-150;
+  }
+
+  .dropdown-submenu-trigger:hover {
+    @apply bg-gradient-to-r from-primary/5 to-transparent;
+  }
+
+  .dropdown-submenu-icon {
+    @apply w-4 h-4 transform transition-transform duration-200;
+  }
+
+  .dropdown-submenu:hover .dropdown-submenu-icon {
+    @apply rotate-90;
+  }
+
+  .dropdown-submenu-menu {
+    @apply absolute left-full top-0 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 opacity-0 invisible transform -translate-x-2 transition-all duration-200;
+  }
+
+  .dropdown-submenu:hover .dropdown-submenu-menu {
+    @apply opacity-100 visible translate-x-0;
+  }
+
+  .dropdown-submenu-item {
+    @apply block px-4 py-2 text-sm text-gray-600 hover:bg-accent/5 hover:text-accent transition-all duration-150 border-l-4 border-transparent;
+  }
+
+  .dropdown-submenu-item:hover {
+    @apply border-l-accent bg-gradient-to-r from-accent/5 to-transparent;
+  }
+
+  /* Mobile Menu Components */
+  .mobile-dropdown {
+    @apply md:hidden;
+  }
+
+  .mobile-dropdown-trigger {
+    @apply w-full flex items-center justify-between px-3 py-2 text-base font-medium text-gray-700 hover:text-primary hover:bg-primary/5 rounded-md transition-all duration-200;
+  }
+
+  .mobile-dropdown-content {
+    @apply pl-4 space-y-1 bg-gray-50/50;
+  }
+
+  .mobile-dropdown-item {
+    @apply block px-3 py-2 text-sm text-gray-600 hover:text-primary hover:bg-primary/5 rounded-md transition-all duration-150;
+  }
+
+  .mobile-submenu-content {
+    @apply pl-4 space-y-1 bg-gray-100/50;
+  }
+
+  .mobile-submenu-item {
+    @apply block px-3 py-2 text-sm text-gray-500 hover:text-accent hover:bg-accent/5 rounded-md transition-all duration-150;
   }
 
   /* Footer Components */
