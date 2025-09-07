@@ -1,7 +1,7 @@
 <footer class="bg-primary text-white">
   <div class="container mx-auto px-4 py-12">
-    <div class="grid md:grid-cols-3 gap-8">
-      <!-- Company Info -->
+    <div class="footer-grid">
+      <!-- Column 1: Company Info -->
       <div>
         <h3 class="text-xl font-semibold mb-4">{{ .Site.Params.company.name }}</h3>
         <div class="space-y-2 text-gray-300">
@@ -11,25 +11,39 @@
         </div>
       </div>
       
-      <!-- Services -->
+      <!-- Column 2: Core Services (Top-level service categories) -->
       <div>
-        <h3 class="text-xl font-semibold mb-4">Services</h3>
+        <h3 class="text-xl font-semibold mb-4">Our Services</h3>
         <ul class="space-y-2">
-          <li><a href="/services/bookkeeping/" class="text-gray-300 hover:text-white transition-colors">Bookkeeping</a></li>
-          <li><a href="/services/tax-prep/" class="text-gray-300 hover:text-white transition-colors">Tax Preparation</a></li>
-          <li><a href="/services/fractional-cfo/" class="text-gray-300 hover:text-white transition-colors">Fractional CFO</a></li>
-          <li><a href="/services/payroll/" class="text-gray-300 hover:text-white transition-colors">Payroll Services</a></li>
+          <li><a href="/services/accounting/" class="text-gray-300 hover:text-accent transition-colors">Accounting Services</a></li>
+          <li><a href="/services/automation/" class="text-gray-300 hover:text-accent transition-colors">Automation Services</a></li>
+          <li><a href="/services/strategy/" class="text-gray-300 hover:text-accent transition-colors">Strategic Consulting</a></li>
         </ul>
       </div>
       
-      <!-- Legal -->
+      <!-- Column 3: Quick Access (High-conversion pages) -->
       <div>
-        <h3 class="text-xl font-semibold mb-4">Legal</h3>
+        <h3 class="text-xl font-semibold mb-4">Quick Access</h3>
         <ul class="space-y-2">
+          {{ range .Site.Menus.footer_quick }}
+            <li><a href="{{ .URL }}" class="text-gray-300 hover:text-accent transition-colors">{{ .Name }}</a></li>
+          {{ end }}
+        </ul>
+      </div>
+      
+      <!-- Column 4: Resources & Legal -->
+      <div>
+        <h3 class="text-xl font-semibold mb-4">Resources</h3>
+        <ul class="space-y-2">
+          {{ range .Site.Menus.footer_resources }}
+            <li><a href="{{ .URL }}" class="text-gray-300 hover:text-accent transition-colors">{{ .Name }}</a></li>
+          {{ end }}
+          <!-- Legal separator -->
+          <li class="pt-3 mt-3 border-t border-gray-600">
+            <span class="text-sm font-medium text-gray-400">Legal</span>
+          </li>
           {{ range .Site.Menus.footer }}
-            <li>
-              <a href="{{ .URL }}" class="text-gray-300 hover:text-white transition-colors">{{ .Name }}</a>
-            </li>
+            <li><a href="{{ .URL }}" class="text-gray-300 hover:text-accent transition-colors text-sm">{{ .Name }}</a></li>
           {{ end }}
         </ul>
       </div>

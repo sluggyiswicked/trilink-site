@@ -145,6 +145,7 @@ name = "Contact"
 url = "/contact/"
 weight = 70
 
+# Footer menu sections
 [[footer]]
 name = "Privacy Policy"
 url = "/legal/privacy/"
@@ -154,3 +155,40 @@ weight = 10
 name = "Terms of Service"
 url = "/legal/terms/"
 weight = 20
+
+# Footer Quick Access menu
+[[footer_quick]]
+name = "About"
+url = "/about/"
+weight = 10
+
+[[footer_quick]]
+name = "Pricing"  
+url = "/pricing/"
+weight = 20
+
+[[footer_quick]]
+name = "Contact"
+url = "/contact/"
+weight = 30
+
+[[footer_quick]]
+name = "Blog"
+url = "/blog/"
+weight = 40
+
+# Footer Resources menu
+[[footer_resources]]
+name = "Case Studies"
+url = "/resources/case-studies/"
+weight = 10
+
+[[footer_resources]]
+name = "Downloads"
+url = "/resources/downloads/"
+weight = 20
+
+[[footer_resources]]
+name = "Webinars"
+url = "/resources/webinars/"
+weight = 30

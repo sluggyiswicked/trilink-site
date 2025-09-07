@@ -243,6 +243,18 @@
     @apply relative;
   }
 
+  /* Extended hover area to bridge gaps between trigger and dropdown */
+  .dropdown::after {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: transparent;
+    z-index: 49;
+  }
+
   .dropdown-trigger {
     @apply flex items-center text-gray-700 hover:text-primary px-3 py-2 text-sm font-medium transition-all duration-200 rounded-md;
   }
@@ -265,7 +277,18 @@
   }
 
   .dropdown-menu {
-    @apply absolute left-0 top-full mt-1 w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 opacity-0 invisible transform translate-y-2 transition-all duration-200;
+    @apply absolute left-0 top-full w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 opacity-0 invisible transform translate-y-2 transition-all duration-200;
+  }
+
+  /* Add invisible hover buffer to eliminate gaps */
+  .dropdown-menu::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: transparent;
   }
 
   .dropdown:hover .dropdown-menu,
@@ -283,6 +306,18 @@
 
   .dropdown-submenu {
     @apply relative;
+  }
+
+  /* Extended hover area to bridge gaps between submenu trigger and submenu */
+  .dropdown-submenu::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 100%;
+    bottom: 0;
+    width: 4px;
+    background: transparent;
+    z-index: 49;
   }
 
   .dropdown-submenu-trigger {
@@ -303,6 +338,17 @@
 
   .dropdown-submenu-menu {
     @apply absolute left-full top-0 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 opacity-0 invisible transform -translate-x-2 transition-all duration-200;
+  }
+
+  /* Add invisible hover buffer for submenus to eliminate horizontal gaps */
+  .dropdown-submenu-menu::before {
+    content: '';
+    position: absolute;
+    left: -4px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: transparent;
   }
 
   .dropdown-submenu:hover .dropdown-submenu-menu {
@@ -353,6 +399,23 @@
 
   .footer-content {
     @apply grid md:grid-cols-3 gap-8;
+  }
+
+  .footer-grid {
+    @apply grid gap-8;
+    grid-template-columns: 1fr;
+  }
+
+  @media (min-width: 640px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .footer-grid {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
   }
 
   .footer-section-title {
