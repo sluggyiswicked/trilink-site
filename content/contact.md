@@ -1,8 +1,40 @@
 ---
 title: "Book a Consultation"
 description: "Tell us where it hurts. We'll bring the fix. Schedule a 30-minute consultation to discuss your accounting, automation, and growth strategy needs."
-layout: "contact"
+layout: "single"
 weight: 70
+
+# Hero placeholder (until custom image is generated)
+# hero_image: "/images/consultation-hero.jpg"
+
+# Trust indicators
+trust_indicators:
+  title: "Why Businesses Choose Us"
+  items:
+    - title: "Free Consultation"
+      description: "No obligation 30-minute discussion about your challenges"
+    - title: "24-Hour Response"
+      description: "We'll contact you within one business day"
+    - title: "Confidential & Secure"
+      description: "Your business information is protected"
+
+# Related services
+related_services:
+  - name: "Accounting Services"
+    url: "/services/accounting/"
+    description: "Complete bookkeeping and financial management"
+  - name: "Business Automation"
+    url: "/services/automation/"
+    description: "Streamline workflows and reduce manual work"
+
+# CTA customization
+cta:
+  title: "Prefer to call instead?"
+  description: "Speak directly with our team at (555) 123-4567 during business hours."
+  primary_text: "Call Now"
+  primary_url: "tel:+15551234567"
+  secondary_text: "View Services"
+  secondary_url: "/services/"
 
 # SEO
 meta_title: "Contact Us - Book a Business Consultation | Trilink Collaborative"

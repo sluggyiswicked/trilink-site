@@ -1,18 +1,131 @@
 {{ define "main" }}
-<div class="container mx-auto px-4 py-8">
-  {{ partial "breadcrumbs.html" . }}
-  
-  <article class="max-w-4xl mx-auto">
-    <header class="mb-8">
-      <h1 class="text-4xl font-bold text-primary mb-4">{{ .Title }}</h1>
-      {{ if .Params.description }}
-        <p class="text-xl text-gray-600">{{ .Params.description }}</p>
-      {{ end }}
-    </header>
-    
-    <div class="prose prose-lg max-w-none">
-      {{ .Content }}
+<!-- Page Hero Section -->
+{{ if .Params.hero_image }}
+<section class="page-hero-with-image" style="background-image: url('{{ .Params.hero_image }}');">
+{{ else }}
+<section class="page-hero">
+{{ end }}
+  <div class="page-hero-content">
+    <div class="page-breadcrumbs">
+      {{ partial "breadcrumbs.html" . }}
     </div>
-  </article>
+    <h1 class="page-hero-title">{{ .Title }}</h1>
+    {{ if .Params.description }}
+      <p class="page-hero-subtitle">{{ .Params.description }}</p>
+    {{ end }}
+  </div>
+</section>
+
+<!-- Main Content -->
+<div class="page-content-wrapper">
+  <div class="page-content-grid">
+    <!-- Main Content Area -->
+    <main class="page-main-content">
+      <article class="prose prose-lg max-w-none">
+        {{ .Content }}
+      </article>
+
+      <!-- Related Content Section -->
+      {{ if .Params.related_services }}
+      <section class="related-content-section">
+        <h2 class="text-2xl font-bold text-primary mb-8">Related Services</h2>
+        <div class="grid md:grid-cols-2 gap-6">
+          {{ range .Params.related_services }}
+            <div class="enhanced-content-card">
+              <div class="enhanced-content-card-content">
+                <h3 class="enhanced-content-card-title">
+                  <a href="{{ .url }}">{{ .name }}</a>
+                </h3>
+                <p class="enhanced-content-card-description">{{ .description }}</p>
+                <a href="{{ .url }}" class="enhanced-content-card-link">
+                  Learn more →
+                </a>
+              </div>
+            </div>
+          {{ end }}
+        </div>
+      </section>
+      {{ end }}
+
+      <!-- Trust Indicators -->
+      {{ if .Params.trust_indicators }}
+      <section class="trust-indicators-section related-content-section">
+        <div class="max-w-5xl mx-auto text-center">
+          <h2 class="text-3xl font-bold text-primary mb-12">{{ .Params.trust_indicators.title | default "Why Choose Us" }}</h2>
+          <div class="trust-indicators-grid">
+            {{ range .Params.trust_indicators.items }}
+              <div class="trust-indicator-item">
+                <div class="trust-indicator-icon">
+                  {{ if .icon }}
+                    <img src="{{ .icon }}" alt="{{ .title }}" class="w-8 h-8">
+                  {{ else }}
+                    <svg class="w-8 h-8 text-accent" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path>
+                    </svg>
+                  {{ end }}
+                </div>
+                <h3 class="trust-indicator-title">{{ .title }}</h3>
+                <p class="trust-indicator-description">{{ .description }}</p>
+              </div>
+            {{ end }}
+          </div>
+        </div>
+      </section>
+      {{ end }}
+    </main>
+
+    <!-- Sidebar -->
+    <aside class="page-sidebar">
+      <!-- Quick Navigation -->
+      {{ if .Parent }}
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title">{{ .Parent.Title }}</h3>
+        <nav class="page-sidebar-nav">
+          {{ range .Parent.Pages }}
+            <a href="{{ .RelPermalink }}" class="page-sidebar-nav-item{{ if eq .RelPermalink $.RelPermalink }} active{{ end }}">
+              {{ .Title }}
+            </a>
+          {{ end }}
+        </nav>
+      </div>
+      {{ end }}
+
+      <!-- Contact CTA -->
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title">Ready to Get Started?</h3>
+        <p class="text-gray-600 text-sm mb-4">Schedule a free consultation to discuss your specific needs.</p>
+        <a href="/contact/" class="btn-primary w-full text-center block">Book Consultation</a>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title">Quick Links</h3>
+        <nav class="page-sidebar-nav">
+          <a href="/pricing/" class="page-sidebar-nav-item">Pricing</a>
+          <a href="/resources/case-studies/" class="page-sidebar-nav-item">Case Studies</a>
+          <a href="/resources/downloads/" class="page-sidebar-nav-item">Downloads</a>
+          <a href="/about/" class="page-sidebar-nav-item">About Us</a>
+        </nav>
+      </div>
+    </aside>
+  </div>
 </div>
+
+<!-- Page CTA Section -->
+{{ if not .Params.hide_cta }}
+<section class="page-cta-section">
+  <div class="page-cta-container">
+    <h2 class="page-cta-title">{{ .Params.cta.title | default "Ready to streamline your operations?" }}</h2>
+    <p class="page-cta-description">{{ .Params.cta.description | default "Book a free 30-minute consultation to discuss your specific challenges and explore solutions." }}</p>
+    <div class="page-cta-buttons">
+      <a href="{{ .Params.cta.primary_url | default "/contact/" }}" class="btn-hero-primary">
+        {{ .Params.cta.primary_text | default "Book Consultation" }}
+      </a>
+      <a href="{{ .Params.cta.secondary_url | default "/services/" }}" class="btn-hero-secondary">
+        {{ .Params.cta.secondary_text | default "View All Services" }}
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}
 {{ end }}
