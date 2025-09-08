@@ -1,6 +1,14 @@
 {{ define "main" }}
 <!-- Page Hero Section -->
-{{ if .Params.hero_image }}
+{{ if .Params.subtle_background }}
+  {{ $overlayClass := "page-hero-overlay-heavy" }}
+  {{ if eq .Params.background_overlay "medium" }}{{ $overlayClass = "page-hero-overlay-medium" }}{{ end }}
+  {{ if eq .Params.background_overlay "light" }}{{ $overlayClass = "page-hero-overlay-light" }}{{ end }}
+  {{ $blendClass := "" }}
+  {{ if eq .Params.background_blend "overlay" }}{{ $blendClass = "page-hero-blend-overlay" }}{{ end }}
+  {{ if eq .Params.background_blend "soft-light" }}{{ $blendClass = "page-hero-blend-soft-light" }}{{ end }}
+<section class="page-hero-with-subtle-image {{ $overlayClass }} {{ $blendClass }}" style="background-image: url('{{ .Params.subtle_background }}');">
+{{ else if .Params.hero_image }}
 <section class="page-hero-with-image" style="background-image: url('{{ .Params.hero_image }}');">
 {{ else }}
 <section class="page-hero">

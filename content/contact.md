@@ -4,8 +4,10 @@ description: "Tell us where it hurts. We'll bring the fix. Schedule a 30-minute 
 layout: "single"
 weight: 70
 
-# Hero placeholder (until custom image is generated)
-# hero_image: "/images/consultation-hero.jpg"
+# Subtle background system with DALL-E generated image
+subtle_background: "/images/hero-contact-subtle.jpg"
+background_overlay: "heavy"  # heavy|medium|light
+background_blend: "multiply" # multiply|overlay|soft-light
 
 # Trust indicators
 trust_indicators:

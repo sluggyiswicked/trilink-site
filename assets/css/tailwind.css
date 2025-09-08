@@ -103,16 +103,16 @@
   }
 
   .hero-content {
-    @apply max-w-4xl mx-auto text-center;
+    @apply max-w-4xl mx-auto text-center relative z-10;
   }
 
   .hero-title {
-    @apply text-5xl md:text-6xl font-bold mb-6;
+    @apply text-5xl md:text-6xl font-bold mb-6 text-white;
   }
 
   .hero-subtitle {
     @apply text-xl md:text-2xl mb-8 max-w-3xl mx-auto;
-    color: #D4AF37;
+    color: #D4AF37 !important;
   }
 
   .hero-buttons {
@@ -412,6 +412,66 @@
     bottom: 0;
     background: linear-gradient(135deg, rgba(11, 31, 59, 0.85) 0%, rgba(11, 31, 59, 0.7) 100%);
     z-index: 1;
+  }
+
+  /* Subtle Background Image System */
+  .page-hero-with-subtle-image {
+    @apply relative text-white;
+    min-height: 320px;
+    max-height: 40vh;
+    padding: 1.5rem 0 2rem 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  /* Homepage hero with background image - maintains original generous sizing */
+  .hero-section.page-hero-with-subtle-image {
+    @apply py-20;
+    min-height: auto;
+    max-height: none;
+    padding: 5rem 0;
+  }
+
+  .page-hero-with-subtle-image::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+  }
+
+  /* Overlay intensity options - Much heavier overlays for whisper-subtle images */
+  .page-hero-overlay-heavy::before {
+    background: linear-gradient(135deg, rgba(11, 31, 59, 0.88) 0%, rgba(11, 31, 59, 0.85) 100%);
+  }
+
+  .page-hero-overlay-medium::before {
+    background: linear-gradient(135deg, rgba(11, 31, 59, 0.95) 0%, rgba(11, 31, 59, 0.93) 100%);
+  }
+
+  .page-hero-overlay-light::before {
+    background: linear-gradient(135deg, rgba(11, 31, 59, 0.90) 0%, rgba(11, 31, 59, 0.88) 100%);
+  }
+
+  /* Default to heavy overlay for maximum brand color preservation */
+  .page-hero-with-subtle-image:not(.page-hero-overlay-medium):not(.page-hero-overlay-light)::before {
+    background: linear-gradient(135deg, rgba(11, 31, 59, 0.98) 0%, rgba(11, 31, 59, 0.96) 100%);
+  }
+
+  /* Enhanced blend modes for professional appearance */
+  .page-hero-with-subtle-image {
+    background-blend-mode: multiply, normal;
+  }
+
+  .page-hero-blend-overlay {
+    background-blend-mode: overlay, normal;
+  }
+
+  .page-hero-blend-soft-light {
+    background-blend-mode: soft-light, normal;
   }
 
   .page-hero-content {
@@ -756,6 +816,40 @@
     height: 200px;
   }
 
+  /* CSS-based subtle background patterns (temporary placeholders) */
+  .hero-bg-accounting {
+    background-image: 
+      radial-gradient(circle at 20% 80%, rgba(42, 161, 152, 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, rgba(42, 161, 152, 0.08) 0%, transparent 50%),
+      linear-gradient(45deg, rgba(255,255,255,0.02) 25%, transparent 25%), 
+      linear-gradient(-45deg, rgba(255,255,255,0.02) 25%, transparent 25%);
+    background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px;
+  }
+
+  .hero-bg-automation {
+    background-image: 
+      radial-gradient(circle at 30% 70%, rgba(42, 161, 152, 0.08) 0%, transparent 40%),
+      radial-gradient(circle at 70% 30%, rgba(42, 161, 152, 0.06) 0%, transparent 40%),
+      repeating-linear-gradient(45deg, rgba(255,255,255,0.01) 0px, rgba(255,255,255,0.01) 2px, transparent 2px, transparent 10px);
+    background-size: 100% 100%, 100% 100%, 40px 40px;
+  }
+
+  .hero-bg-strategy {
+    background-image: 
+      radial-gradient(circle at 40% 60%, rgba(42, 161, 152, 0.09) 0%, transparent 50%),
+      radial-gradient(circle at 60% 40%, rgba(212, 175, 55, 0.06) 0%, transparent 50%),
+      conic-gradient(from 0deg at 50% 50%, rgba(255,255,255,0.02) 0deg, transparent 90deg, rgba(255,255,255,0.02) 180deg, transparent 270deg);
+    background-size: 100% 100%, 100% 100%, 80px 80px;
+  }
+
+  .hero-bg-contact {
+    background-image: 
+      radial-gradient(ellipse at 25% 75%, rgba(42, 161, 152, 0.07) 0%, transparent 60%),
+      radial-gradient(ellipse at 75% 25%, rgba(212, 175, 55, 0.05) 0%, transparent 60%),
+      linear-gradient(90deg, rgba(255,255,255,0.02) 50%, transparent 50%);
+    background-size: 100% 100%, 100% 100%, 100px 100px;
+  }
+
   /* Responsive Spacing Improvements */
   @media (max-width: 768px) {
     .page-hero {
@@ -788,6 +882,26 @@
     .page-content-wrapper {
       padding-top: 2rem;
       padding-bottom: 2.5rem;
+    }
+
+    /* Subtle background images - mobile optimizations */
+    .page-hero-with-subtle-image {
+      min-height: 280px;
+      max-height: 35vh;
+      padding: 1rem 0 1.5rem 0;
+    }
+
+    /* Even stronger overlays on mobile - nearly opaque for brand preservation */
+    .page-hero-overlay-heavy::before {
+      background: linear-gradient(135deg, rgba(11, 31, 59, 0.90) 0%, rgba(11, 31, 59, 0.87) 100%);
+    }
+
+    .page-hero-overlay-medium::before {
+      background: linear-gradient(135deg, rgba(11, 31, 59, 0.97) 0%, rgba(11, 31, 59, 0.95) 100%);
+    }
+
+    .page-hero-overlay-light::before {
+      background: linear-gradient(135deg, rgba(11, 31, 59, 0.92) 0%, rgba(11, 31, 59, 0.90) 100%);
     }
 
     .page-content-grid {

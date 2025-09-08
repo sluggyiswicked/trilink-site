@@ -1,6 +1,25 @@
 {{ define "main" }}
 <!-- Page Hero Section -->
-{{ if .Params.hero_image }}
+{{ if or .Params.subtle_background (ne .Params.subtle_background nil) }}
+  {{ $overlayClass := "page-hero-overlay-heavy" }}
+  {{ if eq .Params.background_overlay "medium" }}{{ $overlayClass = "page-hero-overlay-medium" }}{{ end }}
+  {{ if eq .Params.background_overlay "light" }}{{ $overlayClass = "page-hero-overlay-light" }}{{ end }}
+  {{ $blendClass := "" }}
+  {{ if eq .Params.background_blend "overlay" }}{{ $blendClass = "page-hero-blend-overlay" }}{{ end }}
+  {{ if eq .Params.background_blend "soft-light" }}{{ $blendClass = "page-hero-blend-soft-light" }}{{ end }}
+  {{ $bgPattern := "" }}
+  {{ if eq .Params.subtle_background "" }}
+    {{ if or (eq .Title "Book a Consultation") (eq .Section "contact") }}{{ $bgPattern = "hero-bg-contact" }}{{ end }}
+    {{ if or (in .Title "Accounting") (eq .Section "accounting") }}{{ $bgPattern = "hero-bg-accounting" }}{{ end }}
+    {{ if or (in .Title "Automation") (eq .Section "automation") }}{{ $bgPattern = "hero-bg-automation" }}{{ end }}
+    {{ if or (in .Title "Strategy") (in .Title "Strategic") (eq .Section "strategy") }}{{ $bgPattern = "hero-bg-strategy" }}{{ end }}
+  {{ end }}
+  {{ if ne .Params.subtle_background "" }}
+<section class="page-hero-with-subtle-image {{ $overlayClass }} {{ $blendClass }}" style="background-image: url('{{ .Params.subtle_background }}');">
+  {{ else }}
+<section class="page-hero-with-subtle-image {{ $overlayClass }} {{ $blendClass }} {{ $bgPattern }}">
+  {{ end }}
+{{ else if .Params.hero_image }}
 <section class="page-hero-with-image" style="background-image: url('{{ .Params.hero_image }}');">
 {{ else }}
 <section class="page-hero">

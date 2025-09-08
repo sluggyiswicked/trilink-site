@@ -8,8 +8,10 @@ weight: 20
 meta_title: "Accounting Services + Business Process Automation | Trilink Collaborative"
 meta_description: "Expert accounting services, business process automation, and operations strategy. Clean books, automated workflows, data-driven decisions for growing businesses."
 
-# Hero placeholder (until custom image is generated)
-# hero_image: "/images/services-overview-hero.jpg"
+# Subtle background system with DALL-E generated image
+subtle_background: "/images/hero-strategy-subtle.jpg"
+background_overlay: "heavy"  # heavy|medium|light
+background_blend: "multiply" # multiply|overlay|soft-light
 
 # Service sections
 services:
