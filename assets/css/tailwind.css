@@ -46,6 +46,11 @@
     max-width: 70ch;
     line-height: 1.7;
   }
+
+  /* Smooth scrolling for anchor links */
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 @layer components {
@@ -419,7 +424,7 @@
     @apply relative text-white;
     min-height: 320px;
     max-height: 40vh;
-    padding: 1.5rem 0 2rem 0;
+    padding: 1.5rem 0 3rem 0;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -481,6 +486,7 @@
     flex-direction: column;
     justify-content: space-between;
     min-height: 260px;
+    max-width: 80rem; /* Match max-w-7xl from content grid */
   }
 
   .page-hero-title {
@@ -505,13 +511,39 @@
 
   /* Enhanced Content Layout */
   .page-content-wrapper {
-    @apply container mx-auto px-4;
-    padding-top: 2.5rem;
+    @apply container mx-auto px-4 relative;
+    padding-top: 3rem;
     padding-bottom: 4rem;
   }
 
+  @media (min-width: 768px) {
+    .page-content-wrapper {
+      padding-top: 4rem;
+    }
+  }
+
+  /* Subtle visual separator between hero and content */
+  .page-content-wrapper::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #2AA198 50%, transparent 100%);
+    opacity: 0.3;
+  }
+
+  @media (max-width: 767px) {
+    .page-content-wrapper::before {
+      width: 40px;
+      height: 1px;
+    }
+  }
+
   .page-content-grid {
-    @apply grid lg:grid-cols-4 gap-16 max-w-7xl mx-auto;
+    @apply grid lg:grid-cols-4 gap-8 lg:gap-16 max-w-7xl mx-auto;
   }
 
   .page-main-content {
@@ -579,6 +611,20 @@
   .page-sidebar {
     @apply lg:col-span-1;
     margin-top: 0;
+    position: relative;
+  }
+
+  /* Add subtle visual separation on desktop */
+  @media (min-width: 1024px) {
+    .page-sidebar::before {
+      content: '';
+      position: absolute;
+      left: -2rem;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background: linear-gradient(180deg, transparent 0%, #e5e7eb 20%, #e5e7eb 80%, transparent 100%);
+    }
   }
 
   .page-sidebar > * + * {

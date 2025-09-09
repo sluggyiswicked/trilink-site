@@ -1,149 +1,28 @@
+# Streamlined Main Navigation - matches existing content
 [[main]]
 name = "Home"
 url = "/"
 weight = 10
 
-# Services with hierarchical structure
 [[main]]
 name = "Services"
-url = "/services/"
+url = "/#services"
 weight = 20
 
 [[main]]
-name = "Accounting Services"
-url = "/services/accounting/"
-parent = "Services"
-weight = 21
-
-[[main]]
-name = "Bookkeeping"
-url = "/services/accounting/bookkeeping/"
-parent = "Accounting Services"
-weight = 211
-
-[[main]]
-name = "Tax Preparation"
-url = "/services/accounting/tax-prep/"
-parent = "Accounting Services"
-weight = 212
-
-[[main]]
-name = "Financial Reporting"
-url = "/services/accounting/reporting/"
-parent = "Accounting Services"
-weight = 213
-
-[[main]]
-name = "Automation Services"
-url = "/services/automation/"
-parent = "Services"
-weight = 22
-
-[[main]]
-name = "Process Automation"
-url = "/services/automation/processes/"
-parent = "Automation Services"
-weight = 221
-
-[[main]]
-name = "Software Integration"
-url = "/services/automation/integration/"
-parent = "Automation Services"
-weight = 222
-
-[[main]]
-name = "Strategic Consulting"
-url = "/services/strategy/"
-parent = "Services"
-weight = 23
-
-[[main]]
-name = "Business Planning"
-url = "/services/strategy/planning/"
-parent = "Strategic Consulting"
-weight = 231
-
-[[main]]
-name = "Financial Analysis"
-url = "/services/strategy/analysis/"
-parent = "Strategic Consulting"
-weight = 232
-
-# Industries with hierarchy
-[[main]]
-name = "Industries"
-url = "/industries/"
-weight = 30
-
-[[main]]
-name = "Small Business"
-url = "/industries/small-business/"
-parent = "Industries"
-weight = 31
-
-[[main]]
-name = "E-commerce"
-url = "/industries/ecommerce/"
-parent = "Industries"
-weight = 32
-
-[[main]]
-name = "Professional Services"
-url = "/industries/professional-services/"
-parent = "Industries"
-weight = 33
-
-[[main]]
-name = "Non-Profit"
-url = "/industries/nonprofit/"
-parent = "Industries"
-weight = 34
-
-# Resources with hierarchy
-[[main]]
-name = "Resources"
-url = "/resources/"
-weight = 50
-
-[[main]]
-name = "Blog"
-url = "/blog/"
-parent = "Resources"
-weight = 51
-
-[[main]]
-name = "Downloads"
-url = "/resources/downloads/"
-parent = "Resources"
-weight = 52
-
-[[main]]
-name = "Case Studies"
-url = "/resources/case-studies/"
-parent = "Resources"
-weight = 53
-
-[[main]]
-name = "Webinars"
-url = "/resources/webinars/"
-parent = "Resources"
-weight = 54
-
-# Simple top-level items
-[[main]]
 name = "Pricing"
 url = "/pricing/"
-weight = 40
+weight = 30
 
 [[main]]
 name = "About"
 url = "/about/"
-weight = 60
+weight = 40
 
 [[main]]
 name = "Contact"
 url = "/contact/"
-weight = 70
+weight = 50
 
 # Footer menu sections
 [[footer]]
