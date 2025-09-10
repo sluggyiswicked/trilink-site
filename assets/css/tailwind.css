@@ -509,6 +509,162 @@
     padding-top: 0.5rem;
   }
 
+  /* Mobile-optimized breadcrumbs */
+  .mobile-optimized-breadcrumbs {
+    @apply mb-0;
+    margin-top: 0;
+  }
+
+  @media (max-width: 768px) {
+    .page-breadcrumbs {
+      padding-top: 0.25rem;
+      margin-bottom: -0.25rem;
+    }
+    
+    .mobile-optimized-breadcrumbs {
+      padding-top: 0.25rem;
+      margin-bottom: -0.25rem;
+    }
+  }
+
+  /* What You Get Section - Image + Text Layout */
+  .what-you-get-section {
+    @apply mb-12 flex flex-col lg:flex-row lg:gap-8 lg:items-start;
+    margin-bottom: 3rem;
+  }
+
+  .what-you-get-image {
+    @apply mb-6 lg:mb-0 flex-shrink-0;
+    width: 100%;
+    max-width: 280px;
+  }
+
+  @media (min-width: 1024px) {
+    .what-you-get-image {
+      width: 240px;
+      max-width: 240px;
+      margin-right: 2rem;
+    }
+  }
+
+  .what-you-get-content {
+    @apply flex-1;
+  }
+
+  .bookkeeping-hero-image {
+    @apply w-full h-auto rounded-lg shadow-md;
+    aspect-ratio: 3/4;
+    object-fit: cover;
+    object-position: center;
+    max-width: 200px;
+    max-height: 267px;
+  }
+
+  .what-you-get-content p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+
+  .what-you-get-content p:last-child {
+    @apply mb-0;
+  }
+
+  /* Benefits Grid Layout */
+  .benefits-grid {
+    @apply grid gap-8 md:grid-cols-3 mb-12;
+  }
+
+  .benefit-item {
+    @apply text-center p-6 bg-white rounded-lg border border-gray-100 shadow-sm hover:shadow-md transition-shadow;
+  }
+
+  .benefit-icon {
+    @apply text-4xl mb-4;
+  }
+
+  .benefit-item h3 {
+    @apply text-xl font-semibold text-primary mb-3;
+  }
+
+  .benefit-item p {
+    @apply text-gray-600 leading-relaxed;
+  }
+
+  /* Enhanced Benefits Showcase - Compact Feature List */
+  .benefits-showcase {
+    @apply mb-12;
+  }
+
+  .benefit-feature {
+    @apply p-2 pl-4 border-l-4 border-accent/30 bg-gradient-to-r from-accent/5 to-transparent;
+  }
+
+  .benefit-feature-content {
+    @apply flex-1;
+  }
+
+  .benefit-feature-title {
+    @apply text-lg font-semibold text-primary mb-1 leading-tight;
+  }
+
+  .benefit-feature-description {
+    @apply text-gray-600 leading-relaxed text-sm;
+  }
+
+  /* Integration Partners Section */
+  .integration-section {
+    border-radius: 1rem;
+  }
+
+  .integration-partner {
+    @apply bg-white rounded-lg p-4 text-center shadow-sm hover:shadow-md transition-all duration-300 hover:-translate-y-1;
+  }
+
+  .partner-icon {
+    @apply text-3xl mb-2 block;
+  }
+
+  .partner-name {
+    @apply font-semibold text-sm text-gray-900 mb-1 leading-tight;
+  }
+
+  .partner-description {
+    @apply text-xs text-gray-600 leading-tight;
+  }
+
+  /* Service Details Section with Alternating Backgrounds */
+  .service-details-section {
+    @apply -mx-4 md:-mx-8;
+  }
+
+  .service-detail-card {
+    @apply py-12 px-4 md:px-8;
+  }
+
+  .service-detail-white {
+    @apply bg-white;
+  }
+
+  .service-detail-gray {
+    @apply bg-gray-50;
+  }
+
+  .service-detail-card h3 {
+    @apply text-2xl font-bold text-primary mb-4;
+  }
+
+  .service-detail-card p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+
+  .service-detail-card ul {
+    @apply list-disc list-inside space-y-2 text-gray-700;
+  }
+
+  .service-detail-card li {
+    @apply leading-relaxed;
+  }
+
+
   /* Enhanced Content Layout */
   .page-content-wrapper {
     @apply container mx-auto px-4 relative;
@@ -758,6 +914,10 @@
 
   .enhanced-content-card-link {
     @apply inline-flex items-center text-accent font-medium hover:text-accent/80 transition-colors;
+  }
+
+  .service-card-icon {
+    @apply text-4xl mb-4 block text-center;
   }
 
   /* Trust Indicators Section */
@@ -1025,5 +1185,10 @@
 
   .footer-bottom {
     @apply border-t border-white/20 pt-8 mt-8 text-center text-white/60;
+  }
+
+  /* Fix anchor link overshoot - match actual header height */
+  html {
+    scroll-padding-top: 70px; /* 64px header + 6px buffer */
   }
 }
