@@ -1,7 +1,6 @@
 ---
 title: "Book a Consultation"
 description: "Tell us where it hurts. We'll bring the fix. Schedule a 30-minute consultation to discuss your accounting, automation, and growth strategy needs."
-layout: "single"
 weight: 70
 
 # Subtle background system with DALL-E generated image
@@ -158,18 +157,26 @@ trust:
 
 ---
 
-## Ready to streamline your business operations?
+<div class="content-section-wrapper">
+
+<div class="content-section-card content-section-white">
+
+## Ready to Streamline Your Business Operations?
 
 Book a **free 30-minute consultation** to discuss your specific challenges and explore how we can help. Whether you need to clean up messy books, automate repetitive workflows, or develop a growth strategy, we'll provide actionable insights you can use right away.
 
-### What happens next?
+### What Happens Next?
 
 1. **Complete the form** with your business details and goals
 2. **We'll contact you within 24 hours** to schedule your consultation
 3. **30-minute focused discussion** about your challenges and opportunities
 4. **Receive a tailored proposal** with specific solutions and next steps
 
-### Why businesses choose Trilink Collaborative
+</div>
+
+<div class="content-section-card content-section-gray">
+
+## Why Businesses Choose Trilink Collaborative
 
 **✓ QuickBooks ProAdvisor certified** — Deep expertise in the platform most businesses rely on
 
@@ -179,8 +186,44 @@ Book a **free 30-minute consultation** to discuss your specific challenges and e
 
 **✓ Growth-minded** — We design solutions that scale with your business
 
----
+### Our Commitment to You
+
+- **Free 30-minute consultation**
+- **No obligation or pressure**
+- **Response within 24 hours**
+- **Confidential discussion**
+
+</div>
+
+<div class="content-section-card content-section-white">
+
+## Contact Information
 
 **Prefer to call?** Reach us at **(555) 123-4567** during business hours.
 
 **Need immediate help?** For urgent accounting issues, email us at **hello@trilinkcollab.com** and we'll prioritize your request.
+
+**Business Hours:**
+- Monday - Friday: 9:00 AM - 6:00 PM
+- Saturday: 10:00 AM - 2:00 PM
+- Sunday: Closed
+
+**Address:**
+123 Business St, Suite 100  
+City, ST 12345
+
+</div>
+
+<div class="content-section-card content-section-gray">
+
+## Contact Form
+
+**Tell us where it hurts. We'll bring the fix.**
+
+Get a 30-minute consultation to discuss your specific challenges and explore solutions.
+
+*[Contact form would be implemented here using your form configuration from the frontmatter]*
+
+</div>
+
+</div>

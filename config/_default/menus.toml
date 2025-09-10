@@ -8,6 +8,62 @@ weight = 10
 name = "Services"
 url = "/#services"
 weight = 20
+hasChildren = true
+
+  [[main]]
+  name = "Bookkeeping & Accounting"
+  url = "/services/bookkeeping/"
+  parent = "Services"
+  weight = 21
+  hasChildren = true
+
+    [[main]]
+    name = "Account Setup & Consulting"
+    url = "/services/account-setup-consulting/"
+    parent = "Bookkeeping & Accounting"
+    weight = 211
+
+    [[main]]
+    name = "Account Cleanup (Catch-Up)"
+    url = "/services/account-cleanup-catch-up/"
+    parent = "Bookkeeping & Accounting"
+    weight = 212
+
+    [[main]]
+    name = "Software Training"
+    url = "/services/software-training/"
+    parent = "Bookkeeping & Accounting"
+    weight = 213
+
+    [[main]]
+    name = "Payroll Setup & Processing"
+    url = "/services/payroll-setup-processing/"
+    parent = "Bookkeeping & Accounting"
+    weight = 214
+
+    [[main]]
+    name = "Ongoing Bookkeeping & Monthly Close"
+    url = "/services/ongoing-bookkeeping-monthly-close/"
+    parent = "Bookkeeping & Accounting"
+    weight = 215
+
+    [[main]]
+    name = "Year-End Adjustments"
+    url = "/services/year-end-adjustments/"
+    parent = "Bookkeeping & Accounting"
+    weight = 216
+
+  [[main]]
+  name = "Business Process Automation"
+  url = "/services/business-process-automation/"
+  parent = "Services"
+  weight = 22
+
+  [[main]]
+  name = "Operations & Growth Strategy"
+  url = "/services/operations-growth-strategy/"
+  parent = "Services"
+  weight = 23
 
 [[main]]
 name = "Pricing"

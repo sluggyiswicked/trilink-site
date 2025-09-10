@@ -11,6 +11,45 @@ document.addEventListener('DOMContentLoaded', function() {
       mobileMenu.classList.toggle('hidden');
     });
   }
+
+  // Smart submenu positioning - only flip to left when needed
+  function setupSmartMenus() {
+    const submenus = document.querySelectorAll('.dropdown-submenu');
+    
+    submenus.forEach(submenu => {
+      submenu.addEventListener('mouseenter', function() {
+        const submenuEl = this.querySelector('.dropdown-submenu-menu');
+        if (!submenuEl) return;
+        
+        // Remove flip class first to check natural position
+        submenuEl.classList.remove('flip-left');
+        
+        // Force display to calculate position
+        setTimeout(() => {
+          const rect = submenuEl.getBoundingClientRect();
+          const viewportWidth = window.innerWidth;
+          
+          // If submenu would go off right edge, flip it to the left
+          if (rect.right > viewportWidth - 10) {
+            submenuEl.classList.add('flip-left');
+          }
+        }, 10); // Small delay to ensure menu is rendered
+      });
+      
+      submenu.addEventListener('mouseleave', function() {
+        const submenuEl = this.querySelector('.dropdown-submenu-menu');
+        if (submenuEl) {
+          submenuEl.classList.remove('flip-left');
+        }
+      });
+    });
+  }
+  
+  // Initialize smart menus
+  setupSmartMenus();
+  
+  // Re-initialize on window resize
+  window.addEventListener('resize', setupSmartMenus);
 });
 
 // Lead tracking function

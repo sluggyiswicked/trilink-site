@@ -157,6 +157,8 @@ Starting fresh or migrating from another system? We'll set up your books properl
 - Standard operating procedures documentation
 - Team training on new processes
 
+<a href="/services/account-setup-consulting/" class="service-learn-more">Learn More</a>
+
 </div>
 
 <div class="service-detail-card service-detail-gray">
@@ -171,6 +173,8 @@ Behind on your books? We'll get you caught up and back on track with comprehensi
 - Bank and credit card reconciliation
 - Account balance verification
 - Preparation for tax filing or business transactions
+
+<a href="/services/account-cleanup-catch-up/" class="service-learn-more">Learn More</a>
 
 </div>
 
@@ -187,6 +191,8 @@ Get your team up to speed with comprehensive training on QuickBooks Online, cust
 - Role-based access and permissions
 - Ongoing support and Q&A sessions
 
+<a href="/services/software-training/" class="service-learn-more">Learn More</a>
+
 </div>
 
 <div class="service-detail-card service-detail-gray">
@@ -201,6 +207,8 @@ Streamline your payroll process with proper setup, compliance configuration, and
 - Tax compliance and registration
 - Direct deposit and tax filing automation
 - Integration with accounting system
+
+<a href="/services/payroll-setup-processing/" class="service-learn-more">Learn More</a>
 
 </div>
 
@@ -217,6 +225,8 @@ Never miss a deadline again with our systematic monthly close process that inclu
 - Management dashboard and KPI reporting
 - Quarterly forecasting and variance analysis
 
+<a href="/services/ongoing-bookkeeping-monthly-close/" class="service-learn-more">Learn More</a>
+
 </div>
 
 <div class="service-detail-card service-detail-gray">
@@ -231,6 +241,8 @@ End your fiscal year with confidence. We'll prepare your books for tax preparati
 - Inventory adjustments and valuations  
 - Prepaid and accrued expense entries
 - CPA workpaper preparation and collaboration
+
+<a href="/services/year-end-adjustments/" class="service-learn-more">Learn More</a>
 
 </div>
 

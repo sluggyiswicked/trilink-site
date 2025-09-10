@@ -285,6 +285,14 @@
     @apply absolute left-0 top-full w-64 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 opacity-0 invisible transform translate-y-2 transition-all duration-200;
   }
 
+  /* Prevent dropdown from going off right edge */
+  .dropdown:last-child .dropdown-menu,
+  .dropdown:nth-last-child(2) .dropdown-menu {
+    @apply right-0 left-auto;
+  }
+
+  /* Remove max-width constraint to allow full menu visibility */
+
   /* Add invisible hover buffer to eliminate gaps */
   .dropdown-menu::before {
     content: '';
@@ -344,6 +352,20 @@
   .dropdown-submenu-menu {
     @apply absolute left-full top-0 w-56 bg-white rounded-lg shadow-lg border border-gray-100 py-2 z-50 opacity-0 invisible transform -translate-x-2 transition-all duration-200;
   }
+
+  /* Dynamic class for when submenu needs to flip left */
+  .dropdown-submenu-menu.flip-left {
+    left: auto !important;
+    right: 100% !important;
+    transform: translateX(2px) !important;
+  }
+  
+  /* Adjust hover buffer for left-opening submenus */
+  .dropdown-submenu-menu.flip-left::before {
+    left: auto;
+    right: -4px;
+  }
+  
 
   /* Add invisible hover buffer for submenus to eliminate horizontal gaps */
   .dropdown-submenu-menu::before {
@@ -448,22 +470,22 @@
     z-index: 1;
   }
 
-  /* Overlay intensity options - Much heavier overlays for whisper-subtle images */
+  /* Overlay intensity options - Balanced overlays for optimal background visibility */
   .page-hero-overlay-heavy::before {
-    background: linear-gradient(135deg, rgba(11, 31, 59, 0.88) 0%, rgba(11, 31, 59, 0.85) 100%);
+    background: linear-gradient(135deg, rgba(11, 31, 59, 0.82) 0%, rgba(11, 31, 59, 0.78) 100%);
   }
 
   .page-hero-overlay-medium::before {
-    background: linear-gradient(135deg, rgba(11, 31, 59, 0.95) 0%, rgba(11, 31, 59, 0.93) 100%);
+    background: linear-gradient(135deg, rgba(11, 31, 59, 0.87) 0%, rgba(11, 31, 59, 0.85) 100%);
   }
 
   .page-hero-overlay-light::before {
-    background: linear-gradient(135deg, rgba(11, 31, 59, 0.90) 0%, rgba(11, 31, 59, 0.88) 100%);
+    background: linear-gradient(135deg, rgba(11, 31, 59, 0.75) 0%, rgba(11, 31, 59, 0.72) 100%);
   }
 
-  /* Default to heavy overlay for maximum brand color preservation */
+  /* Default overlay - balanced to show background while maintaining readability */
   .page-hero-with-subtle-image:not(.page-hero-overlay-medium):not(.page-hero-overlay-light)::before {
-    background: linear-gradient(135deg, rgba(11, 31, 59, 0.98) 0%, rgba(11, 31, 59, 0.96) 100%);
+    background: linear-gradient(135deg, rgba(11, 31, 59, 0.90) 0%, rgba(11, 31, 59, 0.87) 100%);
   }
 
   /* Enhanced blend modes for professional appearance */
@@ -664,6 +686,64 @@
     @apply leading-relaxed;
   }
 
+  /* Content Section Alternating Backgrounds */
+  .content-section-wrapper {
+    @apply -mx-4 md:-mx-8;
+  }
+
+  .content-section-card {
+    @apply py-12 px-4 md:px-8;
+  }
+
+  .content-section-white {
+    @apply bg-white;
+  }
+
+  .content-section-gray {
+    @apply bg-gray-50;
+  }
+
+  .content-section-card h2 {
+    @apply text-3xl font-bold text-primary mb-6;
+  }
+
+  .content-section-card h3 {
+    @apply text-2xl font-bold text-primary mb-4;
+  }
+
+  .content-section-card h4 {
+    @apply text-xl font-semibold text-primary mb-3;
+  }
+
+  .content-section-card p {
+    @apply mb-4 text-gray-700 leading-relaxed;
+  }
+
+  .content-section-card ul {
+    @apply list-disc list-inside space-y-2 text-gray-700 mb-4;
+  }
+
+  .content-section-card li {
+    @apply leading-relaxed;
+  }
+
+  .content-section-card strong {
+    @apply font-semibold text-gray-900;
+  }
+
+  /* Service Detail Learn More Links */
+  .service-learn-more {
+    @apply mt-6 inline-flex items-center text-accent font-medium hover:text-accent/80 transition-all duration-200;
+  }
+
+  .service-learn-more::after {
+    content: '→';
+    @apply ml-2 transition-transform duration-200;
+  }
+
+  .service-learn-more:hover::after {
+    transform: translateX(4px);
+  }
 
   /* Enhanced Content Layout */
   .page-content-wrapper {
@@ -1097,17 +1177,17 @@
       padding: 1rem 0 1.5rem 0;
     }
 
-    /* Even stronger overlays on mobile - nearly opaque for brand preservation */
+    /* Mobile overlays - slightly stronger than desktop for readability */
     .page-hero-overlay-heavy::before {
-      background: linear-gradient(135deg, rgba(11, 31, 59, 0.90) 0%, rgba(11, 31, 59, 0.87) 100%);
+      background: linear-gradient(135deg, rgba(11, 31, 59, 0.85) 0%, rgba(11, 31, 59, 0.82) 100%);
     }
 
     .page-hero-overlay-medium::before {
-      background: linear-gradient(135deg, rgba(11, 31, 59, 0.97) 0%, rgba(11, 31, 59, 0.95) 100%);
+      background: linear-gradient(135deg, rgba(11, 31, 59, 0.90) 0%, rgba(11, 31, 59, 0.88) 100%);
     }
 
     .page-hero-overlay-light::before {
-      background: linear-gradient(135deg, rgba(11, 31, 59, 0.92) 0%, rgba(11, 31, 59, 0.90) 100%);
+      background: linear-gradient(135deg, rgba(11, 31, 59, 0.78) 0%, rgba(11, 31, 59, 0.75) 100%);
     }
 
     .page-content-grid {
