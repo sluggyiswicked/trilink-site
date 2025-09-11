@@ -662,7 +662,7 @@
   }
 
   .service-detail-card {
-    @apply py-5 px-3 md:px-6;
+    @apply py-5 px-3 md:px-6 mb-3;
   }
 
   .service-detail-white {
@@ -682,7 +682,7 @@
   }
 
   .service-detail-card ul {
-    @apply list-disc list-inside space-y-2 text-gray-700;
+    @apply list-disc list-outside space-y-2 text-gray-700 pl-5;
   }
 
   .service-detail-card li {
@@ -691,11 +691,11 @@
 
   /* Content Section Alternating Backgrounds */
   .content-section-wrapper {
-    @apply -mx-4 md:-mx-8;
+    @apply mx-0;
   }
 
   .content-section-card {
-    @apply py-5 px-3 md:px-6;
+    @apply py-5 px-3 md:px-6 rounded-lg mb-3;
   }
 
   .content-section-white {
@@ -723,7 +723,7 @@
   }
 
   .content-section-card ul {
-    @apply list-disc list-inside space-y-2 text-gray-700 mb-4;
+    @apply list-disc list-outside space-y-2 text-gray-700 mb-4 pl-5;
   }
 
   .content-section-card li {

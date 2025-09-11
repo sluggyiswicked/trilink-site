@@ -7,7 +7,7 @@ meta_title: "Expert Bookkeeping & Accounting Services | Trilink Collaborative"
 meta_description: "Professional bookkeeping and accounting services including account setup, cleanup, monthly close, payroll processing, and year-end adjustments. GAAP-compliant and audit-ready."
 
 # Subtle background system 
-subtle_background: "/images/hero-accounting-subtle.jpg"
+subtle_background: "/images/hero-accounting-natural.jpg"
 background_overlay: "heavy"  # heavy|medium|light
 background_blend: "multiply" # multiply|overlay|soft-light
 
@@ -41,39 +41,12 @@ cta:
   secondary_url: "/#services"
 ---
 
-## What You Get
-
-<div class="benefits-showcase space-y-4 mb-8">
-  <div class="benefit-feature">
-    <div class="benefit-feature-content">
-      <h3 class="benefit-feature-title">Clean Books, Predictable Closes</h3>
-      <p class="benefit-feature-description">No more scrambling at month-end or worrying about compliance. Your financials are always current and accurate with audit-ready records.</p>
-    </div>
-  </div>
-  
-  <div class="benefit-feature">
-    <div class="benefit-feature-content">
-      <h3 class="benefit-feature-title">Automated Financial Flows</h3>
-      <p class="benefit-feature-description">Data flows seamlessly between your systems. Sales automatically sync to accounting, expenses are categorized correctly, reports generate themselves.</p>
-    </div>
-  </div>
-  
-  <div class="benefit-feature">
-    <div class="benefit-feature-content">
-      <h3 class="benefit-feature-title">Expert Guidance & Support</h3>
-      <p class="benefit-feature-description">We don't just do your books - we help you understand them. Get insights that drive better business decisions and strategic growth.</p>
-    </div>
-  </div>
-</div>
-
----
-
 ## Our Accounting Services
 
 <div class="services-grid">
   <a href="#account-setup" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/account-setup-service.jpg" alt="Account setup and consulting service" class="service-image">
+      <img src="/images/account-setup-natural.jpg" alt="Account setup and consulting service" class="service-image">
     </div>
     <div class="service-content">
       <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">SETUP & CONSULTING</div>
@@ -84,7 +57,7 @@ cta:
   
   <a href="#account-cleanup" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/account-cleanup-service.jpg" alt="Account cleanup and catch-up service" class="service-image">
+      <img src="/images/account-cleanup-natural.jpg" alt="Account cleanup and catch-up service" class="service-image">
     </div>
     <div class="service-content">
       <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">CLEANUP & CATCH-UP</div>
@@ -95,7 +68,7 @@ cta:
   
   <a href="#software-training" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/software-training-service.jpg" alt="Software training service" class="service-image">
+      <img src="/images/software-training-natural.jpg" alt="Software training service" class="service-image">
     </div>
     <div class="service-content">
       <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">TRAINING & SUPPORT</div>
@@ -106,7 +79,7 @@ cta:
   
   <a href="#payroll" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/payroll-service.jpg" alt="Payroll setup and processing service" class="service-image">
+      <img src="/images/payroll-natural.jpg" alt="Payroll setup and processing service" class="service-image">
     </div>
     <div class="service-content">
       <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">PAYROLL MANAGEMENT</div>
@@ -117,7 +90,7 @@ cta:
   
   <a href="#bookkeeping" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/ongoing-bookkeeping-service.jpg" alt="Ongoing bookkeeping and monthly close service" class="service-image">
+      <img src="/images/ongoing-bookkeeping-natural.jpg" alt="Ongoing bookkeeping and monthly close service" class="service-image">
     </div>
     <div class="service-content">
       <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">ONGOING SUPPORT</div>
@@ -128,7 +101,7 @@ cta:
   
   <a href="#year-end" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/year-end-service.jpg" alt="Year-end adjustments service" class="service-image">
+      <img src="/images/year-end-natural.jpg" alt="Year-end adjustments service" class="service-image">
     </div>
     <div class="service-content">
       <div class="text-xs font-semibold text-gray-500 uppercase tracking-wide mb-2">YEAR-END PREP</div>
@@ -142,9 +115,9 @@ cta:
 
 ## Service Details
 
-<div class="service-details-section">
+<div class="content-section-wrapper">
 
-<div class="service-detail-card service-detail-white">
+<div class="content-section-card content-section-white">
 
 ### Account Setup & Consulting {#account-setup}
 **Professional chart of accounts, opening balances, and SOPs**
@@ -161,7 +134,7 @@ Starting fresh or migrating from another system? We'll set up your books properl
 
 </div>
 
-<div class="service-detail-card service-detail-gray">
+<div class="content-section-card content-section-gray">
 
 ### Account Cleanup (Catch-Up) {#account-cleanup}
 **Fix messy books, reconcile accounts, prepare for tax or due diligence**
@@ -178,7 +151,7 @@ Behind on your books? We'll get you caught up and back on track with comprehensi
 
 </div>
 
-<div class="service-detail-card service-detail-white">
+<div class="content-section-card content-section-white">
 
 ### Software Training {#software-training}
 **QuickBooks Online workflows, financial reporting, role-specific training**
@@ -195,7 +168,7 @@ Get your team up to speed with comprehensive training on QuickBooks Online, cust
 
 </div>
 
-<div class="service-detail-card service-detail-gray">
+<div class="content-section-card content-section-gray">
 
 ### Payroll Setup & Processing {#payroll}
 **Provider selection, compliance setup, accurate job cost tracking**
@@ -212,7 +185,7 @@ Streamline your payroll process with proper setup, compliance configuration, and
 
 </div>
 
-<div class="service-detail-card service-detail-white">
+<div class="content-section-card content-section-white">
 
 ### Ongoing Bookkeeping & Monthly Close {#bookkeeping}
 **Consistent close process, management reporting, quarterly forecasting**
@@ -229,7 +202,7 @@ Never miss a deadline again with our systematic monthly close process that inclu
 
 </div>
 
-<div class="service-detail-card service-detail-gray">
+<div class="content-section-card content-section-gray">
 
 ### Year-End Adjustments {#year-end}
 **Tax-ready books, CPA liaison, final adjusting entries**

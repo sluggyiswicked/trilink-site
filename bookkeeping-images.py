@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Batch image generation utility for hero backgrounds
-Usage: python batch_image_generator.py
+Generate photorealistic images for the bookkeeping services page
+Usage: python bookkeeping-images.py
 """
 
 import os
@@ -16,20 +16,8 @@ load_dotenv()
 # Initialize OpenAI client
 client = OpenAI(api_key=os.getenv('OPENAI_API_KEY'))
 
-def generate_image(prompt, filename, size="1792x1024", quality="standard", max_retries=3):
-    """
-    Generate an image using OpenAI DALL-E with retry logic
-    
-    Args:
-        prompt (str): Description of the image to generate
-        filename (str): Name for the saved file (include extension)
-        size (str): Image size - "1024x1024", "1792x1024", or "1024x1792" 
-        quality (str): "standard" or "hd"
-        max_retries (int): Maximum number of retry attempts
-    
-    Returns:
-        bool: True if successful, False otherwise
-    """
+def generate_image(prompt, filename, size="1024x1024", quality="standard", max_retries=3):
+    """Generate an image using OpenAI DALL-E with retry logic"""
     
     for attempt in range(max_retries):
         try:
@@ -82,41 +70,59 @@ def generate_image(prompt, filename, size="1792x1024", quality="standard", max_r
     print(f"FAILED: Could not generate {filename} after {max_retries} attempts")
     return False
 
-def generate_hero_backgrounds():
-    """
-    Generate all 4 hero background images for the Trilink website
-    """
+def generate_bookkeeping_images():
+    """Generate all images needed for the bookkeeping services page"""
     
-    # Photorealistic business requirements - no artificial color forcing
-    common_requirements = "Photorealistic professional business photography, warm natural lighting, high-end corporate environment, very subtle and muted for text overlay, natural business colors"
+    # Common photorealistic requirements
+    common_style = "Photorealistic professional business photography, warm natural lighting, high-end corporate environment, depth of field with background blur for text overlay, authentic business atmosphere"
     
-    # Define all hero background specifications - photorealistic accounting business scenarios
-    hero_images = [
+    # Define all images needed for bookkeeping page
+    images = [
+        # Hero background
         {
             "filename": "hero-accounting-realistic.jpg",
-            "prompt": f"Photorealistic accounting office scene with professional accountant working at modern desk with financial documents and calculator, warm office lighting, depth of field with background blur for text overlay, {common_requirements}, authentic business environment"
+            "size": "1792x1024",
+            "prompt": f"Photorealistic accounting office scene with professional accountant working at modern desk with financial documents, calculator, and computer showing spreadsheets, warm office lighting, depth of field with background blur for text overlay, {common_style}, authentic accounting workspace environment"
+        },
+        
+        # Service card images (1024x1024)
+        {
+            "filename": "account-setup-realistic.jpg", 
+            "size": "1024x1024",
+            "prompt": f"Photorealistic business consultation scene with accountant helping client set up new business accounts, reviewing paperwork and charts of accounts on modern office desk, {common_style}, professional account setup consultation"
         },
         {
-            "filename": "hero-automation-realistic.jpg", 
-            "prompt": f"Photorealistic modern business office with professionals collaborating around computer screens showing business software and workflows, natural office lighting, depth of field, {common_requirements}, authentic technology-driven business setting"
+            "filename": "account-cleanup-realistic.jpg",
+            "size": "1024x1024", 
+            "prompt": f"Photorealistic accounting workspace with stacks of financial documents being organized and reconciled, computer screen showing accounting software, calculator and pen on desk, {common_style}, account cleanup and catch-up work environment"
         },
         {
-            "filename": "hero-strategy-realistic.jpg",
-            "prompt": f"Photorealistic business strategy meeting scene with executives reviewing charts and graphs on conference table, professional boardroom setting, natural corporate lighting, depth of field for text overlay, {common_requirements}, authentic strategic planning environment"
+            "filename": "software-training-realistic.jpg",
+            "size": "1024x1024",
+            "prompt": f"Photorealistic office training session with instructor teaching QuickBooks software on computer screen to business professionals, modern conference room setting, {common_style}, accounting software training environment"  
         },
         {
-            "filename": "hero-contact-realistic.jpg",
-            "prompt": f"Photorealistic professional business consultation scene with advisor meeting client in upscale office setting, handshake or discussion over desk, warm professional lighting, depth of field, {common_requirements}, authentic consultation environment"
+            "filename": "payroll-realistic.jpg",
+            "size": "1024x1024",
+            "prompt": f"Photorealistic payroll processing scene with HR professional working on computer showing payroll software interface, employee timesheets and tax forms on desk, {common_style}, authentic payroll management workspace"
+        },
+        {
+            "filename": "ongoing-bookkeeping-realistic.jpg",
+            "size": "1024x1024", 
+            "prompt": f"Photorealistic monthly bookkeeping scene with accountant reviewing financial reports and bank statements at organized desk, computer showing accounting dashboard, {common_style}, ongoing bookkeeping and monthly close environment"
+        },
+        {
+            "filename": "year-end-realistic.jpg",
+            "size": "1024x1024",
+            "prompt": f"Photorealistic year-end accounting preparation with accountant preparing tax documents and adjusting entries, desk with organized financial records and laptop, {common_style}, year-end tax preparation workspace"
         }
     ]
     
-    print("TRILINK HERO BACKGROUND GENERATOR")
+    print("BOOKKEEPING PAGE IMAGE GENERATOR")
     print("=" * 60)
     print(f"Output directory: static/images/")
-    print(f"Image size: 1792x1024 (landscape)")
-    print(f"Quality: standard")
     print(f"Style: Photorealistic business photography with warm natural lighting")
-    print(f"Total images to generate: {len(hero_images)}")
+    print(f"Total images to generate: {len(images)}")
     print("=" * 60)
     
     # Check API key
@@ -131,13 +137,13 @@ def generate_hero_backgrounds():
     
     start_time = time.time()
     
-    for i, image_spec in enumerate(hero_images, 1):
-        print(f"\nStarting generation {i}/{len(hero_images)}")
+    for i, image_spec in enumerate(images, 1):
+        print(f"\nStarting generation {i}/{len(images)}")
         
         success = generate_image(
             prompt=image_spec["prompt"],
             filename=image_spec["filename"],
-            size="1792x1024",
+            size=image_spec["size"],
             quality="standard"
         )
         
@@ -154,14 +160,14 @@ def generate_hero_backgrounds():
             print(f"FAILED: {image_spec['filename']}")
             
         # Add delay between requests to be respectful to API
-        if i < len(hero_images):
-            print("Waiting 2 seconds before next generation...")
-            time.sleep(2)
+        if i < len(images):
+            print("Waiting 3 seconds before next generation...")
+            time.sleep(3)
     
     # Final summary
     elapsed_time = time.time() - start_time
     print(f"\n{'='*60}")
-    print("BATCH GENERATION COMPLETE")
+    print("BOOKKEEPING IMAGE GENERATION COMPLETE")
     print(f"{'='*60}")
     print(f"Successful: {successful}")
     print(f"Failed: {failed}")
@@ -173,28 +179,24 @@ def generate_hero_backgrounds():
         status = "SUCCESS" if result["success"] else "FAILED"
         print(f"  {status}: {result['filename']}")
     
-    if successful == len(hero_images):
-        print(f"\nAll {len(hero_images)} hero background images generated successfully!")
-        print("Ready to use in your Hugo templates.")
+    if successful == len(images):
+        print(f"\nAll {len(images)} bookkeeping images generated successfully!")
+        print("Ready to update the bookkeeping page with new image references.")
     elif successful > 0:
-        print(f"\nPartially successful: {successful}/{len(hero_images)} images generated")
+        print(f"\nPartially successful: {successful}/{len(images)} images generated")
         print("You may want to retry the failed images.")
     else:
         print(f"\nGeneration failed completely. Check your API key and connection.")
     
-    return successful == len(hero_images)
-
-def main():
-    """Main function to run batch generation"""
-    try:
-        success = generate_hero_backgrounds()
-        return 0 if success else 1
-    except KeyboardInterrupt:
-        print(f"\nGeneration cancelled by user")
-        return 1
-    except Exception as e:
-        print(f"\nUnexpected error: {e}")
-        return 1
+    return successful == len(images)
 
 if __name__ == "__main__":
-    exit(main())
+    try:
+        success = generate_bookkeeping_images()
+        exit(0 if success else 1)
+    except KeyboardInterrupt:
+        print(f"\nGeneration cancelled by user")
+        exit(1)
+    except Exception as e:
+        print(f"\nUnexpected error: {e}")
+        exit(1)
