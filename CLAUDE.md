@@ -123,3 +123,34 @@ This is a Hugo-based static site for an accounting services business using Tailw
 - **Clean Asset Pipeline**: Removed static/css/bundle.css, using only Hugo-processed assets
 - **Template Optimization**: Updated baseof.html to load single consolidated CSS bundle
 - **Preserved Functionality**: Maintained all original semantic classes and design intent
+
+## CSS Change Verification Process
+
+To ensure CSS changes are immediately visible and prevent repeated requests:
+
+### Mandatory Steps After Every CSS Change:
+
+1. **Force CSS Rebuild**:
+   ```bash
+   npm run build:css
+   ```
+
+2. **Verify Change in Compiled CSS**:
+   ```bash
+   grep -n "your-change" assets/css/bundle.css
+   ```
+
+3. **Check Hugo Server Response**:
+   - Monitor hugo server output for "Asset changed /css/bundle.css"
+   - Ensure Hugo detects and rebuilds the site
+
+4. **Browser Cache Management**:
+   **CRITICAL FOR USER**: Always use these steps to see changes:
+   - **Hard Refresh**: `Ctrl+Shift+F5` (Windows) or `Cmd+Shift+R` (Mac)
+   - **Or use Dev Tools**: F12 → Network tab → Check "Disable cache"
+   - **Or Incognito Mode**: Open site in private/incognito window
+
+### Troubleshooting:
+- If changes don't appear: Kill hugo server, run `npm run build:css`, restart server
+- If still not visible: Clear all browser cache or try different browser
+- Changes ARE in the code if they pass the grep verification step
