@@ -8,8 +8,8 @@ background_overlay: "heavy"  # heavy|medium|light
 background_blend: "multiply" # multiply|overlay|soft-light
 
 hero:
-  title: "Expert Accounting Services for Growing Businesses"
-  subtitle: "Streamline your finances with professional bookkeeping, tax preparation, and CFO services tailored to your business needs."
+  title: "Bookkeeping That Powers Business Growth"
+  subtitle: "Professional accounting services with automation and strategic insights built in."
   cta_primary: "Get Started Today"
 ---
 
