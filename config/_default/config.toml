@@ -1,6 +1,6 @@
 baseURL = "https://www.yourdomain.com"
 languageCode = "en-us"
-title = "Your Accounting Co."
+title = "Trilink Collaborative"
 
 # Hugo configuration
 enableRobotsTXT = true
