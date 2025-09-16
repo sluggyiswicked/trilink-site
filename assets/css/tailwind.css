@@ -316,7 +316,7 @@
 
   /* Badges Grid Components */
   .badges-grid {
-    @apply grid grid-cols-5 gap-3 mb-6;
+    @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-6;
   }
 
   .badge-item {
@@ -324,28 +324,70 @@
   }
 
   .badge-image-section {
-    @apply p-1 flex items-center justify-center;
-    min-height: 140px;
+    @apply p-1 sm:p-2 flex items-center justify-center;
+    min-height: 80px;
+  }
+
+  @media (min-width: 640px) {
+    .badge-image-section {
+      min-height: 100px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .badge-image-section {
+      min-height: 120px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .badge-image-section {
+      min-height: 140px;
+    }
   }
 
   .badge-image {
-    @apply w-28 h-28 object-contain;
+    @apply w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 lg:w-28 lg:h-28 object-contain;
   }
 
   .badge-text-section {
-    @apply p-2 pt-0 text-center;
+    @apply p-1 sm:p-2 pt-0 text-center;
   }
 
   .badge-title {
     @apply font-semibold text-primary mb-1 leading-tight;
-    font-size: 0.5rem;
+    font-size: 0.625rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  @media (min-width: 640px) {
+    .badge-title {
+      font-size: 0.75rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .badge-title {
+      font-size: 0.625rem;
+    }
   }
 
   .badge-description {
     @apply text-gray-600 leading-tight;
-    font-size: 0.4rem;
+    font-size: 0.5rem;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  @media (min-width: 640px) {
+    .badge-description {
+      font-size: 0.625rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .badge-description {
+      font-size: 0.5rem;
+    }
   }
 
   .pricing-tiers p {

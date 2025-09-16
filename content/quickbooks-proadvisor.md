@@ -1,5 +1,5 @@
 ---
-title: "QuickBooks ProAdvisor Services | Trilink Collaborative"
+title: "QuickBooks ProAdvisor Services"
 description: "Expert QuickBooks setup, migration, and optimization services from our certified ProAdvisor team led by founder Debra Burch. Comprehensive QuickBooks solutions for businesses of all sizes."
 
 # SEO
@@ -97,9 +97,9 @@ cta:
 
 <div class="content-section-card content-section-white">
 
-## QuickBooks ProAdvisor Excellence at Trilink Collaborative
+## Certified QuickBooks Experts
 
-**Expert QuickBooks solutions from a certified team you can trust.** Our QuickBooks practice delivers comprehensive QuickBooks Online and Desktop services that help businesses streamline their financial operations and make better decisions with confidence.
+**QuickBooks done right. Results guaranteed.**
 
 ### Our QuickBooks Expertise
 
