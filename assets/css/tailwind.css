@@ -47,6 +47,31 @@
     line-height: 1.7;
   }
 
+  /* Enhanced hyperlink styles - only for body text content */
+  .content-section-card p a,
+  .pricing-card-description a {
+    font-weight: 600;
+    text-decoration: underline;
+    color: var(--color-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 2px;
+    transition: all 0.2s ease;
+  }
+
+  .content-section-card p a:hover,
+  .pricing-card-description a:hover {
+    color: var(--color-primary);
+    text-decoration-thickness: 3px;
+    text-underline-offset: 3px;
+    transform: translateY(-1px);
+  }
+
+  .content-section-card p a:active,
+  .pricing-card-description a:active {
+    transform: translateY(0);
+    text-decoration-thickness: 2px;
+  }
+
   /* Smooth scrolling for anchor links */
   html {
     scroll-behavior: smooth;
@@ -187,6 +212,169 @@
 
   .services-cta {
     @apply text-center;
+  }
+
+  /* Pricing Section Components */
+  .pricing-section {
+    @apply py-20 bg-gray-50;
+  }
+
+  .pricing-container {
+    @apply container mx-auto px-4;
+  }
+
+  .pricing-header {
+    @apply text-center mb-16;
+  }
+
+  .pricing-title {
+    @apply text-4xl md:text-5xl font-bold mb-6 text-gray-900;
+    font-family: var(--font-headings);
+  }
+
+  .pricing-subtitle {
+    @apply text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed;
+  }
+
+  .pricing-grid {
+    @apply grid md:grid-cols-1 gap-8;
+  }
+
+  .pricing-card {
+    @apply bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl border;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .pricing-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  }
+
+  .pricing-card.popular {
+    @apply border-accent border-2;
+  }
+
+  .pricing-card.popular .pricing-card-header {
+    @apply bg-gradient-to-r from-accent/10 to-accent/5;
+  }
+
+  .pricing-card-header {
+    @apply p-6 border-b bg-gradient-to-r from-accent/10 to-accent/5;
+  }
+
+  .pricing-card-badge {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin-bottom: 0.5rem;
+    color: #2AA198;
+  }
+
+  .pricing-card-title {
+    @apply text-2xl font-semibold mb-2 text-gray-900;
+    font-family: var(--font-headings);
+  }
+
+  .pricing-card-subtitle {
+    @apply mb-4 text-gray-600;
+  }
+
+  .pricing-card-price {
+    @apply text-3xl font-bold mb-2;
+    color: var(--color-primary);
+    font-family: var(--font-headings);
+  }
+
+  .pricing-card-description {
+    @apply text-gray-600;
+  }
+
+  .pricing-card-content {
+    @apply p-6;
+  }
+
+  .pricing-features {
+    @apply mb-8;
+  }
+
+  .pricing-feature {
+    @apply flex items-start gap-3 mb-3;
+  }
+
+  .pricing-feature-icon {
+    @apply flex-shrink-0 w-5 h-5 rounded-full flex items-center justify-center mt-0.5;
+    background-color: var(--color-accent);
+  }
+
+  .pricing-feature-text {
+    @apply text-gray-700;
+    flex: 1;
+    line-height: 1.5;
+  }
+
+  /* Badges Grid Components */
+  .badges-grid {
+    @apply grid grid-cols-5 gap-3 mb-6;
+  }
+
+  .badge-item {
+    @apply bg-white rounded-lg border border-gray-200 hover:shadow-md transition-shadow duration-200 overflow-hidden;
+  }
+
+  .badge-image-section {
+    @apply p-1 flex items-center justify-center;
+    min-height: 140px;
+  }
+
+  .badge-image {
+    @apply w-28 h-28 object-contain;
+  }
+
+  .badge-text-section {
+    @apply p-2 pt-0 text-center;
+  }
+
+  .badge-title {
+    @apply font-semibold text-primary mb-1 leading-tight;
+    font-size: 0.5rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .badge-description {
+    @apply text-gray-600 leading-tight;
+    font-size: 0.4rem;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .pricing-tiers p {
+    @apply text-sm text-gray-600 mb-1;
+    margin-left: 1rem;
+    text-indent: -1rem;
+    line-height: 1.5;
+  }
+
+
+  .pricing-ideal-for {
+    @apply bg-gray-50 p-4 rounded-lg mb-6;
+  }
+
+  .pricing-ideal-label {
+    @apply text-sm font-semibold text-gray-600 mb-2;
+  }
+
+  .pricing-ideal-text {
+    @apply text-gray-700;
+  }
+
+  .pricing-cta {
+    @apply w-full bg-primary hover:bg-primary/90 text-white px-6 py-3 font-semibold transition-all duration-300 hover:shadow-lg;
+    border-radius: var(--radius-theme);
+  }
+
+  .pricing-cta.secondary {
+    @apply bg-transparent hover:bg-gray-50 text-primary border-2 border-primary hover:border-primary/90;
   }
 
   /* CTA Section Components */

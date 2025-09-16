@@ -108,6 +108,25 @@ This is a Hugo-based static site for an accounting services business using Tailw
 - **Template Updates**: All HTML templates use semantic classes only
 - **Single Source of Truth**: All styling changes happen in one CSS file
 
+### Pricing System Restructure (Latest)
+- **Three-Card Layout**: Restructured pricing from 5 packages to 3 (Foundation, Restoration, Automation)
+- **Vertical Layout**: Changed from 2-across grid to single-column vertical stacking
+- **Unified Styling**: All pricing cards use consistent light teal gradient headers
+- **Inline Links**: Replaced separate CTA buttons with inline hyperlinks in card descriptions
+- **Enhanced Hugo Templates**: Updated pricing-cards.html shortcode to use safeHTML for link rendering
+- **Removed Pricing Duplicates**: Centralized all pricing on dedicated page, removed from service pages
+
+### Enhanced Hyperlink System
+- **Global Link Styling**: Implemented site-wide enhanced hyperlink styles in @layer base
+- **Hover/Click Effects**: Added smooth transitions and improved visual feedback
+- **Consistent Branding**: All links use accent color with proper weight and underline styling
+- **Performance**: Moved from component-specific to base layer for efficiency
+
+### Content Optimization
+- **Streamlined Navigation**: Removed "Related Services" sections from About and Contact pages
+- **Centralized Pricing**: All pricing information now directs to dedicated pricing page
+- **Improved UX**: Better text wrapping and alignment for bullet points in pricing cards
+
 ### Current Status
 - Complete semantic CSS architecture implemented and **conflicts resolved**
 - All styling consolidated into single `assets/css/tailwind.css` file

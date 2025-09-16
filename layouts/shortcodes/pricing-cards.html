@@ -1,0 +1,90 @@
+{{ $packages := .Page.Params.packages }}
+
+<!-- Foundation Package -->
+{{ with $packages.foundation }}
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">SETUP</div>
+    <h3 class="pricing-card-title">{{ .name }}</h3>
+    {{ if .subtitle }}<p class="pricing-card-subtitle">{{ .subtitle }}</p>{{ end }}
+    <div class="pricing-card-price">{{ .price }}{{ if .period }} <span class="text-base font-normal text-gray-600">{{ .period }}</span>{{ end }}</div>
+    <p class="pricing-card-description">{{ .description | safeHTML }}</p>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      {{ range .features }}
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">{{ . | safeHTML }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}
+
+<!-- Restoration Package -->
+{{ with $packages.restoration }}
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">CLEANUP</div>
+    <h3 class="pricing-card-title">{{ .name }}</h3>
+    {{ if .subtitle }}<p class="pricing-card-subtitle">{{ .subtitle }}</p>{{ end }}
+    <div class="pricing-card-price">{{ .price }}{{ if .period }} <span class="text-base font-normal text-gray-600">{{ .period }}</span>{{ end }}</div>
+    <p class="pricing-card-description">{{ .description | safeHTML }}</p>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      {{ range .features }}
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">{{ . | safeHTML }}</span>
+      </li>
+      {{ end }}
+    </ul>
+    {{ if .pricing_tiers }}
+    <div class="pricing-tiers mt-4 mb-4">
+      <h4 class="text-sm font-semibold text-primary mb-2">Pricing Options:</h4>
+      {{ range .pricing_tiers }}
+      <p>• {{ . | safeHTML }}</p>
+      {{ end }}
+    </div>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+<!-- Automation Package -->
+{{ with $packages.automation }}
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">AUTOMATION</div>
+    <h3 class="pricing-card-title">{{ .name }}</h3>
+    {{ if .subtitle }}<p class="pricing-card-subtitle">{{ .subtitle }}</p>{{ end }}
+    <div class="pricing-card-price">{{ .price }}</div>
+    <p class="pricing-card-description">{{ .description | safeHTML }}</p>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      {{ range .features }}
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">{{ . | safeHTML }}</span>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}

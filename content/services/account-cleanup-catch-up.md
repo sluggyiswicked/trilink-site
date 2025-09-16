@@ -222,25 +222,11 @@ Perfect for businesses preparing for:
 - Multiple entity or location issues
 - Regulatory compliance problems
 
-### Investment Range
+### Pricing Information
 
-**Basic Cleanup: $3,000 - $8,000**
-- 1-2 years of records
-- Simple business structure
-- Good source documentation available
+For detailed pricing on our account cleanup and restoration services, including our three-tier approach (Standard, Enhanced, and Advanced Restoration), please visit our [pricing page](/pricing/) where you can find comprehensive information about our cleanup packages and investment levels.
 
-**Moderate Cleanup: $8,000 - $20,000**
-- 2-3 years of records
-- Some complexity in operations
-- Missing documentation requiring research
-
-**Extensive Cleanup: $20,000 - $50,000+**
-- 3+ years of records
-- Complex business operations
-- Significant reconstruction required
-- Regulatory compliance issues
-
-*All quotes provided after initial assessment*
+*All final quotes provided after initial assessment based on your specific needs*
 
 </div>
 

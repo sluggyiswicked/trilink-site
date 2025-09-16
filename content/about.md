@@ -35,12 +35,6 @@ We're working on creating a comprehensive About page that will tell our story an
 
 To help businesses achieve financial clarity and operational excellence through expert accounting, bookkeeping, and strategic consulting services.
 
-### What We Do
-
-- **Bookkeeping & Accounting Services** - Complete financial management solutions
-- **Business Process Automation** - Streamline operations for efficiency
-- **Operations & Growth Strategy** - Strategic guidance for sustainable growth
-
 </div>
 
 <div class="content-section-card content-section-gray">

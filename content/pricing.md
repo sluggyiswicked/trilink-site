@@ -15,80 +15,54 @@ background_blend: "multiply"
 # Pricing packages
 packages:
   foundation:
-    name: "Foundation"
-    subtitle: "Setup or Cleanup + Baseline Reporting"
-    starting_price: "$2,500"
-    description: "Perfect for new businesses or those needing to clean up existing books"
+    name: "Foundation Package"
+    subtitle: "Start Clean & Grow Strong"
+    price: "$1,750"
+    period: "one-time"
+    description: "A strong start for new businesses with organized and accurate books. <a href=\"/contact/\">Get started</a> with your foundation setup today."
     features:
-      - "Chart of accounts setup tailored to your business"
-      - "Bank and credit card connection setup"
-      - "Historical transaction cleanup and categorization"
-      - "Opening balance reconciliation"
-      - "Basic monthly financial reporting (P&L, Balance Sheet)"
-      - "30/60/90-day close process documentation"
-      - "QuickBooks Online training for your team"
-    ideal_for: "New entities, migrations from spreadsheets, or businesses with backlogged books"
-    cta:
-      text: "Get a tailored quote"
-      url: "/contact/?service=foundation"
+      - "Industry tailored Chart of Accounts"
+      - "Classes/locations setup (up to 2)"
+      - "Bank & credit card connections (up to 3 accounts)"
+      - "Opening balances setup and initial reconciliation"
+      - "Standardized financial reporting"
+      - "Customized accounting procedures manual"
+      - "30-day post-setup support with guided first-month close"
+      - "One-time books review and up to 2-hr training"
       
-  operate:
-    name: "Operate"
-    subtitle: "Ongoing Bookkeeping + Monthly Close + Payroll"
-    starting_price: "$1,200/month"
-    description: "Complete ongoing financial management with consistent monthly reporting"
+  restoration:
+    name: "Restoration Package"
+    subtitle: "Historical Clean-Up & Optimization"
+    price: "Starting at $3,750"
+    period: "one-time"
+    description: "A transformative reset of books that restores reliability and confidence. <a href=\"/contact/\">Get started</a> with your books restoration today."
     features:
-      - "Weekly transaction coding and receipt capture"
-      - "Monthly bank and credit card reconciliations"
-      - "Accounts payable and receivable management"
-      - "Monthly close package with management commentary"
-      - "Payroll processing and compliance"
-      - "Quarterly business review and light forecasting"
-      - "Year-end tax preparation support"
-      - "Dedicated accounting team and client portal access"
-    ideal_for: "Established businesses needing consistent monthly financial management"
-    popular: true
-    cta:
-      text: "Get a tailored quote"
-      url: "/contact/?service=operate"
+      - "Balance Sheet Alignment with prior year business tax return"
+      - "Chart of Accounts restructuring & optimization"
+      - "Transaction error identification, correction, and recategorization"
+      - "Bank & credit card reconciliations (up to 3 accounts)"
+      - "Financial statements recalibration for accuracy"
+      - "30-day post-cleanup support with customized month-end closing checklist"
+      - "Comprehensive books review with up to 5 hrs of hands-on training"
+      - "Optional add-on: Automation setup for rules & recurring transactions — $500"
+    pricing_tiers:
+      - "Standard Restoration (up to 6 months history) - $3,750 one-time"
+      - "Enhanced Restoration (up to 12 months history) - $6,750 one-time"
+      - "Advanced Restoration - For clean-up needs beyond 12 months, more than 3 bank/credit card accounts, and multiple classes/locations, please <a href=\"/contact/\">contact us for a custom quote</a>."
       
-  automate:
-    name: "Automate" 
-    subtitle: "Integrations + Cost Allocation + Dashboards"
-    starting_price: "$3,500"
-    description: "Streamline workflows with custom integrations and automated reporting"
+  automation:
+    name: "Automation Package"
+    subtitle: "Enterprise-Level Accounting Solutions"
+    price: "Starting at $5,000"
+    period: ""
+    description: "ERP-level automation at a fraction of the cost, built on accounting expertise. <a href=\"/contact/\">Contact us for a custom quote</a> - each solution depends on complexity and is custom quoted."
     features:
-      - "Custom integration setup (Shopify, Stripe, Square, etc.)"
-      - "Automated cost allocation rules by department/project"
-      - "Real-time dashboard development"
-      - "Custom workflow automation and approval processes"
-      - "Data sync between business systems"
-      - "Executive KPI reporting and board packages"
-      - "Integration maintenance and monitoring"
-      - "Advanced reporting and business intelligence"
-    ideal_for: "Growing businesses with complex operations and multiple systems"
-    cta:
-      text: "Start a systems audit"
-      url: "/contact/?service=automate"
-      
-  strategy:
-    name: "Strategy"
-    subtitle: "Operations & Growth Strategy Blueprint + 90-day Plan"
-    starting_price: "$5,000"
-    description: "Comprehensive operational redesign and growth strategy development"
-    features:
-      - "Current-state operational assessment"
-      - "Process mapping and redesign recommendations"
-      - "Organizational structure optimization"
-      - "Technology stack rationalization"
-      - "Data governance framework development"
-      - "90-day execution plan with clear milestones"
-      - "Change management strategy and templates"
-      - "Monthly progress reviews and adjustments"
-    ideal_for: "Businesses ready to scale operations and implement strategic growth initiatives"
-    cta:
-      text: "Book a strategy session"
-      url: "/contact/?service=strategy"
+      - "FREE accounting process review before recommending any automation"
+      - "Payroll integration with QuickBooks Online (ADP, Paychex, Gusto, etc.)"
+      - "AR/AP automation for recurring invoices, bills, and payments"
+      - "E-commerce integrations (Shopify, Square, Clover, and more)"
+      - "Efficiency gains proven to save up to 80% of manual entry time"
+      - "Live demos and case studies available"
 
 # Trust elements
 trust:
@@ -121,146 +95,68 @@ faq:
 
 <div class="content-section-card content-section-white">
 
-## Choose the Right Package for Your Business Stage
+## Transparent Pricing for Every Business Stage
 
-Whether you're just starting out or ready to scale, we have solutions that grow with your business. Most clients start with **Foundation** or **Operate** and add **Automate** and **Strategy** as they grow.
+Whether you're starting fresh, need to restore your books, or ready to automate your processes, we have a solution that fits. Our one-time packages provide immediate value with no ongoing commitment required.
 
 **Not sure which package is right for you?** Book a 30-minute consultation and we'll recommend the best approach for your specific situation.
 
-### Our Service Packages
-
-Our packages are designed to meet businesses at every stage of growth, from initial setup to advanced automation and strategic growth planning.
-
 </div>
 
 <div class="content-section-card content-section-gray">
 
-## Foundation Package
-**Setup or Cleanup + Baseline Reporting**
+<div class="pricing-grid md:grid-cols-1 gap-8">
+  {{< pricing-cards >}}
+</div>
 
-**Starting at $2,500**
-
-Perfect for new businesses or those needing to clean up existing books.
-
-**What's Included:**
-- Chart of accounts setup tailored to your business
-- Bank and credit card connection setup
-- Historical transaction cleanup and categorization
-- Opening balance reconciliation
-- Basic monthly financial reporting (P&L, Balance Sheet)
-- 30/60/90-day close process documentation
-- QuickBooks Online training for your team
-
-**Ideal for:** New entities, migrations from spreadsheets, or businesses with backlogged books
+<div class="text-center mt-12">
+<p class="text-lg text-gray-600 mb-6">
+<strong>Not sure which package is right for you?</strong> Book a 30-minute consultation and we'll recommend the best approach for your specific situation.
+</p>
+<a href="/contact/" class="btn-cta">Schedule a Consultation</a>
+</div>
 
 </div>
 
 <div class="content-section-card content-section-white">
 
-## Operate Package ⭐ Most Popular
-**Ongoing Bookkeeping + Monthly Close + Payroll**
+## Why Choose Our One-Time Packages?
 
-**Starting at $1,200/month**
-
-Complete ongoing financial management with consistent monthly reporting.
-
-**What's Included:**
-- Weekly transaction coding and receipt capture
-- Monthly bank and credit card reconciliations
-- Accounts payable and receivable management
-- Monthly close package with management commentary
-- Payroll processing and compliance
-- Quarterly business review and light forecasting
-- Year-end tax preparation support
-- Dedicated accounting team and client portal access
-
-**Ideal for:** Established businesses needing consistent monthly financial management
+<div class="grid md:grid-cols-3 gap-8 mb-12">
+  <div class="text-center">
+    <div class="text-accent text-4xl mb-4">💰</div>
+    <h3 class="text-xl font-semibold mb-2">No Monthly Commitment</h3>
+    <p class="text-gray-600">Pay once for immediate results with no ongoing fees</p>
+  </div>
+  <div class="text-center">
+    <div class="text-accent text-4xl mb-4">⚡</div>
+    <h3 class="text-xl font-semibold mb-2">Fast Implementation</h3>
+    <p class="text-gray-600">Most projects completed within 2-4 weeks</p>
+  </div>
+  <div class="text-center">
+    <div class="text-accent text-4xl mb-4">📚</div>
+    <h3 class="text-xl font-semibold mb-2">Knowledge Transfer</h3>
+    <p class="text-gray-600">Training and documentation included so you can maintain your books</p>
+  </div>
+</div>
 
 </div>
 
 <div class="content-section-card content-section-gray">
-
-## Automate Package
-**Integrations + Cost Allocation + Dashboards**
-
-**Starting at $3,500**
-
-Streamline workflows with custom integrations and automated reporting.
-
-**What's Included:**
-- Custom integration setup (Shopify, Stripe, Square, etc.)
-- Automated cost allocation rules by department/project
-- Real-time dashboard development
-- Custom workflow automation and approval processes
-- Data sync between business systems
-- Executive KPI reporting and board packages
-- Integration maintenance and monitoring
-- Advanced reporting and business intelligence
-
-**Ideal for:** Growing businesses with complex operations and multiple systems
-
-</div>
-
-<div class="content-section-card content-section-white">
-
-## Strategy Package
-**Operations & Growth Strategy Blueprint + 90-day Plan**
-
-**Starting at $5,000**
-
-Comprehensive operational redesign and growth strategy development.
-
-**What's Included:**
-- Current-state operational assessment
-- Process mapping and redesign recommendations
-- Organizational structure optimization
-- Technology stack rationalization
-- Data governance framework development
-- 90-day execution plan with clear milestones
-- Change management strategy and templates
-- Monthly progress reviews and adjustments
-
-**Ideal for:** Businesses ready to scale operations and implement strategic growth initiatives
-
-</div>
-
-<div class="content-section-card content-section-gray">
-
-## Trust & Results
-
-**Our Commitment**
-Every package includes our commitment to accuracy, timeliness, and clear communication.
-
-**Certifications & Expertise**
-- QuickBooks ProAdvisor Certified
-- GAAP Compliance Expertise
-- Business Process Automation Specialists
-
-**Proven Results**
-- Average 65% reduction in manual data entry
-- Month-end close by the 5th of each month
-- 3-5 percentage point improvement in gross margins
-
-</div>
-
-<div class="content-section-card content-section-white">
 
 ## Frequently Asked Questions
 
-**How do you determine the exact pricing for my business?**
-Pricing depends on transaction volume, complexity, and specific requirements. We provide detailed quotes after a 30-minute consultation to understand your needs.
+**How long does each package take to complete?**
+Foundation: 1-2 weeks. Restoration Standard: 2-3 weeks. Enhanced: 3-4 weeks. Automation: 4-6 weeks.
 
-**Can I combine packages or customize services?**
-Absolutely. Most clients benefit from combining packages. We'll create a tailored solution that fits your business needs and budget.
+**Do you offer ongoing bookkeeping after cleanup?**
+Yes! We offer monthly bookkeeping services starting at $350/month after your initial package is complete.
 
-**What if my business grows and needs change?**
-Our packages are designed to scale with you. We regularly review your needs and adjust services to match your business growth.
+**What if I need more than one package?**
+Many clients combine packages. For example, Foundation + Automation or Restoration + Automation. We offer bundle discounts.
 
-**Do you work with my existing CPA or tax preparer?**
-Yes, we collaborate seamlessly with your existing professional team. We provide clean, organized records that make their job easier.
-
-**How long does implementation take?**
-Foundation setups typically take 2-3 weeks. Automation projects range from 4-8 weeks depending on complexity. We'll provide a detailed timeline during your consultation.
+**Can you work with my existing accounting software?**
+We specialize in QuickBooks Online but can work with most major platforms including Xero, Wave, and FreshBooks.
 
 </div>
 

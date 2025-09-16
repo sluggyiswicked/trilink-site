@@ -19,15 +19,6 @@ trust_indicators:
     - title: "Confidential & Secure"
       description: "Your business information is protected"
 
-# Related services
-related_services:
-  - name: "Accounting Services"
-    url: "/services/accounting/"
-    description: "Complete bookkeeping and financial management"
-  - name: "Business Automation"
-    url: "/services/automation/"
-    description: "Streamline workflows and reduce manual work"
-
 # CTA customization
 cta:
   title: "Prefer to call instead?"
