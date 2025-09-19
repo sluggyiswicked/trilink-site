@@ -447,7 +447,7 @@
   }
 
   .header-container {
-    @apply container mx-auto px-4;
+    @apply w-full px-4;
   }
 
   .header-nav {
@@ -475,17 +475,14 @@
     @apply text-xl font-bold text-primary;
   }
 
-  /* Edge-compatible navigation */
-  .desktop-nav {
-    display: -ms-flexbox !important;
-    display: flex !important;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
-    white-space: nowrap;
-    gap: 0.25rem;
+  /* Simple Edge fix - just prevent navigation wrapping */
+  @supports (-ms-ime-align: auto) {
+    .desktop-nav {
+      min-width: 500px;
+    }
   }
+
+
 
   .header-logo {
     @apply text-2xl font-bold text-primary;
