@@ -22,9 +22,9 @@ trust_indicators:
 # CTA customization
 cta:
   title: "Prefer to call instead?"
-  description: "Speak directly with our team at (555) 123-4567 during business hours."
+  description: "Speak directly with our team during business hours."
   primary_text: "Call Now"
-  primary_url: "tel:+15551234567"
+  primary_url: "tel:+12142070330"
   secondary_text: "View Services"
   secondary_url: "/services/"
 
@@ -32,14 +32,11 @@ cta:
 meta_title: "Contact Us - Book a Business Consultation | Trilink Collaborative"
 meta_description: "Schedule a 30-minute consultation to discuss accounting services, business process automation, and growth strategy. Get expert solutions for your business challenges."
 
-# Contact info
+# Contact info (uses site parameters)
 contact:
-  phone: "+1 (555) 123-4567"
-  email: "hello@trilinkcollab.com"
-  address: "123 Business St, Suite 100, City, ST 12345"
   hours:
     - "Monday - Friday: 9:00 AM - 6:00 PM"
-    - "Saturday: 10:00 AM - 2:00 PM" 
+    - "Saturday: 10:00 AM - 2:00 PM"
     - "Sunday: Closed"
 
 # Form configuration
@@ -190,9 +187,9 @@ Book a **free 30-minute consultation** to discuss your specific challenges and e
 
 ## Contact Information
 
-**Prefer to call?** Reach us at **(555) 123-4567** during business hours.
+**Prefer to call?** Reach us at **{{< company-phone >}}** during business hours.
 
-**Need immediate help?** For urgent accounting issues, email us at **hello@trilinkcollab.com** and we'll prioritize your request.
+**Need immediate help?** For urgent accounting issues, email us at **{{< company-email >}}** and we'll prioritize your request.
 
 **Business Hours:**
 - Monday - Friday: 9:00 AM - 6:00 PM
@@ -200,8 +197,7 @@ Book a **free 30-minute consultation** to discuss your specific challenges and e
 - Sunday: Closed
 
 **Address:**
-123 Business St, Suite 100  
-City, ST 12345
+{{< company-address >}}
 
 </div>
 

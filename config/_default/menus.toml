@@ -18,38 +18,44 @@ hasChildren = true
   hasChildren = true
 
     [[main]]
-    name = "Account Setup & Consulting"
+    name = "Service Overview"
+    url = "/services/bookkeeping-overview/"
+    parent = "Bookkeeping & Accounting"
+    weight = 210
+
+    [[main]]
+    name = "Account Setup"
     url = "/services/account-setup-consulting/"
     parent = "Bookkeeping & Accounting"
     weight = 211
 
     [[main]]
-    name = "Account Cleanup (Catch-Up)"
+    name = "Account Cleanup"
     url = "/services/account-cleanup-catch-up/"
     parent = "Bookkeeping & Accounting"
     weight = 212
 
     [[main]]
-    name = "Software Training"
-    url = "/services/software-training/"
+    name = "Monthly Maintenance"
+    url = "/services/ongoing-bookkeeping-monthly-close/"
     parent = "Bookkeeping & Accounting"
     weight = 213
 
     [[main]]
-    name = "Payroll Setup & Processing"
-    url = "/services/payroll-setup-processing/"
+    name = "Year-End Close"
+    url = "/services/year-end-adjustments/"
     parent = "Bookkeeping & Accounting"
     weight = 214
 
     [[main]]
-    name = "Ongoing Bookkeeping & Monthly Close"
-    url = "/services/ongoing-bookkeeping-monthly-close/"
+    name = "Payroll Setup & Management"
+    url = "/services/payroll-setup-processing/"
     parent = "Bookkeeping & Accounting"
     weight = 215
 
     [[main]]
-    name = "Year-End Adjustments"
-    url = "/services/year-end-adjustments/"
+    name = "Training & Support"
+    url = "/services/software-training/"
     parent = "Bookkeeping & Accounting"
     weight = 216
 

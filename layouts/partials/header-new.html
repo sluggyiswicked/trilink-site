@@ -12,7 +12,7 @@
       </div>
       
       <!-- Desktop Navigation with Dropdowns -->
-      <div class="hidden md:flex items-center space-x-1">
+      <div class="hidden md:flex items-center space-x-1 desktop-nav">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
           {{ if .HasChildren }}
