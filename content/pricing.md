@@ -19,7 +19,7 @@ packages:
     subtitle: "Start Clean & Grow Strong"
     price: "$1,750"
     period: "one-time"
-    description: "A strong start for new businesses with organized and accurate books. <a href=\"/contact/\">Get started</a> with your foundation setup today."
+    description: "A strong start for new businesses with organized and accurate books. <a href=\"/contact/\">Get started</a>."
     features:
       - "Industry tailored Chart of Accounts"
       - "Classes/locations setup (up to 2)"
@@ -35,7 +35,7 @@ packages:
     subtitle: "Historical Clean-Up & Optimization"
     price: "Starting at $3,750"
     period: "one-time"
-    description: "A transformative reset of books that restores reliability and confidence. <a href=\"/contact/\">Get started</a> with your books restoration today."
+    description: "A transformative reset of books that restores reliability and confidence. <a href=\"/contact/\">Get started</a>."
     features:
       - "Balance Sheet Alignment with prior year business tax return"
       - "Chart of Accounts restructuring & optimization"
@@ -49,7 +49,38 @@ packages:
       - "Standard Restoration (up to 6 months history) - $3,750 one-time"
       - "Enhanced Restoration (up to 12 months history) - $6,750 one-time"
       - "Advanced Restoration - For clean-up needs beyond 12 months, more than 3 bank/credit card accounts, and multiple classes/locations, please <a href=\"/contact/\">contact us for a custom quote</a>."
-      
+
+  monthly:
+    name: "Monthly Maintenance"
+    subtitle: "Ongoing Bookkeeping & Support"
+    price: ""
+    period: ""
+    description: "Consistent monthly care that delivers quality, accuracy and peace of mind. <a href=\"/contact/\">Get started</a>."
+    features:
+      - "Starter — $475/month"
+      - "Accounting entries review, posting & categorization (≤ 80/month)"
+      - "Bank & credit card reconciliations (up to 2 accounts)"
+      - "Standard financial statements (P&L, Balance Sheet, Cash Flow)"
+      - "Month-end close with email support (24-hour response)"
+      - "Core — $900/month"
+      - "Accounting entries review, posting & categorization (≤ 150/month)"
+      - "Bank & credit card reconciliations (up to 3 accounts)"
+      - "2 classes/locations included"
+      - "Financial statements with variance highlights"
+      - "Month-end close by the 15th"
+      - "1-hour monthly account review"
+      - "Growth — $1,600/month"
+      - "Accounting entries review, posting & categorization (≤ 300/month)"
+      - "Bank & credit card reconciliations (up to 4 accounts)"
+      - "Up to 3 classes/locations"
+      - "Light inventory adjustments (quarterly)"
+      - "Month-end close by the 10th"
+      - "2-hour monthly account review & insights snapshot"
+      - "Enterprise — Custom quote"
+      - "High-volume entries, multi-entity, advanced inventory/COGS tracking"
+      - "Custom dashboards, consolidations, priority support"
+      - "Scope and Service Level Agreements (SLAs) tailored to your operations"
+
   automation:
     name: "Automation Package"
     subtitle: "Enterprise-Level Accounting Solutions"
@@ -95,9 +126,11 @@ faq:
 
 <div class="content-section-card content-section-white">
 
-## Transparent Pricing for Every Business Stage
+## Transparent and Predictable Pricing
 
-Whether you're starting fresh, need to restore your books, or ready to automate your processes, we have a solution that fits. Our one-time packages provide immediate value with no ongoing commitment required.
+Whether you're <a href="#foundation">starting fresh</a>, need to <a href="#restoration">restore your books</a>, or outsourcing <a href="#monthly">monthly accouning work</a>, we have a solution that fits.
+
+Save up to 80% of time spent on manual accounting work by automating payroll, AR/AP, and e-commerce processes via our <a href="#automation">Enterprise Automation Solutions</a>. Includes a FREE accounting process review.
 
 **Not sure which package is right for you?** Book a 30-minute consultation and we'll recommend the best approach for your specific situation.
 

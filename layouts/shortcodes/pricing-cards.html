@@ -2,11 +2,13 @@
 
 <!-- Foundation Package -->
 {{ with $packages.foundation }}
-<div class="pricing-card">
+<div class="pricing-card" id="foundation">
   <div class="pricing-card-header">
     <div class="pricing-card-badge">SETUP</div>
-    <h3 class="pricing-card-title">{{ .name }}</h3>
-    {{ if .subtitle }}<p class="pricing-card-subtitle">{{ .subtitle }}</p>{{ end }}
+    <div class="flex items-baseline gap-4 mb-1">
+      <h3 class="pricing-card-title mb-0">{{ .name }}</h3>
+      {{ if .subtitle }}<span class="text-gray-600">→</span><p class="pricing-card-subtitle mb-0">{{ .subtitle }}</p>{{ end }}
+    </div>
     <div class="pricing-card-price">{{ .price }}{{ if .period }} <span class="text-base font-normal text-gray-600">{{ .period }}</span>{{ end }}</div>
     <p class="pricing-card-description">{{ .description | safeHTML }}</p>
   </div>
@@ -29,11 +31,13 @@
 
 <!-- Restoration Package -->
 {{ with $packages.restoration }}
-<div class="pricing-card">
+<div class="pricing-card" id="restoration">
   <div class="pricing-card-header">
     <div class="pricing-card-badge">CLEANUP</div>
-    <h3 class="pricing-card-title">{{ .name }}</h3>
-    {{ if .subtitle }}<p class="pricing-card-subtitle">{{ .subtitle }}</p>{{ end }}
+    <div class="flex items-baseline gap-4 mb-1">
+      <h3 class="pricing-card-title mb-0">{{ .name }}</h3>
+      {{ if .subtitle }}<span class="text-gray-600">→</span><p class="pricing-card-subtitle mb-0">{{ .subtitle }}</p>{{ end }}
+    </div>
     <div class="pricing-card-price">{{ .price }}{{ if .period }} <span class="text-base font-normal text-gray-600">{{ .period }}</span>{{ end }}</div>
     <p class="pricing-card-description">{{ .description | safeHTML }}</p>
   </div>
@@ -62,13 +66,48 @@
 </div>
 {{ end }}
 
+<!-- Monthly Maintenance Package -->
+{{ with $packages.monthly }}
+<div class="pricing-card" id="monthly">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">MONTHLY</div>
+    <div class="flex items-baseline gap-4 mb-1">
+      <h3 class="pricing-card-title mb-0">{{ .name }}</h3>
+      {{ if .subtitle }}<span class="text-gray-600">→</span><p class="pricing-card-subtitle mb-0">{{ .subtitle }}</p>{{ end }}
+    </div>
+    <div class="pricing-card-price">{{ .price }}{{ if .period }} <span class="text-base font-normal text-gray-600">{{ .period }}</span>{{ end }}</div>
+    <p class="pricing-card-description">{{ .description | safeHTML }}</p>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      {{ range .features }}
+        {{ if or (in . "$") (in . "Custom quote") }}
+          <div class="pricing-tier-band">{{ . | safeHTML }}</div>
+        {{ else }}
+          <li class="pricing-feature">
+            <div class="pricing-feature-icon">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span class="pricing-feature-text">{{ . | safeHTML }}</span>
+          </li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </div>
+</div>
+{{ end }}
+
 <!-- Automation Package -->
 {{ with $packages.automation }}
-<div class="pricing-card">
+<div class="pricing-card" id="automation">
   <div class="pricing-card-header">
     <div class="pricing-card-badge">AUTOMATION</div>
-    <h3 class="pricing-card-title">{{ .name }}</h3>
-    {{ if .subtitle }}<p class="pricing-card-subtitle">{{ .subtitle }}</p>{{ end }}
+    <div class="flex items-baseline gap-4 mb-1">
+      <h3 class="pricing-card-title mb-0">{{ .name }}</h3>
+      {{ if .subtitle }}<span class="text-gray-600">→</span><p class="pricing-card-subtitle mb-0">{{ .subtitle }}</p>{{ end }}
+    </div>
     <div class="pricing-card-price">{{ .price }}</div>
     <p class="pricing-card-description">{{ .description | safeHTML }}</p>
   </div>
