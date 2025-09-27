@@ -34,10 +34,12 @@ cta:
 
 <div class="content-section-wrapper">
 
-<div class="content-section-card content-section-gray">
 
-## QuickBooks ProAdvisor Certifications
+<div class="content-section-card content-section-white">
 
+## Certified QuickBooks Experts
+
+**QuickBooks done right. Results guaranteed.**
 
 <div class="badges-grid">
   <div class="badge-item">
@@ -46,7 +48,6 @@ cta:
     </div>
     <div class="badge-text-section">
       <h4 class="badge-title">QuickBooks Online Certified</h4>
-      <p class="badge-description">Level 1 certification</p>
     </div>
   </div>
 
@@ -56,7 +57,6 @@ cta:
     </div>
     <div class="badge-text-section">
       <h4 class="badge-title">QuickBooks Online Advanced</h4>
-      <p class="badge-description">Level 2 certification</p>
     </div>
   </div>
 
@@ -66,7 +66,6 @@ cta:
     </div>
     <div class="badge-text-section">
       <h4 class="badge-title">QuickBooks Payroll Certified</h4>
-      <p class="badge-description">Payroll processing</p>
     </div>
   </div>
 
@@ -76,7 +75,6 @@ cta:
     </div>
     <div class="badge-text-section">
       <h4 class="badge-title">Point of Sale Certified</h4>
-      <p class="badge-description">POS integration</p>
     </div>
   </div>
 
@@ -86,20 +84,11 @@ cta:
     </div>
     <div class="badge-text-section">
       <h4 class="badge-title">QuickBooks Enterprise</h4>
-      <p class="badge-description">Enterprise solutions</p>
     </div>
   </div>
 </div>
 
 **Continuous Education:** These certifications are maintained through ongoing training and testing to ensure we stay current with QuickBooks updates, new features, and best practices.
-
-</div>
-
-<div class="content-section-card content-section-white">
-
-## Certified QuickBooks Experts
-
-**QuickBooks done right. Results guaranteed.**
 
 ### Our QuickBooks Expertise
 
@@ -135,15 +124,16 @@ Debra established Trilink Collaborative with a vision to provide businesses with
 
 ## Our Team-Based QuickBooks Approach
 
-### Why Our Collaborative Model Works Better
+### Your Dedicated ProAdvisor Plus Expert Team Support
 
-**Multiple Experts, One Vision** — Our entire team is trained in QuickBooks best practices and advanced features, ensuring you always have expert support available when you need it.
 
-**Scalable Support** — As your business grows, our team approach means we can scale our support to match your evolving needs without disruption or learning curves.
+**Single Certified Contact** — You'll work directly with one dedicated certified ProAdvisor who serves as your lead bookkeeper and primary QuickBooks contact, ensuring consistent communication and deep knowledge of your business.
 
-**Continuous Learning** — Our team stays current with QuickBooks updates, new features, and industry best practices through ongoing certification, training, and hands-on experience.
+**Expert Team Review** — Your dedicated ProAdvisor is backed by our collaborative team that regularly reviews accounts together, providing multiple perspectives and collective expertise on your QuickBooks system.
 
-**Collaborative Problem-Solving** — Complex challenges benefit from multiple perspectives and varied expertise—our team approach delivers comprehensive solutions faster.
+**Escalation & Complex Issues** — When advanced challenges arise, your lead ProAdvisor seamlessly brings in specialized team members for complex problem-solving while maintaining your primary relationship.
+
+**Specialized Expertise Access** — Our team includes specialists in business process automation, systems integrations (payroll, POS, reporting), cash flow management, and business optimizations—all available to support your lead ProAdvisor when needed.
 
 </div>
 

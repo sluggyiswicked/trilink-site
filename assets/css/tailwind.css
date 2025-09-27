@@ -331,6 +331,146 @@
     margin-top: 0;
   }
 
+  /* Anniversary Badge Styling */
+  .anniversary-badge {
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    shape-outside: circle(50%);
+  }
+
+  @media (max-width: 768px) {
+    .anniversary-badge {
+      float: none;
+      display: block;
+      margin: 0 auto 1.5rem auto;
+      width: 120px;
+      height: 120px;
+    }
+  }
+
+  /* Professional Icon Containers */
+  .icon-container {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--color-accent)/10, var(--color-accent)/5);
+    border: 2px solid var(--color-accent)/20;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    margin-bottom: 1rem;
+  }
+
+  .icon-container:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    background: linear-gradient(135deg, var(--color-accent)/20, var(--color-accent)/10);
+    border-color: var(--color-accent)/30;
+  }
+
+  .icon-container img {
+    width: 48px;
+    height: 48px;
+    transition: transform 0.3s ease;
+  }
+
+  .icon-container:hover img {
+    transform: scale(1.1);
+  }
+
+  /* Advantage Section Styling */
+  .advantage-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .advantage-content h3 {
+    margin-top: 0.8rem !important;
+    margin-bottom: 0.5rem;
+    line-height: 1.1;
+    padding-top: 0;
+  }
+
+  .advantage-content {
+    flex: 1;
+  }
+
+  /* AI Feature Styling */
+  .ai-feature {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    transition: background 0.3s ease;
+  }
+
+  .ai-feature:hover {
+    background: rgba(255, 255, 255, 0.8);
+  }
+
+  .ai-feature .icon-container {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 0;
+    flex-shrink: 0;
+  }
+
+  .ai-feature .icon-container img {
+    width: 36px;
+    height: 36px;
+  }
+
+  .ai-feature-content {
+    flex: 1;
+  }
+
+  .ai-feature-content strong {
+    display: block;
+    color: var(--color-primary);
+    margin-bottom: 0.25rem;
+  }
+
+  @media (max-width: 768px) {
+    .advantage-item {
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .advantage-item .icon-container {
+      align-self: center;
+    }
+
+    .advantage-item .advantage-content {
+      text-align: left;
+    }
+
+    .ai-feature {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .ai-feature .icon-container {
+      align-self: center;
+    }
+
+    .ai-feature .ai-feature-content {
+      text-align: left;
+    }
+  }
+
   /* Badges Grid Components */
   .badges-grid {
     @apply grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-3 mb-6;
