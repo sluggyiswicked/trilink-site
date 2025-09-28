@@ -7,7 +7,7 @@ meta_title: "About Trilink Collaborative | Professional Accounting & Business Co
 meta_description: "Discover Trilink Collaborative's commitment to providing expert accounting, bookkeeping, and business consulting services that help companies grow with confidence."
 
 # Subtle background system
-subtle_background: "/images/hero-about-30th-anniversary.jpg"
+subtle_background: "/images/heroes/hero-about-30th-anniversary.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 
@@ -27,7 +27,7 @@ cta:
 
 ## Nearly Three Decades of Accounting Excellence
 
-<img src="/images/trilink-30-year-badge.jpg" alt="Trilink Collaborative 30 Years Badge - 2006-2026" class="anniversary-badge">
+<img src="/images/badges/trilink-30-year-badge.jpg" alt="Trilink Collaborative 30 Years Badge - 2006-2026" class="anniversary-badge">
 
 **Celebrating 30 years in business in 2026**, TriLink Collaborative has been a trusted partner to businesses seeking financial clarity and operational excellence. As a **top-rated QuickBooks ProAdvisor**, we combine deep accounting expertise with cutting-edge technology to deliver measurable success. For us, accounting is more than numbers — it's about building lasting relationships and supporting our clients' long-term growth.
 
@@ -43,7 +43,7 @@ What makes TriLink Collaborative different? We combine decades of expertise with
 
 <div class="advantage-item">
   <div class="icon-container">
-    <img src="/images/proadvisor-trophy-icon.svg" alt="Top-Rated QuickBooks ProAdvisor">
+    <img src="/images/icons/proadvisor-trophy-icon.svg" alt="Top-Rated QuickBooks ProAdvisor">
   </div>
   <div class="advantage-content">
     <h3>Top-Rated QuickBooks ProAdvisor</h3>
@@ -53,7 +53,7 @@ What makes TriLink Collaborative different? We combine decades of expertise with
 
 <div class="advantage-item">
   <div class="icon-container">
-    <img src="/images/handshake-icon.svg" alt="Customer-Focused Personal Relationships">
+    <img src="/images/icons/handshake-icon.svg" alt="Customer-Focused Personal Relationships">
   </div>
   <div class="advantage-content">
     <h3>Customer-Focused Personal Relationships</h3>
@@ -63,7 +63,7 @@ What makes TriLink Collaborative different? We combine decades of expertise with
 
 <div class="advantage-item">
   <div class="icon-container">
-    <img src="/images/tech-integration-icon.svg" alt="Technology-Driven Integration Expertise">
+    <img src="/images/icons/tech-integration-icon.svg" alt="Technology-Driven Integration Expertise">
   </div>
   <div class="advantage-content">
     <h3>Technology-Driven Integration Expertise</h3>
@@ -73,7 +73,7 @@ What makes TriLink Collaborative different? We combine decades of expertise with
 
 <div class="advantage-item">
   <div class="icon-container">
-    <img src="/images/availability-icon.svg" alt="Exceptional Availability & Responsiveness">
+    <img src="/images/icons/availability-icon.svg" alt="Exceptional Availability & Responsiveness">
   </div>
   <div class="advantage-content">
     <h3>Exceptional Availability & Responsiveness</h3>
@@ -93,7 +93,7 @@ Artificial Intelligence (AI) are increasingly thrown around as buzzwords, but at
 
 <div class="ai-feature">
   <div class="icon-container">
-    <img src="/images/ai-decision-support-icon.svg" alt="Enhanced Decision Support">
+    <img src="/images/icons/ai-decision-support-icon.svg" alt="Enhanced Decision Support">
   </div>
   <div class="ai-feature-content">
     <strong>Enhanced Decision Support</strong>
@@ -103,7 +103,7 @@ Artificial Intelligence (AI) are increasingly thrown around as buzzwords, but at
 
 <div class="ai-feature">
   <div class="icon-container">
-    <img src="/images/automated-tasks-icon.svg" alt="Automated Routine Tasks">
+    <img src="/images/icons/automated-tasks-icon.svg" alt="Automated Routine Tasks">
   </div>
   <div class="ai-feature-content">
     <strong>Automated Routine Tasks</strong>
@@ -113,7 +113,7 @@ Artificial Intelligence (AI) are increasingly thrown around as buzzwords, but at
 
 <div class="ai-feature">
   <div class="icon-container">
-    <img src="/images/human-verified-icon.svg" alt="Always Human-Verified">
+    <img src="/images/icons/human-verified-icon.svg" alt="Always Human-Verified">
   </div>
   <div class="ai-feature-content">
     <strong>Always Human-Verified</strong>
@@ -123,7 +123,7 @@ Artificial Intelligence (AI) are increasingly thrown around as buzzwords, but at
 
 <div class="ai-feature">
   <div class="icon-container">
-    <img src="/images/data-security-icon.svg" alt="Data Security & Privacy">
+    <img src="/images/icons/data-security-icon.svg" alt="Data Security & Privacy">
   </div>
   <div class="ai-feature-content">
     <strong>Data Security & Privacy</strong>
