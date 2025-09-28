@@ -91,43 +91,43 @@ What makes TriLink Collaborative different? We combine decades of expertise with
 
 Artificial Intelligence (AI) are increasingly thrown around as buzzwords, but at TriLink, we truly understand its transformative power. We believe technology should enhance — not replace — human judgment. AI is conscientiously applied where it excels, with human oversight in the loop. We use AI to perform practical, high-value tasks within defined guardrails, accelerating workflows without compromising security or accuracy. Our clients can trust that every decision and adjustment is guided by experienced professionals, with AI serving as a support tool, not a substitute. This balanced approach allows us to deliver innovation while maintaining the integrity, reliability, and accountability upon which your business depends.
 
-<div class="ai-feature">
+<div class="advantage-item">
   <div class="icon-container">
     <img src="/images/icons/ai-decision-support-icon.svg" alt="Enhanced Decision Support">
   </div>
-  <div class="ai-feature-content">
-    <strong>Enhanced Decision Support</strong>
-    We use AI tools to identify patterns and insights in your financial data, helping us provide more valuable recommendations for your business.
+  <div class="advantage-content">
+    <h3>Enhanced Decision Support</h3>
+    <p>We use AI tools to identify patterns and insights in your financial data, helping us provide more valuable recommendations for your business.</p>
   </div>
 </div>
 
-<div class="ai-feature">
+<div class="advantage-item">
   <div class="icon-container">
     <img src="/images/icons/automated-tasks-icon.svg" alt="Automated Routine Tasks">
   </div>
-  <div class="ai-feature-content">
-    <strong>Automated Routine Tasks</strong>
-    AI helps us handle repetitive data entry and reconciliation tasks more efficiently, freeing our team to focus on strategic analysis and client relationships.
+  <div class="advantage-content">
+    <h3>Automated Routine Tasks</h3>
+    <p>AI helps us handle repetitive data entry and reconciliation tasks more efficiently, freeing our team to focus on strategic analysis and client relationships.</p>
   </div>
 </div>
 
-<div class="ai-feature">
+<div class="advantage-item">
   <div class="icon-container">
     <img src="/images/icons/human-verified-icon.svg" alt="Always Human-Verified">
   </div>
-  <div class="ai-feature-content">
-    <strong>Always Human-Verified</strong>
-    While AI assists with processing and analysis, every decision and recommendation is reviewed by our experienced accounting professionals to ensure accuracy and relevance.
+  <div class="advantage-content">
+    <h3>Always Human-Verified</h3>
+    <p>While AI assists with processing and analysis, every decision and recommendation is reviewed by our experienced accounting professionals to ensure accuracy and relevance.</p>
   </div>
 </div>
 
-<div class="ai-feature">
+<div class="advantage-item">
   <div class="icon-container">
     <img src="/images/icons/data-security-icon.svg" alt="Data Security & Privacy">
   </div>
-  <div class="ai-feature-content">
-    <strong>Data Security & Privacy</strong>
-    We maintain strict protocols around AI tool usage, ensuring your sensitive financial information remains secure and confidential.
+  <div class="advantage-content">
+    <h3>Data Security & Privacy</h3>
+    <p>We maintain strict protocols around AI tool usage, ensuring your sensitive financial information remains secure and confidential.</p>
   </div>
 </div>
 
