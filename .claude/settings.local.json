@@ -4,7 +4,12 @@
       "Bash(python:*)",
       "Bash(npm run build:css:*)",
       "Bash(hugo server:*)",
-      "Bash(git add:*)"
+      "Bash(git add:*)",
+      "WebSearch",
+      "WebFetch(domain:www.credly.com)",
+      "Bash(ipconfig)",
+      "Bash(findstr:*)",
+      "Bash(curl:*)"
     ],
     "deny": [],
     "ask": []

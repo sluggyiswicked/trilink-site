@@ -7,7 +7,7 @@ meta_title: "Operations & Growth Strategy Consulting | Trilink Collaborative"
 meta_description: "Expert business strategy consulting to optimize operations, plan sustainable growth, and build scalable systems that support your company's long-term success."
 
 # Subtle background system 
-subtle_background: "/images/hero-strategy-natural.jpg"
+subtle_background: "/images/heroes/hero-strategy-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 

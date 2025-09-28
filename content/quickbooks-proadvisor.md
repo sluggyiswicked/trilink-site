@@ -7,7 +7,7 @@ meta_title: "QuickBooks ProAdvisor Services | Certified QuickBooks Experts | Tri
 meta_description: "Get expert QuickBooks Online setup, migration, and training from our certified ProAdvisor team. Led by founder Debra Burch with comprehensive QuickBooks solutions for your business."
 
 # Subtle background system 
-subtle_background: "/images/hero-accounting-natural.jpg"
+subtle_background: "/images/heroes/hero-accounting-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 

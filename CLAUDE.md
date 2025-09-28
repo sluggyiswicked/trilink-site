@@ -49,6 +49,32 @@ This is a Hugo-based static site for an accounting services business using Tailw
 - **Production**: Assets are minified and fingerprinted via Hugo's asset pipeline
 - **JavaScript**: Single `assets/js/main.js` file
 
+### Image Organization
+- **Structured Directory System**: All images are organized into purpose-specific subdirectories for scalability and maintainability
+- **Directory Structure**:
+  - `static/images/heroes/` - Hero banner images for page headers and backgrounds
+  - `static/images/icons/` - SVG icons for UI elements and feature highlights
+  - `static/images/badges/` - Certification badges and achievement displays
+  - `static/images/logos/` - Company logos and branding assets
+  - `static/images/services/bookkeeping/` - Bookkeeping service-specific images
+  - `static/images/services/automation/` - Business process automation service images
+  - `static/images/services/strategy/` - Operations and growth strategy consulting images
+  - `static/images/pages/` - Page-specific content images (about, pricing, contact subdirectories)
+  - `static/images/shared/` - Shared/common images used across multiple pages
+  - `static/images/references/` - Reference materials and documentation images
+
+**Naming Conventions**:
+- Service images: `service-name-variant.jpg` (e.g., `account-setup-natural.jpg`, `payroll-realistic.jpg`)
+- Hero images: `hero-pagename-style.jpg` (e.g., `hero-homepage-main.jpg`, `hero-accounting-natural.jpg`)
+- Icons: `descriptive-name-icon.svg` (e.g., `availability-icon.svg`, `proadvisor-trophy-icon.svg`)
+
+**Guidelines for Adding New Images**:
+- Always place images in appropriate subdirectories - never leave in root `/images/` directory
+- Create new service subdirectories as features are added (e.g., `/services/consulting/`)
+- Create page-specific subdirectories under `/pages/` for dedicated page content
+- Maintain consistent naming patterns for easy identification and maintenance
+- Use descriptive filenames that indicate purpose and content
+
 ### Content Structure
 - `content/_index.md` - Homepage content with frontmatter
 - Static assets in `static/` directory including images and robots.txt

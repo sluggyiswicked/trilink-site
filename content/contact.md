@@ -4,7 +4,7 @@ description: "Tell us where it hurts. We'll bring the fix. Schedule a 30-minute 
 weight: 70
 
 # Subtle background system with DALL-E generated image
-subtle_background: "/images/hero-contact-subtle.jpg"
+subtle_background: "/images/heroes/hero-contact-subtle.jpg"
 background_overlay: "heavy"  # heavy|medium|light
 background_blend: "multiply" # multiply|overlay|soft-light
 

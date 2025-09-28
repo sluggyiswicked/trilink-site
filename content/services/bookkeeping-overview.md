@@ -7,7 +7,7 @@ meta_title: "Expert Bookkeeping & Accounting Services | Trilink Collaborative"
 meta_description: "Professional bookkeeping and accounting services including account setup, cleanup, monthly close, payroll processing, and year-end adjustments. GAAP-compliant and audit-ready."
 
 # Subtle background system
-subtle_background: "/images/hero-accounting-natural.jpg"
+subtle_background: "/images/heroes/hero-accounting-natural.jpg"
 background_overlay: "heavy"  # heavy|medium|light
 background_blend: "multiply" # multiply|overlay|soft-light
 
@@ -50,7 +50,7 @@ cta:
 <div class="services-grid">
   <a href="/services/account-setup-consulting/" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/account-setup-natural.jpg" alt="Account setup and consulting service" class="service-image">
+      <img src="/images/services/bookkeeping/account-setup-natural.jpg" alt="Account setup and consulting service" class="service-image">
     </div>
     <div class="service-content">
       <div>
@@ -65,7 +65,7 @@ cta:
 
   <a href="/services/account-cleanup-catch-up/" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/account-cleanup-natural.jpg" alt="Account cleanup and catch-up service" class="service-image">
+      <img src="/images/services/bookkeeping/account-cleanup-natural.jpg" alt="Account cleanup and catch-up service" class="service-image">
     </div>
     <div class="service-content">
       <div>
@@ -80,7 +80,7 @@ cta:
 
   <a href="/services/ongoing-bookkeeping-monthly-close/" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/ongoing-bookkeeping-natural.jpg" alt="Ongoing bookkeeping and monthly close service" class="service-image">
+      <img src="/images/services/bookkeeping/ongoing-bookkeeping-natural.jpg" alt="Ongoing bookkeeping and monthly close service" class="service-image">
     </div>
     <div class="service-content">
       <div>
@@ -95,7 +95,7 @@ cta:
 
   <a href="/services/year-end-adjustments/" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/year-end-natural.jpg" alt="Year-end adjustments service" class="service-image">
+      <img src="/images/services/bookkeeping/year-end-natural.jpg" alt="Year-end adjustments service" class="service-image">
     </div>
     <div class="service-content">
       <div>
@@ -110,7 +110,7 @@ cta:
 
   <a href="/services/payroll-setup-processing/" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/payroll-natural.jpg" alt="Payroll setup and processing service" class="service-image">
+      <img src="/images/services/bookkeeping/payroll-natural.jpg" alt="Payroll setup and processing service" class="service-image">
     </div>
     <div class="service-content">
       <div>
@@ -125,7 +125,7 @@ cta:
 
   <a href="/services/software-training/" class="service-card">
     <div class="overflow-hidden">
-      <img src="/images/software-training-natural.jpg" alt="Software training service" class="service-image">
+      <img src="/images/services/bookkeeping/software-training-natural.jpg" alt="Software training service" class="service-image">
     </div>
     <div class="service-content">
       <div>

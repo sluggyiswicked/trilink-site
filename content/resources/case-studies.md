@@ -7,7 +7,7 @@ meta_title: "Case Studies & Client Success Stories | Trilink Collaborative"
 meta_description: "Real client success stories showcasing how our accounting, automation, and strategy services have transformed businesses and delivered measurable results."
 
 # Subtle background system 
-subtle_background: "/images/hero-contact-natural.jpg"
+subtle_background: "/images/heroes/hero-contact-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 

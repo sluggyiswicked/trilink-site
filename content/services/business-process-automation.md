@@ -1,19 +1,19 @@
 ---
-title: "Financial Process Automation"
+title: "Accounting Process Automation"
 description: "Transform your accounting workflows with intelligent automation that eliminates manual data entry, reduces errors, and delivers real-time financial insights."
 
 # SEO
-meta_title: "Financial Process Automation | Accounting Workflow Solutions | Trilink Collaborative"
+meta_title: "Accounting Process Automation | Accounting Workflow Solutions | Trilink Collaborative"
 meta_description: "Automate your accounting workflows with intelligent solutions. From invoice processing to payroll allocation, we eliminate manual tasks and deliver real-time financial insights."
 
 # Subtle background system 
-subtle_background: "/images/hero-automation-subtle.jpg"
+subtle_background: "/images/heroes/hero-automation-subtle.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 
 # Trust indicators specific to automation
 trust_indicators:
-  title: "Why Choose Our Financial Automation"
+  title: "Why Choose Our Accounting Automation"
   items:
     - title: "Accounting Expertise"
       description: "Deep understanding of financial processes and compliance requirements"
@@ -47,11 +47,11 @@ cta:
 
 ## Stop Wrestling with Manual Accounting Tasks
 
-### Transform Your Financial Workflows with Intelligent Automation
+### Transform Your Accounting Workflows with Intelligent Automation
 
 Traditional accounting workflows drain your team's time and energy. Manual data entry, repetitive reconciliation tasks, and scattered financial processes create bottlenecks that slow your business growth and increase error risk.
 
-**Financial Process Automation changes everything.** By connecting your existing systems and automating routine tasks, we eliminate the manual work that keeps your team from focusing on strategic financial management and business growth.
+**Accounting Process Automation changes everything.** By connecting your existing systems and automating routine tasks, we eliminate the manual work that keeps your team from focusing on strategic financial management and business growth.
 
 ### Why Manual Accounting Workflows Hold You Back
 
@@ -65,7 +65,7 @@ Traditional accounting workflows drain your team's time and energy. Manual data 
 
 <div class="content-section-card content-section-gray">
 
-## Key Benefits of Financial Process Automation
+## Key Benefits of Accounting Process Automation
 
 ### 🚀 Increased Efficiency
 Reduce manual accounting work by 40-80%. Your team focuses on analysis, strategy, and growth instead of data entry and routine tasks. Enable insights and processes that simply aren't feasible with manual data entry.
@@ -171,7 +171,7 @@ Transform these common accounting bottlenecks into seamless, automated processes
 
 <div class="content-section-card content-section-gray">
 
-## Our Financial Automation Process
+## Our Accounting Automation Process
 
 ### 1. Workflow Assessment
 We analyze your current accounting processes to identify the biggest time-wasters and error sources. Our assessment typically uncovers 40-80% efficiency improvement opportunities plus capabilities that aren't feasible with manual processes.
@@ -191,7 +191,7 @@ Your team receives comprehensive training on new automated processes. We monitor
 - **Week 4**: Team training and go-live
 - **Ongoing**: Monitoring, optimization, and expansion
 
-**Ready to reduce manual tasks by 40-80% while enabling new capabilities?** [Contact us](/contact/) to schedule your free workflow assessment and discover your Financial Process Automation opportunities.
+**Ready to reduce manual tasks by 40-80% while enabling new capabilities?** [Contact us](/contact/) to schedule your free workflow assessment and discover your Accounting Process Automation opportunities.
 
 </div>
 
