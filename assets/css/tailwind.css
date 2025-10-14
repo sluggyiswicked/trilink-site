@@ -384,6 +384,10 @@
     font-family: var(--font-headings);
   }
 
+  .workflow-card-description {
+    @apply text-gray-700 text-base mb-0 mt-2 leading-relaxed;
+  }
+
   .workflow-card-content {
     @apply p-6;
   }

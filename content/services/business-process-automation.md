@@ -41,6 +41,7 @@ automation_cards:
   workflows:
     - id: "invoice-workflow"
       title: "Invoice Creation & Processing"
+      description: "Automate the entire invoice lifecycle—from generation to payment tracking—with automatic client data population, scheduled sending, and real-time payment visibility."
       metric: "70-80% Time Reduction"
       before:
         - "Manually create invoices in multiple systems"
@@ -57,6 +58,7 @@ automation_cards:
 
     - id: "payroll-workflow"
       title: "Payroll Expense Allocation"
+      description: "Connect your payroll and project management systems to automatically allocate labor costs, update budgets in real-time, and track project profitability instantly."
       metric: "75% Time Reduction"
       before:
         - "Export payroll data from HR system"
@@ -73,6 +75,7 @@ automation_cards:
 
     - id: "pos-workflow"
       title: "POS & Payment Reconciliation"
+      description: "Eliminate manual transaction matching by connecting your POS systems directly to accounting, with smart algorithms handling routine reconciliation and flagging only exceptions for review."
       metric: "75% Time Reduction"
       before:
         - "Download transaction reports from multiple POS systems"
@@ -89,6 +92,7 @@ automation_cards:
 
     - id: "recurring-workflow"
       title: "Recurring Transaction Management"
+      description: "Replace manual recurring entries with pre-configured templates that post automatically on schedule, complete with approval workflows for unusual amounts and full audit trails."
       metric: "50%-90% (depending on queueing system developed)"
       before:
         - "Manually enter monthly recurring transactions"
@@ -105,6 +109,7 @@ automation_cards:
 
     - id: "tax-workflow"
       title: "Tax & Benefits Journal Entries"
+      description: "Transform complex payroll tax calculations into automated journal entries with pre-configured account mappings, enabling sophisticated multi-entity scenarios that were previously impossible."
       metric: "85% Time Reduction"
       before:
         - "Calculate payroll tax allocations manually"

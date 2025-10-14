@@ -68,8 +68,8 @@
     <div class="workflow-card-header">
       <div class="workflow-card-badge badge-workflow">WORKFLOW</div>
       <h3 class="workflow-card-title">{{ $workflow.title }}</h3>
-      {{ if $workflow.metric }}
-      <div class="workflow-card-metric">{{ $workflow.metric }}</div>
+      {{ if $workflow.description }}
+      <p class="workflow-card-description">{{ $workflow.description }}</p>
       {{ end }}
     </div>
     <div class="workflow-card-content">
