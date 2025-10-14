@@ -1,0 +1,173 @@
+{{ $cards := .Page.Params.automation_cards }}
+
+<div class="content-section-wrapper">
+
+<!-- Overview Card Section -->
+{{ with $cards.overview }}
+<div class="content-section-card content-section-white">
+  <div class="workflow-card" id="overview">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-overview">{{ .badge }}</div>
+      <h3 class="workflow-card-title">{{ .title }}</h3>
+      {{ if .subtitle }}<p class="text-gray-600 mb-0">{{ .subtitle }}</p>{{ end }}
+    </div>
+    <div class="workflow-card-content">
+      <p class="text-gray-700 mb-4">{{ .description }}</p>
+      {{ if .pain_points }}
+      <div class="workflow-section-title">Key Challenges:</div>
+      <ul class="pricing-features">
+        {{ range .pain_points }}
+        <li class="pricing-feature">
+          <div class="pricing-feature-icon" style="background-color: #d97706;">
+            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <span class="pricing-feature-text">{{ . }}</span>
+        </li>
+        {{ end }}
+      </ul>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Benefits Card Section -->
+{{ with $cards.benefits }}
+<div class="content-section-card content-section-gray">
+  <div class="workflow-card" id="benefits">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-benefits">{{ .badge }}</div>
+      <h3 class="workflow-card-title">{{ .title }}</h3>
+    </div>
+    <div class="workflow-card-content">
+      <ul class="pricing-features">
+        {{ range .items }}
+        <li class="pricing-feature">
+          <div class="pricing-feature-icon">
+            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <div class="pricing-feature-text">
+            <strong>{{ .title }}:</strong> {{ .description }}
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Workflow Cards Section -->
+{{ range $index, $workflow := $cards.workflows }}
+<div class="content-section-card {{ if mod $index 2 }}content-section-gray{{ else }}content-section-white{{ end }}">
+  <div class="workflow-card" id="{{ $workflow.id }}">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-workflow">WORKFLOW</div>
+      <h3 class="workflow-card-title">{{ $workflow.title }}</h3>
+      {{ if $workflow.metric }}
+      <div class="workflow-card-metric">{{ $workflow.metric }}</div>
+      {{ end }}
+    </div>
+    <div class="workflow-card-content">
+      <!-- Before Section -->
+      {{ if $workflow.before }}
+      <div class="workflow-comparison">
+        <div class="workflow-section-title">Before Automation:</div>
+        <ul class="pricing-features">
+          {{ range $workflow.before }}
+          <li class="pricing-feature">
+            <div class="pricing-feature-icon" style="background-color: #d97706;">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span class="pricing-feature-text">{{ . }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      <!-- After Section -->
+      {{ if $workflow.after }}
+      <div class="workflow-comparison">
+        <div class="workflow-section-title">After Automation:</div>
+        <ul class="pricing-features">
+          {{ range $workflow.after }}
+          <li class="pricing-feature">
+            <div class="pricing-feature-icon">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span class="pricing-feature-text">{{ . }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      <!-- Result Callout -->
+      {{ if $workflow.result }}
+      <div class="workflow-result">
+        <div class="workflow-result-label">Result:</div>
+        <div class="workflow-result-text">{{ $workflow.result | safeHTML }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Process Card Section -->
+{{ with $cards.process }}
+<div class="content-section-card content-section-gray">
+  <div class="workflow-card" id="process">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-process">{{ .badge }}</div>
+      <h3 class="workflow-card-title">{{ .title }}</h3>
+      {{ if .subtitle }}<p class="text-gray-600 mb-0">{{ .subtitle }}</p>{{ end }}
+    </div>
+    <div class="workflow-card-content">
+      {{ if .steps }}
+      <div class="space-y-6">
+        {{ range $index, $step := .steps }}
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm">
+            {{ add $index 1 }}
+          </div>
+          <div class="flex-1">
+            <h4 class="text-lg font-semibold text-primary mb-1">{{ .title }}</h4>
+            <p class="text-gray-700">{{ .description }}</p>
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if .timeline }}
+      <div class="mt-6 pt-6 border-t border-gray-200">
+        <div class="workflow-section-title">Typical Implementation Timeline:</div>
+        <ul class="workflow-list">
+          {{ range .timeline }}
+          <li class="workflow-list-item">{{ . }}</li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      {{ if .cta }}
+      <div class="mt-6 pt-6 border-t border-gray-200">
+        <p class="text-gray-700">{{ .cta | safeHTML }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+</div>

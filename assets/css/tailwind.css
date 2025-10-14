@@ -331,6 +331,112 @@
     margin-top: 0;
   }
 
+  /* Workflow Card Styles - Extends pricing card system */
+  .workflow-card {
+    @apply bg-white rounded-lg overflow-hidden transition-all duration-300 hover:shadow-xl border;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+  }
+
+  .workflow-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.12);
+  }
+
+  .workflow-card-header {
+    @apply px-6 py-3 border-b bg-gradient-to-r from-accent/10 to-accent/5;
+  }
+
+  .workflow-card-badge {
+    font-size: 0.75rem;
+    line-height: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.025em;
+    margin-bottom: 0.5rem;
+    color: #2AA198;
+  }
+
+  /* Badge color variants */
+  .badge-overview {
+    color: #0B1F3B;
+  }
+
+  .badge-benefits {
+    color: #2AA198;
+  }
+
+  .badge-workflow {
+    color: #2AA198;
+  }
+
+  .badge-process {
+    color: #0B1F3B;
+  }
+
+  .workflow-card-title {
+    @apply text-2xl font-semibold mb-2 text-gray-900;
+    font-family: var(--font-headings);
+  }
+
+  .workflow-card-metric {
+    @apply text-xl font-bold mb-2;
+    color: var(--color-accent);
+    font-family: var(--font-headings);
+  }
+
+  .workflow-card-content {
+    @apply p-6;
+  }
+
+  /* Before/After sections for workflow cards */
+  .workflow-comparison {
+    @apply mb-6;
+  }
+
+  .workflow-section-title {
+    @apply text-sm font-semibold uppercase tracking-wide mb-3;
+    color: var(--color-primary);
+  }
+
+  .workflow-list {
+    @apply space-y-2 mb-6;
+  }
+
+  .workflow-list-item {
+    @apply flex items-start gap-3 text-gray-700;
+  }
+
+  .workflow-list-item::before {
+    content: '•';
+    @apply flex-shrink-0 text-accent font-bold;
+    font-size: 1.25rem;
+    line-height: 1.5;
+  }
+
+  .workflow-before-list-item::before {
+    content: '✗';
+    @apply text-red-500;
+  }
+
+  .workflow-after-list-item::before {
+    content: '✓';
+    @apply text-green-500;
+  }
+
+  /* Result callout box */
+  .workflow-result {
+    @apply mt-4 p-4 rounded-lg bg-gradient-to-r from-accent/5 to-accent/10 border-l-4 border-accent;
+  }
+
+  .workflow-result-label {
+    @apply text-sm font-semibold uppercase tracking-wide mb-1;
+    color: var(--color-primary);
+  }
+
+  .workflow-result-text {
+    @apply text-gray-800 font-medium;
+  }
+
   /* Anniversary Badge Styling */
   .anniversary-badge {
     float: left;
