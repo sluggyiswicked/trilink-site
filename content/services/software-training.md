@@ -1,13 +1,13 @@
 ---
 title: "Software Training Services"
-description: "QuickBooks Online workflows, financial reporting, and role-specific training for your team. Comprehensive training programs that match your business processes and maximize software efficiency."
+description: "QuickBooks Online workflows, financial reporting, and role-specific training. Comprehensive programs that match your business processes and maximize efficiency."
 
 # SEO
 meta_title: "QuickBooks Online Training Services | Trilink Collaborative"
 meta_description: "Professional QuickBooks Online training services including workflow setup, custom reporting, role-based access, and ongoing support for your accounting team."
 
 # Subtle background system 
-subtle_background: "/images/software-training-service.jpg"
+subtle_background: "/images/services/bookkeeping/software-training-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 

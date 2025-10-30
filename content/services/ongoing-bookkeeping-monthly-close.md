@@ -7,7 +7,7 @@ meta_title: "Ongoing Bookkeeping & Monthly Close Services | Trilink Collaborativ
 meta_description: "Professional ongoing bookkeeping services including daily monitoring, monthly reconciliation, management reporting, and quarterly forecasting for consistent financial clarity."
 
 # Subtle background system 
-subtle_background: "/images/ongoing-bookkeeping-service.jpg"
+subtle_background: "/images/services/bookkeeping/ongoing-bookkeeping-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 
@@ -35,7 +35,7 @@ related_services:
 cta:
   title: "Ready for Stress-Free Monthly Closes?"
   description: "Schedule a consultation to discuss your bookkeeping needs and discover how consistent monthly processes can transform your business visibility."
-  primary_text: "Book Bookkeeping Consultation"
+  primary_text: "Start Monthly Service"
   primary_url: "/contact/"
   secondary_text: "View All Services"
   secondary_url: "/services/bookkeeping/"

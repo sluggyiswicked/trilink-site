@@ -31,5 +31,11 @@ Thumbs.db
 *.tmp
 *.temp
 
+# Localtunnel
+tunnel-url.txt
+
 # Reference images for Claude sessions
 static/images/references/
+
+# Image optimization backups
+static/images/originals/

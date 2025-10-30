@@ -1406,6 +1406,18 @@
     @apply text-primary bg-primary/10 font-medium;
   }
 
+  .page-sidebar-section ul {
+    @apply list-none p-0 m-0;
+  }
+
+  .page-sidebar-section ul.space-y-2 > li {
+    @apply mb-2;
+  }
+
+  .page-sidebar-section ul.space-y-2 > li:last-child {
+    @apply mb-0;
+  }
+
   /* Section Spacing Improvements */
   .page-main-content > section + section,
   .page-main-content > div + section {

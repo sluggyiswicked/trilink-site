@@ -1,0 +1,265 @@
+{{ $form := $.Page.Params.form }}
+{{ $messages := $.Page.Params.messages }}
+
+<div id="contact-form-container">
+  <!-- Success Message (hidden initially) -->
+  <div id="form-success-message" class="hidden bg-accent/10 border-2 border-accent rounded-lg p-6 mb-6">
+    <div class="flex items-start">
+      <svg class="w-6 h-6 text-accent mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+      </svg>
+      <div>
+        <h3 class="text-lg font-semibold text-accent mb-2">Thank You!</h3>
+        <p class="text-gray-700">{{ $messages.success | default "Thank you! We'll be in touch within 24 hours to schedule your consultation." }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Error Message (hidden initially) -->
+  <div id="form-error-message" class="hidden bg-red-50 border-2 border-red-500 rounded-lg p-6 mb-6">
+    <div class="flex items-start">
+      <svg class="w-6 h-6 text-red-500 mr-3 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clip-rule="evenodd"/>
+      </svg>
+      <div>
+        <h3 class="text-lg font-semibold text-red-500 mb-2">Submission Error</h3>
+        <p class="text-gray-700" id="error-message-text">{{ $messages.error | default "Sorry, there was an issue submitting your form. Please try again or call us directly." }}</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contact Form -->
+  <form id="trilink-contact-form" class="space-y-6" onsubmit="return false;">
+    {{ range $form.fields }}
+      <div class="form-field">
+        <label for="{{ .name }}" class="block text-sm font-semibold text-gray-700 mb-2">
+          {{ .label }}{{ if .required }}<span class="text-accent ml-1">*</span>{{ end }}
+        </label>
+
+        {{ if eq .type "text" }}
+          <input
+            type="text"
+            id="{{ .name }}"
+            name="{{ .name }}"
+            {{ if .required }}required{{ end }}
+            {{ if .placeholder }}placeholder="{{ .placeholder }}"{{ end }}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors"
+          />
+
+        {{ else if eq .type "email" }}
+          <input
+            type="email"
+            id="{{ .name }}"
+            name="{{ .name }}"
+            {{ if .required }}required{{ end }}
+            {{ if .placeholder }}placeholder="{{ .placeholder }}"{{ end }}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors"
+          />
+
+        {{ else if eq .type "tel" }}
+          <input
+            type="tel"
+            id="{{ .name }}"
+            name="{{ .name }}"
+            {{ if .required }}required{{ end }}
+            {{ if .placeholder }}placeholder="{{ .placeholder }}"{{ end }}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors"
+          />
+
+        {{ else if eq .type "select" }}
+          <select
+            id="{{ .name }}"
+            name="{{ .name }}"
+            {{ if .required }}required{{ end }}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors bg-white"
+          >
+            <option value="">-- Please select --</option>
+            {{ range .options }}
+              <option value="{{ . }}">{{ . }}</option>
+            {{ end }}
+          </select>
+
+        {{ else if eq .type "checkbox_group" }}
+          <div class="space-y-2">
+            {{ $fieldName := .name }}
+            {{ range $index, $option := .options }}
+              <label class="flex items-center">
+                <input
+                  type="checkbox"
+                  name="{{ $fieldName }}"
+                  value="{{ $option }}"
+                  class="w-4 h-4 text-accent border-gray-300 rounded focus:ring-accent"
+                />
+                <span class="ml-2 text-sm text-gray-700">{{ $option }}</span>
+              </label>
+            {{ end }}
+          </div>
+
+        {{ else if eq .type "textarea" }}
+          <textarea
+            id="{{ .name }}"
+            name="{{ .name }}"
+            rows="4"
+            {{ if .required }}required{{ end }}
+            {{ if .placeholder }}placeholder="{{ .placeholder }}"{{ end }}
+            class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-accent focus:border-accent transition-colors resize-y"
+          ></textarea>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <!-- Submit Button -->
+    <div class="pt-4">
+      <button
+        type="submit"
+        id="submit-button"
+        class="btn-cta w-full sm:w-auto px-8 py-4 text-lg"
+      >
+        <span id="submit-button-text">Schedule Free Consultation</span>
+        <span id="submit-button-loader" class="hidden">
+          <svg class="inline w-5 h-5 mr-2 animate-spin" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          Sending...
+        </span>
+      </button>
+    </div>
+
+    <!-- Privacy Note -->
+    <p class="text-xs text-gray-500">
+      By submitting this form, you consent to us contacting you about our services. We respect your privacy and will never share your information. See our <a href="/privacy/" class="text-accent hover:underline">Privacy Policy</a>.
+    </p>
+  </form>
+</div>
+
+<!-- Contact Form JavaScript -->
+<script>
+(function() {
+  console.log('Contact form script loading...');
+
+  const form = document.getElementById('trilink-contact-form');
+  const submitButton = document.getElementById('submit-button');
+  const submitButtonText = document.getElementById('submit-button-text');
+  const submitButtonLoader = document.getElementById('submit-button-loader');
+  const successMessage = document.getElementById('form-success-message');
+  const errorMessage = document.getElementById('form-error-message');
+  const errorMessageText = document.getElementById('error-message-text');
+
+  console.log('Form elements:', { form, submitButton, successMessage, errorMessage });
+
+  // API Gateway endpoint for contact form submissions
+  const API_ENDPOINT = 'https://rdhdj1fs39.execute-api.us-east-1.amazonaws.com/';
+
+  if (!form) {
+    console.error('Contact form not found!');
+    return;
+  }
+
+  console.log('Contact form initialized, API endpoint:', API_ENDPOINT);
+
+  form.addEventListener('submit', async function(e) {
+    e.preventDefault();
+    console.log('Form submitted!');
+
+    // Hide any previous messages
+    successMessage.classList.add('hidden');
+    errorMessage.classList.add('hidden');
+
+    // Show loading state
+    submitButton.disabled = true;
+    submitButtonText.classList.add('hidden');
+    submitButtonLoader.classList.remove('hidden');
+
+    console.log('Loading state set, preparing to submit...');
+
+    try {
+      // Gather form data
+      const formData = new FormData(form);
+      const data = {};
+
+      // Handle checkboxes specially (collect as array)
+      const checkboxGroups = {};
+
+      for (let [key, value] of formData.entries()) {
+        // Check if this is a checkbox group
+        const field = form.querySelector(`[name="${key}"]`);
+        if (field && field.type === 'checkbox') {
+          if (!checkboxGroups[key]) {
+            checkboxGroups[key] = [];
+          }
+          checkboxGroups[key].push(value);
+        } else {
+          data[key] = value;
+        }
+      }
+
+      // Merge checkbox arrays into data
+      Object.assign(data, checkboxGroups);
+
+      // Log for debugging
+      console.log('Submitting form data:', data);
+
+      // Submit to Lambda via API Gateway
+      console.log('Sending POST to:', API_ENDPOINT);
+      const response = await fetch(API_ENDPOINT, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data)
+      });
+
+      console.log('Response received:', response.status, response.statusText);
+
+      const result = await response.json();
+      console.log('Response body:', result);
+
+      if (response.ok && result.success) {
+        console.log('SUCCESS! Showing success message...');
+        // Show success message
+        successMessage.classList.remove('hidden');
+
+        // Hide form
+        form.classList.add('hidden');
+
+        // Scroll to success message
+        successMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+        // Track conversion (if you have analytics)
+        if (typeof gtag !== 'undefined') {
+          gtag('event', 'form_submission', {
+            'event_category': 'contact',
+            'event_label': 'Contact Form'
+          });
+        }
+      } else {
+        throw new Error(result.message || 'Submission failed');
+      }
+
+    } catch (error) {
+      console.error('FORM SUBMISSION ERROR:', error);
+      console.error('Error details:', {
+        message: error.message,
+        stack: error.stack,
+        name: error.name
+      });
+
+      // Show error message
+      errorMessageText.textContent = error.message || 'Sorry, there was an issue submitting your form. Please try again or call us directly.';
+      errorMessage.classList.remove('hidden');
+      console.log('Showing error message to user');
+
+      // Scroll to error message
+      errorMessage.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+
+    } finally {
+      console.log('Finally block - resetting button state');
+      // Reset button state
+      submitButton.disabled = false;
+      submitButtonText.classList.remove('hidden');
+      submitButtonLoader.classList.add('hidden');
+    }
+  });
+})();
+</script>

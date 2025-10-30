@@ -1,13 +1,13 @@
 ---
 title: "Account Setup & Consulting Services"
-description: "Professional chart of accounts design, opening balance reconciliation, and SOPs for new entities or business system migrations. Get your books set up right from day one."
+description: "Professional chart of accounts, opening balance reconciliation, and SOPs for new entities or migrations. Get your books set up right from day one with expert guidance."
 
 # SEO
 meta_title: "Account Setup & Consulting Services | Trilink Collaborative"
 meta_description: "Expert accounting system setup and consulting services including chart of accounts design, opening balance reconciliation, and standard operating procedures documentation."
 
 # Subtle background system 
-subtle_background: "/images/account-setup-service.jpg"
+subtle_background: "/images/services/bookkeeping/account-setup-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 

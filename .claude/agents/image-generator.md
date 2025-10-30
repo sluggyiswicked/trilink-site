@@ -1,6 +1,6 @@
 ---
 name: Image Generator
-type: image-generator
+type: image-generator.py
 description: Specialized agent for generating professional business images using DALL-E 3 API with Trilink brand colors and aesthetic
 ---
 

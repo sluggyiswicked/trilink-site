@@ -1,6 +1,6 @@
 ---
 title: "Pricing"
-description: "Flexible pricing packages for accounting, automation, and growth strategy services. From foundation setup to full-scale operations support."
+description: "Flexible pricing packages for accounting, automation, and growth strategy services. From foundation setup to full-scale operations support. Find your perfect fit today."
 weight: 40
 
 # SEO
@@ -94,6 +94,21 @@ packages:
       - "E-commerce integrations (Shopify, Square, Clover, and more)"
       - "Efficiency gains proven to save up to 80% of manual entry time"
       - "Live demos and case studies available"
+
+  hourly:
+    name: "Hourly Option"
+    subtitle: "On-Demand Expertise"
+    price: "Contact for Rates"
+    period: ""
+    description: "Perfect for one-off projects, quick consultations, or specialized advisory needs. <a href=\"/contact/\">Get a custom quote</a>."
+    features:
+      - "QuickBooks troubleshooting & optimization"
+      - "Custom report design & financial dashboards"
+      - "Process review & workflow recommendations"
+      - "Software selection & implementation support"
+      - "Team training sessions & knowledge transfer"
+      - "Tax preparation documentation & review"
+      - "Special projects & one-off consulting needs"
 
 # Trust elements
 trust:

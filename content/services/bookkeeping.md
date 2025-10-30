@@ -1,6 +1,7 @@
 ---
 title: "Expert Bookkeeping and Accounting Services"
 description: "GAAP-aligned bookkeeping, account setup, cleanup, and ongoing financial management that keeps your books audit-ready and decision-focused."
+draft: true
 
 # SEO
 meta_title: "Expert Bookkeeping & Accounting Services | Trilink Collaborative"

@@ -172,6 +172,16 @@ cta:
   primary_url: "/contact/"
   secondary_text: "View All Services"
   secondary_url: "/#services"
+
+# Sidebar configuration
+sidebar:
+  related_services:
+    - title: "Bookkeeping Services"
+      url: "/services/bookkeeping/"
+      description: "Expert bookkeeping and accounting services"
+    - title: "Operations & Growth Strategy"
+      url: "/services/operations-growth-strategy/"
+      description: "Strategic consulting for business growth"
 ---
 
 {{< automation-cards >}}

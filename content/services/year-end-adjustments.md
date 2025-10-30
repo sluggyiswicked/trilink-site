@@ -1,13 +1,13 @@
 ---
 title: "Year-End Adjustments Services"
-description: "Tax-ready books, CPA liaison, final adjusting entries, depreciation calculations, and seamless year-end preparation. End your fiscal year with confidence through proper adjustments and CPA collaboration."
+description: "Tax-ready books, CPA liaison, final adjusting entries, and seamless year-end preparation. End your fiscal year with confidence through expert adjustments."
 
 # SEO
 meta_title: "Year-End Adjustments Services | Trilink Collaborative"
 meta_description: "Professional year-end adjustment services including depreciation calculations, inventory valuations, accrual entries, and CPA workpaper preparation for tax-ready financial statements."
 
 # Subtle background system 
-subtle_background: "/images/year-end-service.jpg"
+subtle_background: "/images/services/bookkeeping/year-end-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 

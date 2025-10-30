@@ -22,6 +22,16 @@ trust_indicators:
     - title: "Audit-Ready Records"
       description: "Clean, organized books ready for tax preparation or due diligence"
 
+# Sidebar configuration
+sidebar:
+  related_services:
+    - title: "Business Process Automation"
+      url: "/services/business-process-automation/"
+      description: "Automate workflows and save 70-80% of time"
+    - title: "Operations & Growth Strategy"
+      url: "/services/operations-growth-strategy/"
+      description: "Strategic consulting for scalable growth"
+
 # Related services
 related_services:
   - name: "Business Process Automation"
@@ -35,7 +45,7 @@ related_services:
 cta:
   title: "Ready to Get Your Books in Order?"
   description: "Schedule a free consultation to discuss your accounting needs and see how we can help streamline your financial operations."
-  primary_text: "Book Free Consultation"
+  primary_text: "Schedule Bookkeeping Review"
   primary_url: "/contact/"
   secondary_text: "View All Services"
   secondary_url: "/#services"
@@ -140,6 +150,34 @@ cta:
 </div>
 
 </div>
+
+</div>
+
+---
+
+<div class="content-section-card content-section-white">
+
+## Frequently Asked Questions
+
+**How often will we communicate about my books?**
+
+For ongoing bookkeeping clients, we provide monthly financial statements and are available for questions anytime. We typically check in during the monthly close process and whenever we notice trends or issues that need your attention. Our goal is proactive communication without overwhelming you.
+
+**What information do you need from me to get started?**
+
+We'll need access to your accounting software, bank statements, and any relevant business documents. During onboarding, we'll walk you through exactly what we need and help you gather everything efficiently. Most clients are surprised by how simple the process is.
+
+**How long does the initial setup or cleanup take?**
+
+Setup for new businesses typically takes 1-2 weeks. Cleanup projects vary based on how far behind you are and the complexity of your books—most are completed within 2-4 weeks. We'll provide a clear timeline after reviewing your specific situation during the consultation.
+
+**Do you work with my accounting software or do I need to switch?**
+
+We specialize in QuickBooks Online but work with most major platforms including Xero, Wave, and FreshBooks. If you're already using software that works for your business, we'll work within that system. We only recommend switching if there's a compelling reason that benefits your operations.
+
+**What if I'm months (or years) behind on my books?**
+
+This is more common than you think, and it's exactly what our cleanup services are designed for. We've helped businesses catch up from years of backlog. The key is starting now—the longer you wait, the more complex it becomes. We'll create a systematic plan to get you current without disrupting your business.
 
 </div>
 

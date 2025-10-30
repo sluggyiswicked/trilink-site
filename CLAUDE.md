@@ -22,6 +22,42 @@ This is a Hugo-based static site for an accounting services business using Tailw
 - `hugo` - Build site (requires Hugo CLI)
 - `hugo server` - Serve locally with live reload
 
+### Image Optimization
+- `npm run optimize:images` - Optimize all images (resize + compress)
+- `npm run optimize:images:preview` - Preview what would be optimized (dry-run)
+- `npm run optimize:images:restore` - Restore original images from backup
+- `npm run optimize:images:verbose` - Run with detailed logging
+
+**Image Optimization Details:**
+- Uses `sharp` library for high-quality image processing
+- Hero images: resized to max 1920x1080, compressed to 85% quality
+- Service images: resized to max 1920x1080, compressed to 85% quality
+- Badges/icons: resized to max 800x800
+- Automatically creates backups in `static/images/originals/`
+- Typical savings: 85-95% file size reduction with minimal quality loss
+- See `optimize-images.js` for full configuration
+
+### Public Sharing via Localtunnel
+For sharing the site publicly (useful when on restricted networks like coffee shop WiFi with client isolation):
+
+**Setup:**
+1. `hugo server --bind 0.0.0.0 --baseURL http://localhost:1313 --port 1313` - Start Hugo server
+2. `node start-tunnel.js` - Start localtunnel (creates public URL)
+
+**How it works:**
+- The `start-tunnel.js` script creates a public HTTPS URL (e.g., `https://xyz.loca.lt`)
+- Writes the URL to `tunnel-url.txt` for easy reference
+- Tunnel stays active as long as the script is running
+- First-time visitors will see a localtunnel landing page with an IP confirmation - they just click "Continue"
+
+**Requirements:**
+- `localtunnel` package (already in devDependencies)
+- Both Hugo server and tunnel script must be running simultaneously
+
+**Files:**
+- `start-tunnel.js` - Node script that establishes tunnel connection
+- `tunnel-url.txt` - Generated file containing the current public URL (git-ignored)
+
 ## Architecture
 
 ### Hugo Structure
@@ -84,6 +120,7 @@ This is a Hugo-based static site for an accounting services business using Tailw
 - `tailwind.config.js` - TailwindCSS configuration with custom theme
 - `postcss.config.js` - PostCSS configuration
 - `image_generator.py` - Python script for image generation
+- `start-tunnel.js` - Localtunnel script for public site sharing
 - `theme-preview.html` - Theme preview/testing page
 
 ## Development Notes

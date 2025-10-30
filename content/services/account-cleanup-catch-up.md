@@ -1,13 +1,13 @@
 ---
 title: "Account Cleanup & Catch-Up Services"
-description: "Fix messy books, reconcile accounts, and prepare for tax filing or due diligence. Comprehensive cleanup services that address missing transactions, reconciliation issues, and classification errors."
+description: "Fix messy books, reconcile accounts, and prepare for tax filing or due diligence. Expert cleanup services for missing transactions, reconciliation, and classification."
 
 # SEO
 meta_title: "Account Cleanup & Catch-Up Services | Trilink Collaborative"
 meta_description: "Professional bookkeeping cleanup services to fix messy books, reconcile accounts, and prepare accurate financial records for tax filing or business transactions."
 
 # Subtle background system 
-subtle_background: "/images/account-cleanup-service.jpg"
+subtle_background: "/images/services/bookkeeping/account-cleanup-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 

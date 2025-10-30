@@ -1,6 +1,6 @@
 ---
 title: "QuickBooks ProAdvisor Services"
-description: "Expert QuickBooks setup, migration, and optimization services from our certified ProAdvisor team led by founder Debra Burch. Comprehensive QuickBooks solutions for businesses of all sizes."
+description: "Expert QuickBooks setup, migration, and optimization from our certified ProAdvisor team. Comprehensive QuickBooks solutions for businesses of all sizes."
 
 # SEO
 meta_title: "QuickBooks ProAdvisor Services | Certified QuickBooks Experts | Trilink Collaborative"

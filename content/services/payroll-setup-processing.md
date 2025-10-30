@@ -1,13 +1,13 @@
 ---
 title: "Payroll Setup & Processing Services"
-description: "Provider selection, compliance setup, accurate job cost tracking, and ongoing payroll management. Comprehensive payroll services that ensure compliance and integrate seamlessly with your accounting system."
+description: "Provider selection, compliance setup, accurate job cost tracking, and ongoing payroll management. Full-service payroll that integrates with your accounting system."
 
 # SEO
 meta_title: "Payroll Setup & Processing Services | Trilink Collaborative"
 meta_description: "Professional payroll setup and processing services including provider selection, tax compliance, direct deposit automation, and accounting system integration."
 
 # Subtle background system 
-subtle_background: "/images/payroll-service.jpg"
+subtle_background: "/images/services/bookkeeping/payroll-natural.jpg"
 background_overlay: "heavy"
 background_blend: "multiply"
 

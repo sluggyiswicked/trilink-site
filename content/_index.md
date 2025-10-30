@@ -1,6 +1,6 @@
 ---
 title: "Professional Accounting Services"
-description: "Expert bookkeeping, tax preparation, and CFO services for growing businesses. Streamline your finances with our professional team."
+description: "Expert bookkeeping, tax preparation, and CFO services for growing businesses. Streamline your finances with our professional team. Schedule a free consultation today."
 
 # Subtle background system with DALL-E generated image
 subtle_background: "/images/heroes/hero-homepage-main.jpg"

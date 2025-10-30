@@ -209,7 +209,7 @@ Book a **free 30-minute consultation** to discuss your specific challenges and e
 
 Get a 30-minute consultation to discuss your specific challenges and explore solutions.
 
-*[Contact form would be implemented here using your form configuration from the frontmatter]*
+{{< contact-form >}}
 
 </div>
 

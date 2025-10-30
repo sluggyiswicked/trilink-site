@@ -15,7 +15,7 @@ background_blend: "multiply"
 cta:
   title: "Ready to Work Together?"
   description: "Let's discuss how we can help your business achieve financial clarity and operational excellence."
-  primary_text: "Schedule a Consultation"
+  primary_text: "Schedule Free Consultation"
   primary_url: "/contact/"
   secondary_text: "View Our Services"
   secondary_url: "/services/bookkeeping/"

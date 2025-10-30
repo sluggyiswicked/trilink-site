@@ -95,37 +95,144 @@
 
     <!-- Sidebar -->
     <aside class="page-sidebar">
-      <!-- Quick Navigation -->
+
+      <!-- Section 1: Smart Navigation -->
       {{ if .Parent }}
+        <!-- If page has parent, show sibling navigation -->
+        <div class="page-sidebar-section">
+          <h3 class="page-sidebar-title">{{ .Parent.Title }}</h3>
+          <nav class="page-sidebar-nav">
+            {{ range .Parent.Pages }}
+              <a href="{{ .RelPermalink }}" class="page-sidebar-nav-item{{ if eq .RelPermalink $.RelPermalink }} active{{ end }}">
+                {{ .Title }}
+              </a>
+            {{ end }}
+          </nav>
+        </div>
+
+      {{ else if .Params.sidebar.related_services }}
+        <!-- If page has related services in frontmatter, show those -->
+        <div class="page-sidebar-section">
+          <h3 class="page-sidebar-title">Related Services</h3>
+          <nav class="page-sidebar-nav">
+            {{ range .Params.sidebar.related_services }}
+              <a href="{{ .url }}" class="page-sidebar-nav-item">
+                <strong>{{ .title }}</strong>
+                {{ if .description }}
+                  <span class="block text-xs text-gray-500 mt-1">{{ .description }}</span>
+                {{ end }}
+              </a>
+            {{ end }}
+          </nav>
+        </div>
+
+      {{ else if eq .Section "services" }}
+        <!-- If it's a service page without related_services, show main service categories -->
+        <div class="page-sidebar-section">
+          <h3 class="page-sidebar-title">Our Services</h3>
+          <nav class="page-sidebar-nav">
+            <a href="/services/bookkeeping-overview/" class="page-sidebar-nav-item">Bookkeeping Services</a>
+            <a href="/services/business-process-automation/" class="page-sidebar-nav-item">Business Process Automation</a>
+            <a href="/services/operations-growth-strategy/" class="page-sidebar-nav-item">Operations & Growth Strategy</a>
+          </nav>
+        </div>
+
+      {{ else }}
+        <!-- Default: Show Quick Links for non-service pages -->
+        <div class="page-sidebar-section">
+          <h3 class="page-sidebar-title">Quick Links</h3>
+          <nav class="page-sidebar-nav">
+            {{ if not (eq .RelPermalink "/pricing/") }}
+            <a href="/pricing/" class="page-sidebar-nav-item">Pricing</a>
+            {{ end }}
+            {{ if not (eq .RelPermalink "/resources/case-studies/") }}
+            <a href="/resources/case-studies/" class="page-sidebar-nav-item">Case Studies</a>
+            {{ end }}
+            {{ if not (eq .RelPermalink "/about/") }}
+            <a href="/about/" class="page-sidebar-nav-item">About Us</a>
+            {{ end }}
+          </nav>
+        </div>
+      {{ end }}
+
+      <!-- Section 2: Trust & Value Indicators -->
+      {{ if .Params.sidebar.trust_indicators }}
       <div class="page-sidebar-section">
-        <h3 class="page-sidebar-title">{{ .Parent.Title }}</h3>
-        <nav class="page-sidebar-nav">
-          {{ range .Parent.Pages }}
-            <a href="{{ .RelPermalink }}" class="page-sidebar-nav-item{{ if eq .RelPermalink $.RelPermalink }} active{{ end }}">
-              {{ .Title }}
-            </a>
+        <h3 class="page-sidebar-title">Why Choose Us</h3>
+        <ul class="space-y-2">
+          {{ range .Params.sidebar.trust_indicators }}
+          <li class="flex items-start text-sm text-gray-700">
+            <svg class="w-5 h-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>{{ .text }}</span>
+          </li>
           {{ end }}
-        </nav>
+        </ul>
+      </div>
+      {{ else if .Params.trust_indicators.items }}
+      <!-- Fallback: Use existing trust_indicators.items if no sidebar-specific ones -->
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title">{{ .Params.trust_indicators.title | default "Why Choose Us" }}</h3>
+        <ul class="space-y-2">
+          {{ range .Params.trust_indicators.items }}
+          <li class="flex items-start text-sm text-gray-700">
+            <svg class="w-5 h-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>{{ .title }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ else if or (eq .Section "about") (eq .RelPermalink "/about/") (eq .RelPermalink "/contact/") }}
+      <!-- Default trust indicators for About/Contact pages -->
+      <div class="page-sidebar-section">
+        <h3 class="page-sidebar-title">Why Trilink</h3>
+        <ul class="space-y-2">
+          <li class="flex items-start text-sm text-gray-700">
+            <svg class="w-5 h-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>QuickBooks ProAdvisor Certified</span>
+          </li>
+          <li class="flex items-start text-sm text-gray-700">
+            <svg class="w-5 h-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>GAAP Compliant Practices</span>
+          </li>
+          <li class="flex items-start text-sm text-gray-700">
+            <svg class="w-5 h-5 text-accent mr-2 flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+            </svg>
+            <span>Personalized Service</span>
+          </li>
+        </ul>
       </div>
       {{ end }}
 
-      <!-- Contact CTA -->
+      <!-- Section 3: Context-Aware CTA -->
+      {{ $isContact := eq .RelPermalink "/contact/" }}
+      {{ if not $isContact }}
       <div class="page-sidebar-section">
-        <h3 class="page-sidebar-title">Ready to Get Started?</h3>
-        <p class="text-gray-600 text-sm mb-4">Schedule a free consultation to discuss your specific needs.</p>
+        {{ $ctaTitle := "Ready to Get Started?" }}
+        {{ $ctaDesc := "Schedule a free consultation to discuss your specific needs." }}
+
+        {{ if .Params.cta.title }}
+          {{ $ctaTitle = .Params.cta.title }}
+        {{ end }}
+
+        {{ if .Params.cta.description }}
+          {{ $ctaDesc = .Params.cta.description }}
+        {{ end }}
+
+        <h3 class="page-sidebar-title">{{ $ctaTitle }}</h3>
+        <p class="text-gray-600 text-sm mb-4">{{ $ctaDesc }}</p>
         <a href="/contact/" class="btn-primary w-full text-center block">Book Consultation</a>
       </div>
+      {{ end }}
 
-      <!-- Quick Links -->
-      <div class="page-sidebar-section">
-        <h3 class="page-sidebar-title">Quick Links</h3>
-        <nav class="page-sidebar-nav">
-          <a href="/pricing/" class="page-sidebar-nav-item">Pricing</a>
-          <a href="/resources/case-studies/" class="page-sidebar-nav-item">Case Studies</a>
-          <a href="/resources/downloads/" class="page-sidebar-nav-item">Downloads</a>
-          <a href="/about/" class="page-sidebar-nav-item">About Us</a>
-        </nav>
-      </div>
     </aside>
   </div>
 </div>
