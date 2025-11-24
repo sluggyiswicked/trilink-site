@@ -41,44 +41,48 @@ cta:
 
 What makes TriLink Collaborative different? We combine decades of expertise with modern technology and a genuinely personal approach to accounting. Here's how we deliver exceptional value for your business:
 
-<div class="advantage-item">
-  <div class="icon-container">
-    <img src="/images/icons/proadvisor-trophy-icon.svg" alt="Top-Rated QuickBooks ProAdvisor">
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PROADVISOR</div>
+    <h3 class="pricing-card-title">Top-Rated QuickBooks ProAdvisor</h3>
   </div>
-  <div class="advantage-content">
-    <h3>Top-Rated QuickBooks ProAdvisor</h3>
-    <p>We maintain the highest certification levels with QuickBooks, ensuring you receive expert guidance on the platform that powers your business. Our ProAdvisor status reflects our commitment to staying current with the latest features and best practices. <span style="float: right;"><a href="/quickbooks-proadvisor/" class="text-sm text-primary font-medium hover:text-primary/80 transition-colors">more →</a></span></p>
+  <div class="pricing-card-content">
+    <p>We maintain the highest certification levels with QuickBooks, ensuring you receive expert guidance on the platform that powers your business. Our ProAdvisor status reflects our commitment to staying current with the latest features and best practices. <a href="/quickbooks-proadvisor/">Learn more →</a></p>
   </div>
 </div>
 
-<div class="advantage-item">
-  <div class="icon-container">
-    <img src="/images/icons/handshake-icon.svg" alt="Customer-Focused Personal Relationships">
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">RELATIONSHIPS</div>
+    <h3 class="pricing-card-title">Customer-Focused Personal Relationships</h3>
   </div>
-  <div class="advantage-content">
-    <h3>Customer-Focused Personal Relationships</h3>
+  <div class="pricing-card-content">
     <p>Unlike large firms where you're just another client number, we build genuine relationships with each business we serve. You'll have direct access to our team, consistent communication, and the personal attention your business deserves.</p>
   </div>
 </div>
 
-<div class="advantage-item">
-  <div class="icon-container">
-    <img src="/images/icons/tech-integration-icon.svg" alt="Technology-Driven Integration Expertise">
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">INTEGRATION</div>
+    <h3 class="pricing-card-title">Technology-Driven Integration Expertise</h3>
   </div>
-  <div class="advantage-content">
-    <h3>Technology-Driven Integration Expertise</h3>
+  <div class="pricing-card-content">
     <p>We specialize in connecting your accounting system with your entire business ecosystem. From payroll and CRM integrations to e-commerce platforms and custom workflows, we design solutions that eliminate manual work and maximize efficiency.</p>
   </div>
 </div>
 
-<div class="advantage-item">
-  <div class="icon-container">
-    <img src="/images/icons/availability-icon.svg" alt="Exceptional Availability & Responsiveness">
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">AVAILABILITY</div>
+    <h3 class="pricing-card-title">Exceptional Availability & Responsiveness</h3>
   </div>
-  <div class="advantage-content">
-    <h3>Exceptional Availability & Responsiveness</h3>
+  <div class="pricing-card-content">
     <p>Your questions don't wait for business hours, and neither do we. Our team is committed to being available when you need us, providing the responsive support that keeps your business moving forward.</p>
   </div>
+</div>
+
 </div>
 
 </div>
@@ -91,44 +95,48 @@ What makes TriLink Collaborative different? We combine decades of expertise with
 
 Artificial Intelligence (AI) are increasingly thrown around as buzzwords, but at TriLink, we truly understand its transformative power. We believe technology should enhance — not replace — human judgment. AI is conscientiously applied where it excels, with human oversight in the loop. We use AI to perform practical, high-value tasks within defined guardrails, accelerating workflows without compromising security or accuracy. Our clients can trust that every decision and adjustment is guided by experienced professionals, with AI serving as a support tool, not a substitute. This balanced approach allows us to deliver innovation while maintaining the integrity, reliability, and accountability upon which your business depends.
 
-<div class="advantage-item">
-  <div class="icon-container">
-    <img src="/images/icons/ai-decision-support-icon.svg" alt="Enhanced Decision Support">
+<div class="grid md:grid-cols-2 gap-6">
+
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">DECISION SUPPORT</div>
+    <h3 class="pricing-card-title">Enhanced Decision Support</h3>
   </div>
-  <div class="advantage-content">
-    <h3>Enhanced Decision Support</h3>
+  <div class="pricing-card-content">
     <p>We use AI tools to identify patterns and insights in your financial data, helping us provide more valuable recommendations for your business.</p>
   </div>
 </div>
 
-<div class="advantage-item">
-  <div class="icon-container">
-    <img src="/images/icons/automated-tasks-icon.svg" alt="Automated Routine Tasks">
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">AUTOMATION</div>
+    <h3 class="pricing-card-title">Automated Routine Tasks</h3>
   </div>
-  <div class="advantage-content">
-    <h3>Automated Routine Tasks</h3>
+  <div class="pricing-card-content">
     <p>AI helps us handle repetitive data entry and reconciliation tasks more efficiently, freeing our team to focus on strategic analysis and client relationships.</p>
   </div>
 </div>
 
-<div class="advantage-item">
-  <div class="icon-container">
-    <img src="/images/icons/human-verified-icon.svg" alt="Always Human-Verified">
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">HUMAN VERIFIED</div>
+    <h3 class="pricing-card-title">Always Human-Verified</h3>
   </div>
-  <div class="advantage-content">
-    <h3>Always Human-Verified</h3>
+  <div class="pricing-card-content">
     <p>While AI assists with processing and analysis, every decision and recommendation is reviewed by our experienced accounting professionals to ensure accuracy and relevance.</p>
   </div>
 </div>
 
-<div class="advantage-item">
-  <div class="icon-container">
-    <img src="/images/icons/data-security-icon.svg" alt="Data Security & Privacy">
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">SECURITY</div>
+    <h3 class="pricing-card-title">Data Security & Privacy</h3>
   </div>
-  <div class="advantage-content">
-    <h3>Data Security & Privacy</h3>
+  <div class="pricing-card-content">
     <p>We maintain strict protocols around AI tool usage, ensuring your sensitive financial information remains secure and confidential.</p>
   </div>
+</div>
+
 </div>
 
 </div>

@@ -1,0 +1,301 @@
+{{ $cards := .Page.Params.strategy_cards }}
+
+<div class="content-section-wrapper">
+
+<!-- Overview Card Section - Plain content card style (no teal header) -->
+{{ with $cards.overview }}
+<div class="content-section-card content-section-white">
+
+<h2>{{ .title }}</h2>
+
+{{ if .subtitle }}<p><strong>{{ .subtitle }}</strong></p>{{ end }}
+
+<p>{{ .description }}</p>
+
+{{ if .challenges }}
+<h3>The Challenge</h3>
+
+<p>Many growing businesses hit a ceiling where:</p>
+
+<ul class="pricing-features">
+  {{ range .challenges }}
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon" style="background-color: #d97706;">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text">{{ . }}</span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+
+{{ if .ideal_for }}
+<h3>Who This Is For</h3>
+
+<p>Our operations and growth strategy services are designed for:</p>
+
+<ul class="pricing-features">
+  {{ range .ideal_for }}
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text">{{ . }}</span>
+  </li>
+  {{ end }}
+</ul>
+{{ end }}
+
+</div>
+{{ end }}
+
+<!-- Benefits Card Section -->
+{{ with $cards.benefits }}
+<div class="content-section-card content-section-gray">
+  <div class="workflow-card" id="benefits">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-benefits">{{ .badge }}</div>
+      <h3 class="workflow-card-title">{{ .title }}</h3>
+    </div>
+    <div class="workflow-card-content">
+      <ul class="pricing-features">
+        {{ range .items }}
+        <li class="pricing-feature">
+          <div class="pricing-feature-icon">
+            <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+            </svg>
+          </div>
+          <div class="pricing-feature-text">
+            <strong>{{ .title }}:</strong> {{ .description }}
+          </div>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Focus Area Cards Section -->
+{{ range $index, $focus := $cards.focus_areas }}
+<div class="content-section-card {{ if mod $index 2 }}content-section-gray{{ else }}content-section-white{{ end }}">
+  <div class="workflow-card" id="{{ $focus.id }}">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-workflow">FOCUS AREA</div>
+      <h3 class="workflow-card-title">{{ $focus.title }}</h3>
+      {{ if $focus.tagline }}
+      <p class="workflow-card-description"><em>{{ $focus.tagline }}</em></p>
+      {{ end }}
+    </div>
+    <div class="workflow-card-content">
+      {{ if $focus.description }}
+      <p class="text-gray-700 mb-4">{{ $focus.description }}</p>
+      {{ end }}
+
+      <!-- Deliverables Section -->
+      {{ if $focus.deliverables }}
+      <div class="workflow-comparison">
+        <div class="workflow-section-title">What We Deliver:</div>
+        <ul class="pricing-features">
+          {{ range $focus.deliverables }}
+          <li class="pricing-feature">
+            <div class="pricing-feature-icon">
+              <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <span class="pricing-feature-text">{{ . }}</span>
+          </li>
+          {{ end }}
+        </ul>
+      </div>
+      {{ end }}
+
+      <!-- Impact Callout -->
+      {{ if $focus.impact }}
+      <div class="workflow-result">
+        <div class="workflow-result-label">Typical Impact:</div>
+        <div class="workflow-result-text">{{ $focus.impact | safeHTML }}</div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Process Card Section -->
+{{ with $cards.process }}
+<div class="content-section-card content-section-gray">
+  <div class="workflow-card" id="process">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-process">{{ .badge }}</div>
+      <h3 class="workflow-card-title">{{ .title }}</h3>
+      {{ if .subtitle }}<p class="text-gray-600 mb-0">{{ .subtitle }}</p>{{ end }}
+    </div>
+    <div class="workflow-card-content">
+      {{ if .phases }}
+      <div class="space-y-6">
+        {{ range $index, $phase := .phases }}
+        <div class="flex items-start gap-4">
+          <div class="flex-shrink-0 w-8 h-8 bg-primary text-white rounded-full flex items-center justify-center font-semibold text-sm">
+            {{ add $index 1 }}
+          </div>
+          <div class="flex-1">
+            <h4 class="text-lg font-semibold text-primary mb-1">{{ .title }}</h4>
+            <p class="text-gray-700 mb-2">{{ .description }}</p>
+            {{ if .activities }}
+            <ul class="text-sm text-gray-600 space-y-1 mt-2">
+              {{ range .activities }}
+              <li class="flex items-start gap-2">
+                <span class="text-accent">•</span>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+            {{ end }}
+            {{ if .deliverable }}
+            <p class="text-sm mt-2"><strong class="text-primary">Deliverable:</strong> {{ .deliverable }}</p>
+            {{ end }}
+          </div>
+        </div>
+        {{ end }}
+      </div>
+      {{ end }}
+
+      {{ if .cta }}
+      <div class="mt-6 pt-6 border-t border-gray-200">
+        <p class="text-gray-700">{{ .cta | safeHTML }}</p>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Scenarios Cards Section -->
+{{ if $cards.scenarios }}
+<div class="content-section-card content-section-white">
+  <div class="workflow-card" id="scenarios">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-overview">SCENARIOS</div>
+      <h3 class="workflow-card-title">{{ $cards.scenarios.title }}</h3>
+      {{ if $cards.scenarios.subtitle }}<p class="text-gray-600 mb-0">{{ $cards.scenarios.subtitle }}</p>{{ end }}
+    </div>
+    <div class="workflow-card-content">
+      <div class="space-y-6">
+        {{ range $cards.scenarios.items }}
+        <div class="border-b border-gray-200 pb-6 last:border-0 last:pb-0">
+          <h4 class="text-lg font-semibold text-primary mb-2">{{ .title }}</h4>
+          <p class="text-gray-700 mb-3"><strong>Challenge:</strong> {{ .challenge }}</p>
+          <p class="text-gray-700 mb-3"><strong>Our Approach:</strong> {{ .approach }}</p>
+          {{ if .engagement }}
+          <p class="text-sm text-gray-600"><em>Typical engagement: {{ .engagement }}</em></p>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Case Studies Section -->
+{{ if $cards.case_studies }}
+<div class="content-section-card content-section-gray">
+  <div class="workflow-card" id="case-studies">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-benefits">RESULTS</div>
+      <h3 class="workflow-card-title">{{ $cards.case_studies.title }}</h3>
+    </div>
+    <div class="workflow-card-content">
+      <div class="space-y-8">
+        {{ range $cards.case_studies.items }}
+        <div class="border-b border-gray-200 pb-6 last:border-0 last:pb-0">
+          <h4 class="text-lg font-semibold text-primary mb-2">{{ .title }}</h4>
+          <p class="text-gray-700 mb-3"><strong>Situation:</strong> {{ .situation }}</p>
+          {{ if .approach_items }}
+          <div class="mb-3">
+            <strong class="text-gray-700">Approach:</strong>
+            <ul class="mt-2 space-y-1">
+              {{ range .approach_items }}
+              <li class="flex items-start gap-2 text-gray-700">
+                <span class="text-accent">•</span>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+          {{ if .results }}
+          <div class="workflow-result mt-4">
+            <div class="workflow-result-label">Results:</div>
+            <ul class="mt-2 space-y-1">
+              {{ range .results }}
+              <li class="flex items-start gap-2 text-gray-800">
+                <svg class="w-4 h-4 text-accent flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span>{{ . }}</span>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          {{ end }}
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- Differentiators Section -->
+{{ if $cards.differentiators }}
+<div class="content-section-card content-section-white">
+  <div class="workflow-card" id="differentiators">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-workflow">WHY US</div>
+      <h3 class="workflow-card-title">{{ $cards.differentiators.title }}</h3>
+    </div>
+    <div class="workflow-card-content">
+      <div class="grid gap-4 md:grid-cols-2">
+        {{ range $cards.differentiators.items }}
+        <div class="p-4 bg-gradient-to-r from-accent/5 to-accent/10 rounded-lg">
+          <h4 class="font-semibold text-primary mb-2">{{ .title }}</h4>
+          <p class="text-gray-700 text-sm">{{ .description }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+<!-- FAQ Section -->
+{{ if $cards.faq }}
+<div class="content-section-card content-section-gray">
+  <div class="workflow-card" id="faq">
+    <div class="workflow-card-header">
+      <div class="workflow-card-badge badge-process">FAQ</div>
+      <h3 class="workflow-card-title">{{ $cards.faq.title }}</h3>
+    </div>
+    <div class="workflow-card-content">
+      <div class="space-y-6">
+        {{ range $cards.faq.items }}
+        <div class="border-b border-gray-200 pb-4 last:border-0 last:pb-0">
+          <h4 class="font-semibold text-primary mb-2">{{ .question }}</h4>
+          <p class="text-gray-700">{{ .answer }}</p>
+        </div>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</div>
+{{ end }}
+
+</div>
