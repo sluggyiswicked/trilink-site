@@ -176,12 +176,26 @@ cta:
 # Sidebar configuration
 sidebar:
   related_services:
-    - title: "Bookkeeping Services"
-      url: "/services/bookkeeping/"
-      description: "Expert bookkeeping and accounting services"
+    - title: "Service Overview"
+      url: "/services/bookkeeping-overview/"
+    - title: "Account Setup"
+      url: "/services/account-setup-consulting/"
+    - title: "Account Cleanup"
+      url: "/services/account-cleanup-catch-up/"
+    - title: "Monthly Maintenance"
+      url: "/services/ongoing-bookkeeping-monthly-close/"
+    - title: "Year-End Close"
+      url: "/services/year-end-adjustments/"
+    - title: "Payroll Setup & Management"
+      url: "/services/payroll-setup-processing/"
+    - title: "Training & Support"
+      url: "/services/software-training/"
+    - title: "---separator---"
+      url: "#"
+    - title: "Business Process Automation"
+      url: "/services/business-process-automation/"
     - title: "Operations & Growth Strategy"
       url: "/services/operations-growth-strategy/"
-      description: "Strategic consulting for business growth"
 ---
 
 {{< automation-cards >}}

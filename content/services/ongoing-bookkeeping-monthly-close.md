@@ -22,6 +22,30 @@ trust_indicators:
     - title: "Proactive Insights"
       description: "Forward-looking analysis and recommendations for business improvement"
 
+# Sidebar configuration
+sidebar:
+  related_services:
+    - title: "Service Overview"
+      url: "/services/bookkeeping-overview/"
+    - title: "Account Setup"
+      url: "/services/account-setup-consulting/"
+    - title: "Account Cleanup"
+      url: "/services/account-cleanup-catch-up/"
+    - title: "Monthly Maintenance"
+      url: "/services/ongoing-bookkeeping-monthly-close/"
+    - title: "Year-End Close"
+      url: "/services/year-end-adjustments/"
+    - title: "Payroll Setup & Management"
+      url: "/services/payroll-setup-processing/"
+    - title: "Training & Support"
+      url: "/services/software-training/"
+    - title: "---separator---"
+      url: "#"
+    - title: "Business Process Automation"
+      url: "/services/business-process-automation/"
+    - title: "Operations & Growth Strategy"
+      url: "/services/operations-growth-strategy/"
+
 # Related services
 related_services:
   - name: "Year-End Adjustments"
@@ -39,6 +63,9 @@ cta:
   primary_url: "/contact/"
   secondary_text: "View All Services"
   secondary_url: "/services/bookkeeping/"
+
+# Hide template-level CTA (using inline links instead)
+hide_cta: true
 ---
 
 <div class="content-section-wrapper">
@@ -49,123 +76,303 @@ cta:
 
 Tired of scrambling at month-end? Uncertain about your financial position? **Our Ongoing Bookkeeping & Monthly Close services provide systematic daily monitoring, timely reconciliation, and management reporting that gives you consistent visibility into your business performance.**
 
-Perfect for:
-- **Growing businesses** needing reliable financial processes
-- **Busy owners** who want to focus on operations, not bookkeeping
-- **Companies** requiring timely financial reporting for decisions
-- **Businesses** preparing for financing, investment, or exit opportunities
+### Perfect For
+
+<ul class="pricing-features">
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Growing businesses</strong> needing reliable financial processes</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Busy owners</strong> who want to focus on operations, not bookkeeping</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Companies</strong> requiring timely financial reporting for decisions</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Businesses</strong> preparing for financing, investment, or exit opportunities</span>
+  </li>
+</ul>
 
 ### The Monthly Close Challenge
 
-**Common Month-End Struggles:**
-- Scrambling to gather receipts and documents
-- Last-minute surprises in financial results
-- Inconsistent timing affecting business decisions
-- Bank reconciliations that take days to complete
-- Financial reports that arrive weeks after month-end
-- Uncertainty about cash flow and profitability
+<div class="grid md:grid-cols-2 gap-6">
 
-**The Cost of Poor Monthly Processes:**
-- Delayed business decisions due to lack of timely data
-- Cash flow problems from poor visibility
-- Missed opportunities for course correction
-- Stress and overtime during month-end rush
-- Inaccurate financial information affecting strategic planning
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">STRUGGLES</div>
+    <h3 class="pricing-card-title">Common Month-End Problems</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Scrambling to gather receipts and documents</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Last-minute surprises in financial results</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Inconsistent timing affecting business decisions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Bank reconciliations that take days to complete</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Financial reports that arrive weeks after month-end</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Uncertainty about cash flow and profitability</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">IMPACT</div>
+    <h3 class="pricing-card-title">Cost of Poor Processes</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Delayed business decisions due to lack of timely data</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Cash flow problems from poor visibility</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Missed opportunities for course correction</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Stress and overtime during month-end rush</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Inaccurate financial information affecting strategic planning</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
 
 </div>
 
 <div class="content-section-card content-section-gray">
 
-### Our Systematic Monthly Process
+## Our Systematic Monthly Process
 
-## Daily Transaction Management
+<div class="grid md:grid-cols-3 gap-6">
 
-**Real-Time Processing**
-- Daily review and categorization of bank transactions
-- Invoice entry and accounts receivable management
-- Bill entry and accounts payable processing
-- Expense receipt collection and categorization
-
-**Automated Workflows**
-- Bank feed management with intelligent categorization rules
-- Recurring transaction automation
-- Invoice and payment reminder systems
-- Expense approval and reimbursement workflows
-
-**Quality Control**
-- Daily exception reporting and issue resolution
-- Duplicate transaction identification and prevention
-- Account balance monitoring and alert systems
-- Cash flow tracking and projections
-
+<!-- Daily Management Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">DAILY</div>
+    <h3 class="pricing-card-title">Transaction Management</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p><strong>Real-Time Processing</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Daily review and categorization of bank transactions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Invoice entry and accounts receivable management</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Bill entry and accounts payable processing</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Automated workflows and quality control</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-white">
-
-## Weekly Financial Monitoring
-
-**Account Reconciliation**
-- Weekly bank and credit card reconciliation
-- Outstanding item identification and follow-up
-- Investment and loan account verification
-- Intercompany transaction reconciliation
-
-**Performance Tracking**
-- Revenue and expense trend analysis
-- Budget vs. actual variance monitoring
-- Key performance indicator (KPI) tracking
-- Cash flow forecasting and updates
-
-**Proactive Communication**
-- Weekly financial summary and highlights
-- Issue identification and resolution
-- Recommendation development and discussion
-- Strategic planning support and insights
-
+<!-- Weekly Monitoring Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">WEEKLY</div>
+    <h3 class="pricing-card-title">Financial Monitoring</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p><strong>Account Reconciliation</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Weekly bank and credit card reconciliation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Revenue and expense trend analysis</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">KPI tracking and cash flow forecasting</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Proactive communication and insights</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-gray">
+<!-- Monthly Close Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">MONTHLY</div>
+    <h3 class="pricing-card-title">Monthly Close</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p><strong>5-7 Day Process</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Complete transaction entry and reconciliation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Adjusting entries and financial statement prep</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Management dashboard and variance analysis</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Review and recommendations presentation</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-## Monthly Close Process
-
-### Week 1: Transaction Completion
-**Days 1-3: Final Processing**
-- Complete all month-end transaction entry
-- Finalize accounts receivable and payable
-- Process any outstanding receipts or invoices
-- Review and categorize credit card transactions
-
-**Days 4-5: Initial Reconciliation**
-- Complete bank and credit card reconciliations
-- Reconcile merchant accounts and payment processors
-- Review loan and investment account balances
-- Identify and research any discrepancies
-
-### Week 2: Adjustments & Analysis
-**Days 6-8: Adjusting Entries**
-- Depreciation and amortization calculations
-- Accrual entries for known but unbilled items
-- Prepaid expense and deferred revenue adjustments
-- Inventory adjustments and valuations (if applicable)
-
-**Days 9-10: Financial Statement Preparation**
-- Generate preliminary financial statements
-- Review for accuracy and reasonableness
-- Compare to prior periods and budget
-- Identify unusual items or trends
-
-### Week 3: Reporting & Review
-**Days 11-13: Management Reporting**
-- Prepare executive dashboard and KPI reports
-- Create departmental and project profitability analysis
-- Develop cash flow projections and analysis
-- Prepare variance analysis and explanations
-
-**Days 14-15: Review & Communication**
-- Internal quality review and approval
-- Client review and discussion of results
-- Recommendation development and presentation
-- Action item identification and planning
+</div>
 
 </div>
 
@@ -173,31 +380,97 @@ Perfect for:
 
 ## Quarterly Business Reviews
 
-### Comprehensive Analysis
-**Financial Performance Review**
-- Three-month trend analysis and seasonal adjustments
-- Year-to-date performance vs. budget and prior year
-- Profitability analysis by product, service, or project
-- Cash flow patterns and working capital analysis
+<div class="grid md:grid-cols-2 gap-6">
 
-**Strategic Planning Support**
-- Budget vs. actual variance analysis and explanations
-- Forecast updates based on actual performance
-- Scenario planning for different growth assumptions
-- Recommendation development for operational improvements
+<!-- Comprehensive Analysis Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">ANALYSIS</div>
+    <h3 class="pricing-card-title">Performance Review</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Three-month trend analysis and seasonal adjustments</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Year-to-date performance vs. budget and prior year</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Profitability analysis by product or service</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Cash flow patterns and working capital analysis</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-### Forward-Looking Insights
-**Predictive Analytics**
-- Quarterly forecasting with multiple scenarios
-- Seasonal trend analysis and planning
-- Cash flow projections with sensitivity analysis
-- Growth planning and resource requirement analysis
+<!-- Forward-Looking Insights Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">INSIGHTS</div>
+    <h3 class="pricing-card-title">Strategic Planning</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Quarterly forecasting with multiple scenarios</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Industry benchmarking and competitive analysis</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Key ratio analysis and trend identification</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Strategic opportunity identification and evaluation</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-**Business Intelligence**
-- Industry benchmarking and competitive analysis
-- Key ratio analysis and trend identification
-- Operational efficiency metrics and recommendations
-- Strategic opportunity identification and evaluation
+</div>
 
 </div>
 
@@ -205,57 +478,141 @@ Perfect for:
 
 ## What's Included
 
-### Daily Services
-- **Transaction Processing** - Real-time categorization and entry
-- **Bank Feed Management** - Automated rules and exception handling
-- **Document Management** - Receipt collection and filing
-- **Issue Resolution** - Proactive problem identification and solving
+<div class="grid md:grid-cols-3 gap-6">
 
-### Monthly Close
-- **Complete Reconciliation** - All accounts balanced and verified
-- **Financial Statements** - P&L, Balance Sheet, and Cash Flow
-- **Management Dashboard** - KPIs and performance metrics
-- **Variance Analysis** - Budget vs. actual with explanations
-
-### Quarterly Reviews
-- **Comprehensive Analysis** - Trend analysis and strategic insights
-- **Forecasting Updates** - Rolling forecasts with scenario planning
-- **Business Intelligence** - Industry comparisons and benchmarking
-- **Strategic Recommendations** - Actionable insights for growth
-
+<!-- Daily Services Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">DAILY</div>
+    <h3 class="pricing-card-title">Daily Services</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Transaction Processing</strong> - Real-time categorization and entry</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Bank Feed Management</strong> - Automated rules and exception handling</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Document Management</strong> - Receipt collection and filing</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Issue Resolution</strong> - Proactive problem identification and solving</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-white">
+<!-- Monthly Close Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">MONTHLY</div>
+    <h3 class="pricing-card-title">Monthly Close</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Complete Reconciliation</strong> - All accounts balanced and verified</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Financial Statements</strong> - P&L, Balance Sheet, and Cash Flow</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Management Dashboard</strong> - KPIs and performance metrics</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Variance Analysis</strong> - Budget vs. actual with explanations</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-## Service Levels & Investment
+<!-- Quarterly Reviews Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">QUARTERLY</div>
+    <h3 class="pricing-card-title">Quarterly Reviews</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Comprehensive Analysis</strong> - Trend analysis and strategic insights</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Forecasting Updates</strong> - Rolling forecasts with scenario planning</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Business Intelligence</strong> - Industry comparisons and benchmarking</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Strategic Recommendations</strong> - Actionable insights for growth</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-### Essential Bookkeeping: $800 - $1,500/month
-**Ideal for:** Simple businesses with straightforward transactions
-- **Transaction Volume:** Up to 100 transactions/month
-- **Reporting:** Basic financial statements and cash flow
-- **Close Timeline:** Within 10 business days
-- **Communication:** Monthly review call and email updates
-
-### Professional Bookkeeping: $1,500 - $3,000/month
-**Ideal for:** Growing businesses with moderate complexity
-- **Transaction Volume:** 100-300 transactions/month
-- **Reporting:** Full management dashboard and KPI tracking
-- **Close Timeline:** Within 7 business days
-- **Communication:** Weekly updates and monthly review meeting
-
-### Advanced Bookkeeping: $3,000 - $6,000/month
-**Ideal for:** Complex businesses with detailed reporting needs
-- **Transaction Volume:** 300-500 transactions/month
-- **Reporting:** Comprehensive analysis and forecasting
-- **Close Timeline:** Within 5 business days
-- **Communication:** Real-time dashboard and weekly strategy calls
-
-### Enterprise Bookkeeping: Custom pricing
-**Ideal for:** Large businesses with complex requirements
-- **Transaction Volume:** 500+ transactions/month
-- **Reporting:** Custom reporting and advanced analytics
-- **Close Timeline:** Within 3 business days
-- **Communication:** Dedicated account manager and daily updates
+</div>
 
 </div>
 
@@ -313,18 +670,9 @@ We use a multi-level review process, automated checking tools, and maintain deta
 **Can you help us improve our cash flow management?**
 Yes, cash flow forecasting and management recommendations are included in our quarterly business reviews.
 
-</div>
+**How much does ongoing bookkeeping cost?**
+Pricing varies based on transaction volume and complexity. See our <a href="/pricing/">pricing page</a> for monthly bookkeeping package details, or <a href="/contact/">contact us</a> for a custom quote based on your specific needs.
 
 </div>
 
----
-
-## Ready for Predictable, Stress-Free Month-Ends?
-
-Stop scrambling at month-end and start getting the timely financial insights you need for confident business decisions. Our systematic process ensures consistency, accuracy, and actionable reporting every month.
-
-**Next Steps:**
-1. **Schedule a consultation** to discuss your current processes
-2. **Receive a customized proposal** based on your business needs
-3. **Begin with a smooth transition** to our proven systems
-4. **Experience the peace of mind** of predictable monthly closes
+</div>

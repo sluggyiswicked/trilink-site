@@ -22,6 +22,30 @@ trust_indicators:
     - title: "Seamless Coordination"
       description: "Direct collaboration with your CPA to streamline the entire process"
 
+# Sidebar configuration
+sidebar:
+  related_services:
+    - title: "Service Overview"
+      url: "/services/bookkeeping-overview/"
+    - title: "Account Setup"
+      url: "/services/account-setup-consulting/"
+    - title: "Account Cleanup"
+      url: "/services/account-cleanup-catch-up/"
+    - title: "Monthly Maintenance"
+      url: "/services/ongoing-bookkeeping-monthly-close/"
+    - title: "Year-End Close"
+      url: "/services/year-end-adjustments/"
+    - title: "Payroll Setup & Management"
+      url: "/services/payroll-setup-processing/"
+    - title: "Training & Support"
+      url: "/services/software-training/"
+    - title: "---separator---"
+      url: "#"
+    - title: "Business Process Automation"
+      url: "/services/business-process-automation/"
+    - title: "Operations & Growth Strategy"
+      url: "/services/operations-growth-strategy/"
+
 # Related services
 related_services:
   - name: "Ongoing Bookkeeping"
@@ -39,6 +63,9 @@ cta:
   primary_url: "/contact/"
   secondary_text: "View All Services"
   secondary_url: "/services/bookkeeping/"
+
+# Hide template-level CTA (using inline links instead)
+hide_cta: true
 ---
 
 <div class="content-section-wrapper">
@@ -49,122 +76,348 @@ cta:
 
 Dreading year-end close and tax preparation? **Our Year-End Adjustments services ensure your books are tax-ready with proper depreciation calculations, inventory valuations, accrual entries, and seamless CPA collaboration that makes tax season stress-free.**
 
-Perfect for:
-- **Businesses** preparing for annual tax filing
-- **Companies** with depreciation and fixed asset complexities
-- **Organizations** requiring detailed CPA workpapers
-- **Businesses** wanting to maximize tax deductions legally
+### Perfect For
+
+<ul class="pricing-features">
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Businesses</strong> preparing for annual tax filing</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Companies</strong> with depreciation and fixed asset complexities</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Organizations</strong> requiring detailed CPA workpapers</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Businesses</strong> wanting to maximize tax deductions legally</span>
+  </li>
+</ul>
 
 ### The Year-End Challenge
 
-**Common Year-End Struggles:**
-- Depreciation calculations that haven't been updated all year
-- Inventory counts that don't match book values
-- Missing accruals for expenses and revenue
-- Disorganized records causing CPA delays and higher fees
-- Uncertainty about tax deductions and compliance
-- Year-end surprises affecting tax planning
+<div class="grid md:grid-cols-2 gap-6">
 
-**The Cost of Poor Year-End Preparation:**
-- Higher CPA fees due to disorganized records
-- Missed tax deductions and credits
-- Filing deadline stress and potential extensions
-- Inaccurate financial statements affecting business decisions
-- IRS audit risk from incorrect or unsupported entries
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">STRUGGLES</div>
+    <h3 class="pricing-card-title">Common Year-End Problems</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Depreciation calculations that haven't been updated all year</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Inventory counts that don't match book values</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Missing accruals for expenses and revenue</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Disorganized records causing CPA delays and higher fees</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Uncertainty about tax deductions and compliance</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Year-end surprises affecting tax planning</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">CONSEQUENCES</div>
+    <h3 class="pricing-card-title">Cost of Poor Preparation</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Higher CPA fees due to disorganized records</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Missed tax deductions and credits</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Filing deadline stress and potential extensions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Inaccurate financial statements affecting business decisions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">IRS audit risk from incorrect or unsupported entries</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
 
 </div>
 
 <div class="content-section-card content-section-gray">
 
-### Our Comprehensive Year-End Process
+## Our Comprehensive Year-End Process
 
-## Phase 1: Pre-Year-End Planning (November)
+<div class="grid md:grid-cols-2 gap-6">
 
-**Current Year Review**
-- Analyze year-to-date financial performance
-- Identify potential year-end adjustments needed
-- Review depreciation schedules and asset additions
-- Assess tax planning opportunities and strategies
-
-**Documentation Preparation**
-- Organize supporting documentation for all adjustments
-- Review contracts for proper revenue and expense cutoffs
-- Coordinate with management on timing of transactions
-- Plan for efficient year-end close process
-
-**CPA Coordination**
-- Initial coordination with your CPA or tax preparer
-- Discuss tax planning strategies and timing
-- Confirm reporting requirements and deadlines
-- Establish workpaper format and delivery expectations
-
+<!-- Phase 1 Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PHASE 1</div>
+    <h3 class="pricing-card-title">Pre-Year-End Planning (November)</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p><strong>Current Year Review & Documentation</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Analyze year-to-date financial performance</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Identify potential year-end adjustments needed</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Review depreciation schedules and asset additions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Initial CPA coordination and tax planning discussion</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-white">
-
-## Phase 2: Year-End Adjusting Entries (January)
-
-**Fixed Asset & Depreciation**
-- Complete fixed asset additions and disposals for the year
-- Calculate annual depreciation using appropriate methods
-- Review asset lives and salvage values for reasonableness
-- Prepare detailed depreciation schedules and supporting workpapers
-
-**Inventory Adjustments**
-- Coordinate with physical inventory counts
-- Analyze and adjust for inventory variances
-- Review obsolete or slow-moving inventory
-- Calculate lower of cost or market adjustments
-
-**Accrual Entries**
-- Accrue for known but unbilled expenses
-- Recognize earned but unbilled revenue
-- Adjust for prepaid expenses and deferred revenue
-- Review and adjust estimated liabilities
-
-## Phase 3: Financial Statement Finalization
-
-**Account Analysis**
-- Detailed review of all balance sheet accounts
-- Analysis of unusual or unexpected account balances
-- Correction of classification errors and reclassifications
-- Verification of inter-company and related party transactions
-
-**Income Statement Review**
-- Revenue recognition analysis and adjustments
-- Expense matching and period-end cutoff testing
-- Review of extraordinary or non-recurring items
-- Analysis of gross margins and expense ratios
-
-**Cash Flow Statement**
-- Preparation of statement of cash flows
-- Analysis of cash flow from operations, investing, and financing
-- Review of working capital changes and explanations
-- Coordination with balance sheet and income statement changes
-
+<!-- Phase 2 Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PHASE 2</div>
+    <h3 class="pricing-card-title">Year-End Adjusting Entries (January)</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p><strong>Fixed Assets, Inventory & Accruals</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Calculate annual depreciation and fixed asset updates</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Coordinate physical inventory counts and adjustments</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Accrue for known expenses and unbilled revenue</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Adjust prepaid expenses and deferred revenue</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-gray">
+<!-- Phase 3 Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PHASE 3</div>
+    <h3 class="pricing-card-title">Financial Statement Finalization</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p><strong>Account Analysis & Statements</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Detailed review of all balance sheet accounts</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Revenue recognition analysis and adjustments</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Expense matching and period-end cutoff testing</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Preparation of complete cash flow statement</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-## Phase 4: CPA Workpaper Preparation
+<!-- Phase 4 Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PHASE 4</div>
+    <h3 class="pricing-card-title">CPA Workpaper Preparation</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p><strong>Trial Balance & Tax Documentation</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Final adjusted trial balance with all year-end entries</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Detailed fixed asset and depreciation schedules</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Supporting schedules for all major accounts</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Tax planning documentation and coordination materials</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-**Trial Balance & Adjustments**
-- Final adjusted trial balance with all year-end entries
-- Detailed general ledger and supporting schedules
-- Documentation of all adjusting entries with explanations
-- Reconciliation of all balance sheet accounts
-
-**Supporting Schedules**
-- Detailed fixed asset and depreciation schedules
-- Accounts receivable aging and bad debt analysis
-- Inventory valuation and turnover analysis
-- Debt schedules with payment terms and covenants
-
-**Tax Planning Documentation**
-- Summary of tax-deductible expenses and supporting documentation
-- Analysis of timing differences for tax vs. book purposes
-- Documentation of any tax elections or special considerations
-- Coordination materials for tax planning strategies
+</div>
 
 </div>
 
@@ -172,105 +425,141 @@ Perfect for:
 
 ## What's Included
 
-### Complete Year-End Package
-- **Depreciation Calculations** - Complete fixed asset and depreciation analysis
-- **Inventory Adjustments** - Physical count coordination and valuation adjustments
-- **Accrual Entries** - Proper matching of revenues and expenses
-- **Financial Statement Preparation** - Final P&L, Balance Sheet, and Cash Flow
+<div class="grid md:grid-cols-3 gap-6">
 
-### CPA Collaboration
-- **Workpaper Preparation** - Professional trial balance and supporting schedules
-- **Documentation Package** - Complete backup for all adjustments and entries
-- **Direct CPA Communication** - Coordination calls and question resolution
-- **Tax Planning Support** - Strategic advice for current and future years
-
-### Quality Assurance
-- **Multi-Level Review** - Senior accountant oversight and approval
-- **Compliance Verification** - GAAP compliance and reasonableness testing
-- **Deadline Management** - Timely completion to meet tax filing deadlines
-- **Follow-Up Support** - Available for CPA questions during tax preparation
-
+<!-- Year-End Package Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">YEAR-END</div>
+    <h3 class="pricing-card-title">Complete Year-End Package</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Depreciation Calculations</strong> - Complete fixed asset and depreciation analysis</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Inventory Adjustments</strong> - Physical count coordination and valuation adjustments</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Accrual Entries</strong> - Proper matching of revenues and expenses</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Financial Statement Preparation</strong> - Final P&L, Balance Sheet, and Cash Flow</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-gray">
-
-## Specialized Year-End Services
-
-### Industry-Specific Adjustments
-**Manufacturing & Inventory**
-- Work-in-process and finished goods valuations
-- Standard cost vs. actual cost reconciliations
-- Overhead allocation and absorption analysis
-- Warranty and obsolescence reserves
-
-**Service Businesses**
-- Revenue recognition for long-term contracts
-- Unbilled receivables and work-in-progress
-- Deferred revenue and contract liability analysis
-- Commission and bonus accruals
-
-**Retail & E-Commerce**
-- Inventory shrinkage and physical count adjustments
-- Gift card liability and breakage analysis
-- Returns and allowances reserves
-- Vendor rebate and co-op advertising accruals
-
-### Tax Optimization
-**Depreciation Strategies**
-- Section 179 and bonus depreciation optimization
-- Asset grouping and method selection
-- Timing of asset purchases and disposals
-- Cost segregation study coordination
-
-**Expense Timing**
-- Acceleration of deductible expenses
-- Deferral of income when beneficial
-- Prepaid expense vs. current deduction analysis
-- Repair vs. capitalization decisions
-
+<!-- CPA Collaboration Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">CPA</div>
+    <h3 class="pricing-card-title">CPA Collaboration</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Workpaper Preparation</strong> - Professional trial balance and supporting schedules</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Documentation Package</strong> - Complete backup for all adjustments and entries</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Direct CPA Communication</strong> - Coordination calls and question resolution</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Tax Planning Support</strong> - Strategic advice for current and future years</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-white">
+<!-- Quality Assurance Card -->
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">QUALITY</div>
+    <h3 class="pricing-card-title">Quality Assurance</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Multi-Level Review</strong> - Senior accountant oversight and approval</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Compliance Verification</strong> - GAAP compliance and reasonableness testing</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Deadline Management</strong> - Timely completion to meet tax filing deadlines</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Follow-Up Support</strong> - Available for CPA questions during tax preparation</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-## Timeline & Investment
-
-### Year-End Service Timeline
-**November (Planning Phase):** 1-2 weeks
-- Initial review and planning
-- CPA coordination and strategy discussion
-- Documentation organization
-
-**December (Preparation):** Ongoing monitoring
-- Transaction cutoff coordination
-- Final accrual identification
-- Asset addition tracking
-
-**January (Execution):** 2-4 weeks
-- Complete year-end adjustments
-- Financial statement finalization
-- CPA workpaper preparation
-
-### Investment Levels
-
-**Standard Year-End Service: $3,000 - $8,000**
-- Simple business structure with basic adjustments
-- Standard depreciation and inventory adjustments
-- Basic CPA workpaper preparation
-- Straightforward tax compliance needs
-
-**Comprehensive Year-End Service: $8,000 - $15,000**
-- Complex business operations with multiple locations
-- Advanced inventory valuation and fixed asset analysis
-- Detailed CPA workpapers and tax planning
-- Industry-specific adjustments and compliance
-
-**Complex Year-End Service: $15,000 - $30,000+**
-- Multi-entity or consolidated businesses
-- Complex revenue recognition and contract accounting
-- Extensive tax planning and optimization strategies
-- Regulatory compliance and audit preparation
-
-*Pricing depends on business complexity and year-end timing*
+</div>
 
 </div>
 
@@ -328,18 +617,9 @@ We use professional depreciation software and maintain detailed fixed asset sche
 **Can you help prepare for an audit?**
 Yes, our year-end workpapers and documentation are audit-ready and can support financial statement audits or IRS examinations.
 
-</div>
+**How much do year-end adjustment services cost?**
+Pricing depends on business complexity, transaction volume, and timing. See our <a href="/pricing/">pricing page</a> for year-end service package details, or <a href="/contact/">contact us</a> for a custom quote based on your specific situation.
 
 </div>
 
----
-
-## Ready for a Confident Year-End Close?
-
-Don't let year-end preparation create stress and uncertainty. Our systematic approach ensures your books are tax-ready with proper adjustments and professional documentation that your CPA will appreciate.
-
-**Next Steps:**
-1. **Schedule a consultation** to discuss your year-end needs
-2. **Receive a detailed timeline** and scope for your business
-3. **Begin year-end preparation** with our experienced team
-4. **Experience a smooth tax season** with confidence in your numbers
+</div>

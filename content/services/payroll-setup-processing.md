@@ -22,6 +22,30 @@ trust_indicators:
     - title: "Accurate Job Costing"
       description: "Detailed labor cost tracking for projects and profit analysis"
 
+# Sidebar configuration
+sidebar:
+  related_services:
+    - title: "Service Overview"
+      url: "/services/bookkeeping-overview/"
+    - title: "Account Setup"
+      url: "/services/account-setup-consulting/"
+    - title: "Account Cleanup"
+      url: "/services/account-cleanup-catch-up/"
+    - title: "Monthly Maintenance"
+      url: "/services/ongoing-bookkeeping-monthly-close/"
+    - title: "Year-End Close"
+      url: "/services/year-end-adjustments/"
+    - title: "Payroll Setup & Management"
+      url: "/services/payroll-setup-processing/"
+    - title: "Training & Support"
+      url: "/services/software-training/"
+    - title: "---separator---"
+      url: "#"
+    - title: "Business Process Automation"
+      url: "/services/business-process-automation/"
+    - title: "Operations & Growth Strategy"
+      url: "/services/operations-growth-strategy/"
+
 # Related services
 related_services:
   - name: "Account Setup & Consulting"
@@ -39,6 +63,9 @@ cta:
   primary_url: "/contact/"
   secondary_text: "View All Services"
   secondary_url: "/services/bookkeeping/"
+
+# Hide template-level CTA (using inline links instead)
+hide_cta: true
 ---
 
 <div class="content-section-wrapper">
@@ -49,28 +76,158 @@ cta:
 
 Struggling with payroll compliance, manual calculations, or time-consuming processes? **Our Payroll Setup & Processing services handle everything from provider selection and compliance setup to ongoing processing and job cost tracking, ensuring accuracy while saving you valuable time.**
 
-Perfect for:
-- **Growing businesses** outgrowing manual payroll processes
-- **Multi-state operations** needing compliance across jurisdictions  
-- **Project-based businesses** requiring detailed job cost tracking
-- **Companies** wanting to integrate payroll with their accounting system
+### Perfect For
+
+<ul class="pricing-features">
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Growing businesses</strong> outgrowing manual payroll processes</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Multi-state operations</strong> needing compliance across jurisdictions</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Project-based businesses</strong> requiring detailed job cost tracking</span>
+  </li>
+  <li class="pricing-feature">
+    <div class="pricing-feature-icon">
+      <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+        <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+      </svg>
+    </div>
+    <span class="pricing-feature-text"><strong>Companies</strong> wanting to integrate payroll with their accounting system</span>
+  </li>
+</ul>
 
 ### The Payroll Challenge
 
-**Common Payroll Struggles:**
-- Manual calculations prone to errors and omissions
-- Compliance confusion across multiple jurisdictions
-- Time-consuming pay period processing
-- Disconnect between payroll and accounting systems
-- Difficulty tracking labor costs by project or department
-- Penalties and interest from late or incorrect tax filings
+<div class="grid md:grid-cols-2 gap-6">
 
-**The Cost of Payroll Problems:**
-- IRS and state penalties for compliance failures
-- Employee dissatisfaction from pay errors or delays
-- Management time diverted from core business activities
-- Inaccurate job costing affecting profitability analysis
-- Potential liability for misclassified workers
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">STRUGGLES</div>
+    <h3 class="pricing-card-title">Common Payroll Problems</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Manual calculations prone to errors and omissions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Compliance confusion across multiple jurisdictions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Time-consuming pay period processing</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Disconnect between payroll and accounting systems</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Difficulty tracking labor costs by project or department</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Penalties from late or incorrect tax filings</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">CONSEQUENCES</div>
+    <h3 class="pricing-card-title">Cost of Payroll Problems</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">IRS and state penalties for compliance failures</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Employee dissatisfaction from pay errors or delays</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Management time diverted from core business activities</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Inaccurate job costing affecting profitability analysis</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Potential liability for misclassified workers</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+</div>
 
 </div>
 
@@ -78,81 +235,415 @@ Perfect for:
 
 ### Our Comprehensive Payroll Solution
 
-## Phase 1: Provider Selection & System Setup
+<div class="grid md:grid-cols-3 gap-6">
 
-**Payroll Provider Evaluation**
-- Assess your specific business needs and requirements
-- Compare features, pricing, and integration capabilities
-- Evaluate compliance support for your jurisdictions
-- Consider scalability for future business growth
-
-**Popular Platforms We Work With:**
-- **Gusto** - Great for small to medium businesses, excellent benefits integration
-- **ADP** - Enterprise-level features, strong compliance support
-- **Paychex** - Good for service businesses, solid reporting capabilities
-- **QuickBooks Payroll** - Seamless QBO integration, simple setup
-- **Rippling** - Modern platform with excellent automation features
-
-**System Configuration**
-- Complete payroll system setup and configuration
-- Employee data migration from existing systems
-- Pay structure setup (hourly, salary, commission, etc.)
-- Benefits and deduction configuration
-- Direct deposit and payment method setup
-
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PHASE 1</div>
+    <h3 class="pricing-card-title">Provider Selection & System Setup</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p class="mb-4"><strong>Payroll Provider Evaluation</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Assess your specific business needs and requirements</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Compare features, pricing, and integration capabilities</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Evaluate compliance support for your jurisdictions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Consider scalability for future business growth</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>Popular Platforms We Work With:</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Gusto</strong> - Great for small to medium businesses, excellent benefits integration</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>ADP</strong> - Enterprise-level features, strong compliance support</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Paychex</strong> - Good for service businesses, solid reporting capabilities</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>QuickBooks Payroll</strong> - Seamless QBO integration, simple setup</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Rippling</strong> - Modern platform with excellent automation features</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>System Configuration</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Complete payroll system setup and configuration</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Employee data migration from existing systems</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Pay structure setup (hourly, salary, commission, etc.)</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Benefits and deduction configuration</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Direct deposit and payment method setup</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-white">
-
-## Phase 2: Compliance & Tax Setup
-
-**Multi-Jurisdiction Compliance**
-- Federal tax registration and configuration
-- State unemployment and disability setup
-- Local tax requirements and registrations
-- Workers' compensation coordination
-- New hire reporting compliance
-
-**Tax Calendar Management**
-- Federal and state filing schedule setup
-- Automatic tax deposit configuration
-- Quarterly and annual reporting procedures
-- Year-end processing and W-2 preparation
-- Compliance monitoring and alert systems
-
-**Employee Classification**
-- Proper classification of employees vs. contractors
-- Exempt vs. non-exempt status determination
-- Review of job descriptions and duties
-- Documentation of classification decisions
-- Ongoing monitoring for compliance changes
-
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PHASE 2</div>
+    <h3 class="pricing-card-title">Compliance & Tax Setup</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p class="mb-4"><strong>Multi-Jurisdiction Compliance</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Federal tax registration and configuration</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">State unemployment and disability setup</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Local tax requirements and registrations</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Workers' compensation coordination</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">New hire reporting compliance</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>Tax Calendar Management</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Federal and state filing schedule setup</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Automatic tax deposit configuration</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Quarterly and annual reporting procedures</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Year-end processing and W-2 preparation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Compliance monitoring and alert systems</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>Employee Classification</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Proper classification of employees vs. contractors</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Exempt vs. non-exempt status determination</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Review of job descriptions and duties</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Documentation of classification decisions</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Ongoing monitoring for compliance changes</span>
+      </li>
+    </ul>
+  </div>
 </div>
 
-<div class="content-section-card content-section-gray">
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PHASE 3</div>
+    <h3 class="pricing-card-title">Integration & Job Costing</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p class="mb-4"><strong>Accounting System Integration</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Seamless connection with QuickBooks Online</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Chart of accounts mapping for payroll expenses</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Automatic journal entry creation and posting</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Bank account reconciliation procedures</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Financial reporting integration</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>Advanced Job Costing Setup</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Project and class tracking configuration</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Department and location cost allocation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Time tracking integration and workflows</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Burden rate calculation and application</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Profitability reporting by job or project</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>Workflow Optimization</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Time collection and approval processes</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Pay period procedures and deadlines</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Review and approval workflows</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Error checking and validation procedures</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Exception reporting and resolution</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-## Phase 3: Integration & Job Costing
-
-**Accounting System Integration**
-- Seamless connection with QuickBooks Online
-- Chart of accounts mapping for payroll expenses
-- Automatic journal entry creation and posting
-- Bank account reconciliation procedures
-- Financial reporting integration
-
-**Advanced Job Costing Setup**
-- Project and class tracking configuration
-- Department and location cost allocation
-- Time tracking integration and workflows
-- Burden rate calculation and application
-- Profitability reporting by job or project
-
-**Workflow Optimization**
-- Time collection and approval processes
-- Pay period procedures and deadlines
-- Review and approval workflows
-- Error checking and validation procedures
-- Exception reporting and resolution
+</div>
 
 </div>
 
@@ -160,37 +651,202 @@ Perfect for:
 
 ## Ongoing Payroll Processing Services
 
-### Bi-Weekly/Monthly Processing
-**Pre-Processing:**
-- Time sheet collection and review
-- Hours validation and overtime calculations
-- Benefits and deduction updates
-- New hire and termination processing
+<div class="grid md:grid-cols-2 gap-6">
 
-**Processing Execution:**
-- Payroll calculation and review
-- Direct deposit and check preparation
-- Tax calculation and deposit automation
-- Pay stub distribution and employee communication
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">PROCESSING</div>
+    <h3 class="pricing-card-title">Bi-Weekly/Monthly Processing</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p class="mb-4"><strong>Pre-Processing:</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Time sheet collection and review</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Hours validation and overtime calculations</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Benefits and deduction updates</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">New hire and termination processing</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>Processing Execution:</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Payroll calculation and review</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Direct deposit and check preparation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Tax calculation and deposit automation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Pay stub distribution and employee communication</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>Post-Processing:</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Accounting system integration and reconciliation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Exception reporting and issue resolution</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Compliance verification and filing</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Management reporting and analysis</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-**Post-Processing:**
-- Accounting system integration and reconciliation
-- Exception reporting and issue resolution
-- Compliance verification and filing
-- Management reporting and analysis
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">YEAR-END</div>
+    <h3 class="pricing-card-title">Year-End Services</h3>
+  </div>
+  <div class="pricing-card-content">
+    <p class="mb-4"><strong>W-2 and 1099 Preparation</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Employee W-2 generation and distribution</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Contractor 1099-NEC preparation and filing</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">State and local wage reporting</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Corrected forms processing if needed</span>
+      </li>
+    </ul>
+    <p class="mt-4 mb-2"><strong>Annual Compliance</strong></p>
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Federal and state unemployment reporting</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Workers' compensation audits and adjustments</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Benefits reporting (ACA, etc.)</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text">Payroll tax reconciliation and adjustments</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-### Year-End Services
-**W-2 and 1099 Preparation**
-- Employee W-2 generation and distribution
-- Contractor 1099-NEC preparation and filing
-- State and local wage reporting
-- Corrected forms processing if needed
-
-**Annual Compliance**
-- Federal and state unemployment reporting
-- Workers' compensation audits and adjustments
-- Benefits reporting (ACA, etc.)
-- Payroll tax reconciliation and adjustments
+</div>
 
 </div>
 
@@ -198,64 +854,141 @@ Perfect for:
 
 ## What's Included
 
-### Complete Setup Package
-- **Provider Selection** - Comparative analysis and recommendation
-- **System Configuration** - Complete setup tailored to your business
-- **Compliance Setup** - All required registrations and configurations
-- **Integration** - Seamless connection with your accounting system
+<div class="grid md:grid-cols-3 gap-6">
 
-### Ongoing Processing
-- **Payroll Processing** - Complete bi-weekly or monthly payroll runs
-- **Tax Management** - Automatic deposits and filing
-- **Employee Support** - Pay stub questions and direct deposit issues
-- **Compliance Monitoring** - Ongoing compliance verification and updates
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">SETUP</div>
+    <h3 class="pricing-card-title">Complete Setup Package</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Provider Selection</strong> - Comparative analysis and recommendation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>System Configuration</strong> - Complete setup tailored to your business</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Compliance Setup</strong> - All required registrations and configurations</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Integration</strong> - Seamless connection with your accounting system</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
-### Reporting & Analysis
-- **Management Reports** - Labor cost analysis and departmental summaries
-- **Job Costing** - Project profitability and labor allocation
-- **Compliance Reports** - Tax liability and filing status
-- **Custom Reporting** - Business-specific metrics and KPIs
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">ONGOING</div>
+    <h3 class="pricing-card-title">Ongoing Processing</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Payroll Processing</strong> - Complete bi-weekly or monthly payroll runs</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Tax Management</strong> - Automatic deposits and filing</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Employee Support</strong> - Pay stub questions and direct deposit issues</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Compliance Monitoring</strong> - Ongoing compliance verification and updates</span>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="pricing-card">
+  <div class="pricing-card-header">
+    <div class="pricing-card-badge">REPORTING</div>
+    <h3 class="pricing-card-title">Reporting & Analysis</h3>
+  </div>
+  <div class="pricing-card-content">
+    <ul class="pricing-features">
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Management Reports</strong> - Labor cost analysis and departmental summaries</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Job Costing</strong> - Project profitability and labor allocation</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Compliance Reports</strong> - Tax liability and filing status</span>
+      </li>
+      <li class="pricing-feature">
+        <div class="pricing-feature-icon">
+          <svg class="w-3 h-3 text-white" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+          </svg>
+        </div>
+        <span class="pricing-feature-text"><strong>Custom Reporting</strong> - Business-specific metrics and KPIs</span>
+      </li>
+    </ul>
+  </div>
+</div>
 
 </div>
 
-<div class="content-section-card content-section-white">
-
-## Investment & Service Levels
-
-### Payroll Setup Service: $2,000 - $5,000
-- Provider selection and comparative analysis
-- Complete system setup and configuration
-- Employee data migration and testing
-- Compliance setup for all jurisdictions
-- Integration with accounting system
-- Initial training and documentation
-
-### Ongoing Processing Service
-**Small Business (1-15 employees): $150 - $300/month**
-- Bi-weekly or monthly processing
-- Tax deposits and filing
-- Basic reporting and reconciliation
-- Employee support
-
-**Medium Business (16-50 employees): $300 - $600/month**
-- Advanced reporting and analytics
-- Job costing and departmental tracking
-- Priority support and consultation
-- Quarterly compliance reviews
-
-**Large Business (50+ employees): Custom pricing**
-- Complex payroll structures and requirements
-- Multi-state and multi-location processing
-- Advanced integrations and reporting
-- Dedicated account management
-
-### Additional Services
-- **Year-end processing:** $500 - $1,500
-- **New hire setup:** $25 per employee
-- **Compliance consultation:** $200/hour
-- **Custom reporting development:** $500 - $2,000
-
 </div>
+
 
 <div class="content-section-card content-section-gray">
 
@@ -311,18 +1044,9 @@ While we don't provide workers' comp insurance, we coordinate with your insuranc
 **What happens if there's a payroll error?**
 We have procedures in place to quickly identify and correct errors, including communicating with affected employees and making necessary adjustments.
 
-</div>
+**How much does payroll setup and processing cost?**
+Service pricing varies based on company size, complexity, and specific needs. [Visit our pricing page](/pricing/) to learn about our service packages and request a custom quote.
 
 </div>
 
----
-
-## Ready to Simplify Your Payroll?
-
-Stop struggling with time-consuming, error-prone payroll processes. Our comprehensive setup and ongoing services ensure compliance while giving you the job costing insights you need for profitable growth.
-
-**Next Steps:**
-1. **Schedule a consultation** to discuss your payroll needs
-2. **Receive recommendations** for the best solution for your business
-3. **Begin setup** with our payroll experts
-4. **Experience hassle-free processing** and accurate job costing
+</div>

@@ -97,7 +97,27 @@
     <aside class="page-sidebar">
 
       <!-- Section 1: Smart Navigation -->
-      {{ if .Parent }}
+      {{ if .Params.sidebar.related_services }}
+        <!-- If page has sidebar.related_services in frontmatter, show those (PRIORITY) -->
+        <div class="page-sidebar-section">
+          <h3 class="page-sidebar-title">Related Services</h3>
+          <nav class="page-sidebar-nav">
+            {{ range .Params.sidebar.related_services }}
+              {{ if eq .title "---separator---" }}
+                <hr class="my-4 border-t border-gray-300">
+              {{ else }}
+                <a href="{{ .url }}" class="page-sidebar-nav-item{{ if eq .url $.RelPermalink }} active{{ end }}">
+                  <strong>{{ .title }}</strong>
+                  {{ if .description }}
+                    <span class="block text-xs text-gray-500 mt-1">{{ .description }}</span>
+                  {{ end }}
+                </a>
+              {{ end }}
+            {{ end }}
+          </nav>
+        </div>
+
+      {{ else if .Parent }}
         <!-- If page has parent, show sibling navigation -->
         <div class="page-sidebar-section">
           <h3 class="page-sidebar-title">{{ .Parent.Title }}</h3>
@@ -110,14 +130,14 @@
           </nav>
         </div>
 
-      {{ else if .Params.sidebar.related_services }}
-        <!-- If page has related services in frontmatter, show those -->
+      {{ else if .Params.related_services }}
+        <!-- Old related_services format (deprecated but keep for backwards compatibility) -->
         <div class="page-sidebar-section">
           <h3 class="page-sidebar-title">Related Services</h3>
           <nav class="page-sidebar-nav">
-            {{ range .Params.sidebar.related_services }}
+            {{ range .Params.related_services }}
               <a href="{{ .url }}" class="page-sidebar-nav-item">
-                <strong>{{ .title }}</strong>
+                <strong>{{ .name }}</strong>
                 {{ if .description }}
                   <span class="block text-xs text-gray-500 mt-1">{{ .description }}</span>
                 {{ end }}
@@ -131,7 +151,7 @@
         <div class="page-sidebar-section">
           <h3 class="page-sidebar-title">Our Services</h3>
           <nav class="page-sidebar-nav">
-            <a href="/services/bookkeeping-overview/" class="page-sidebar-nav-item">Bookkeeping Services</a>
+            <a href="/services/bookkeeping-overview/" class="page-sidebar-nav-item">Bookkeeping & Accounting</a>
             <a href="/services/business-process-automation/" class="page-sidebar-nav-item">Business Process Automation</a>
             <a href="/services/operations-growth-strategy/" class="page-sidebar-nav-item">Operations & Growth Strategy</a>
           </nav>
