@@ -1,0 +1,41 @@
+{{/*
+  Process Cards Shortcode
+  Displays numbered step-by-step process workflows
+
+  Usage in frontmatter:
+    process_steps:
+      - title: "Step Title"
+        description: "Step description"
+      - title: "Next Step"
+        description: "Next step description"
+
+  Usage in content:
+    {{< process-cards >}}
+*/}}
+
+{{ $steps := .Page.Params.process_steps }}
+
+{{ if $steps }}
+<div class="space-y-6 mt-6">
+  {{ range $index, $step := $steps }}
+  <div class="process-step-card">
+    <div class="flex items-start gap-4">
+      <div class="process-step-number">
+        {{ add $index 1 }}
+      </div>
+      <div class="flex-1">
+        <h4 class="process-step-title">{{ .title }}</h4>
+        <p class="process-step-description">{{ .description | markdownify }}</p>
+        {{ if .details }}
+        <ul class="process-step-details">
+          {{ range .details }}
+          <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        {{ end }}
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</div>
+{{ end }}

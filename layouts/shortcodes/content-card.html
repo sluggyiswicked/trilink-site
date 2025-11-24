@@ -1,0 +1,39 @@
+{{/*
+  Content Card Shortcode
+  Usage:
+    {{< content-card type="overview" badge="OVERVIEW" title="Card Title" >}}
+    Card content goes here in markdown
+    {{< /content-card >}}
+
+  Parameters:
+    - type: Card type (overview, benefits, workflow, process) - affects badge color
+    - badge: Badge text (optional)
+    - title: Card title (required)
+    - subtitle: Optional subtitle
+    - background: white or gray (default: alternates)
+*/}}
+
+{{ $type := .Get "type" | default "default" }}
+{{ $badge := .Get "badge" }}
+{{ $title := .Get "title" }}
+{{ $subtitle := .Get "subtitle" }}
+{{ $background := .Get "background" | default "white" }}
+
+<div class="content-section-card content-section-{{ $background }}">
+  <div class="workflow-card">
+    <div class="workflow-card-header">
+      {{ if $badge }}
+      <div class="workflow-card-badge badge-{{ $type }}">{{ $badge }}</div>
+      {{ end }}
+      {{ if $title }}
+      <h3 class="workflow-card-title">{{ $title }}</h3>
+      {{ end }}
+      {{ if $subtitle }}
+      <p class="text-gray-600 mb-0">{{ $subtitle }}</p>
+      {{ end }}
+    </div>
+    <div class="workflow-card-content">
+      {{ .Inner }}
+    </div>
+  </div>
+</div>
