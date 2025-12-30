@@ -8,6 +8,7 @@ meta_description: "Automate your accounting workflows with intelligent solutions
 
 # Subtle background system
 subtle_background: "/images/heroes/hero-automation-subtle.jpg"
+hero_alt: "Business process automation transforming accounting workflows with technology"
 background_overlay: "heavy"
 background_blend: "multiply"
 

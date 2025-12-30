@@ -2,12 +2,15 @@
   {{ $overlayClass := "page-hero-overlay-heavy" }}
   {{ if eq .Params.background_overlay "medium" }}{{ $overlayClass = "page-hero-overlay-medium" }}{{ end }}
   {{ if eq .Params.background_overlay "light" }}{{ $overlayClass = "page-hero-overlay-light" }}{{ end }}
-  
+
   {{ $blendMode := "multiply" }}
   {{ if .Params.background_blend }}{{ $blendMode = .Params.background_blend }}{{ end }}
-  
-  <section class="hero-section page-hero-with-subtle-image {{ $overlayClass }}" 
-           style="background-image: url('{{ .Params.subtle_background }}'); background-blend-mode: {{ $blendMode }};">
+
+  {{ $heroAlt := .Params.hero_alt | default .Title }}
+
+  <section class="hero-section page-hero-with-subtle-image {{ $overlayClass }}"
+           style="background-image: url('{{ .Params.subtle_background }}'); background-blend-mode: {{ $blendMode }};"
+           role="img" aria-label="{{ $heroAlt }}">
 {{ else }}
   <section class="hero-section">
 {{ end }}

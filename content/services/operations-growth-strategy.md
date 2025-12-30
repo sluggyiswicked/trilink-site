@@ -8,6 +8,7 @@ meta_description: "Expert business strategy consulting to optimize operations, p
 
 # Subtle background system
 subtle_background: "/images/heroes/hero-operations-strategy.jpg"
+hero_alt: "Strategic business planning and operations consulting for growth"
 background_overlay: "heavy"
 background_blend: "multiply"
 

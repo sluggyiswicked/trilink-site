@@ -8,6 +8,7 @@ meta_description: "Professional bookkeeping and accounting services including ac
 
 # Subtle background system
 subtle_background: "/images/heroes/hero-accounting-natural.jpg"
+hero_alt: "Professional bookkeeping and accounting services with organized financial documents"
 background_overlay: "heavy"  # heavy|medium|light
 background_blend: "multiply" # multiply|overlay|soft-light
 

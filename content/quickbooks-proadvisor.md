@@ -6,8 +6,9 @@ description: "Expert QuickBooks setup, migration, and optimization from our cert
 meta_title: "QuickBooks ProAdvisor Services | Certified QuickBooks Experts | Trilink Collaborative"
 meta_description: "Get expert QuickBooks Online setup, migration, and training from our certified ProAdvisor team. Led by founder Debra Burch with comprehensive QuickBooks solutions for your business."
 
-# Subtle background system 
+# Subtle background system
 subtle_background: "/images/heroes/hero-accounting-natural.jpg"
+hero_alt: "QuickBooks ProAdvisor certified team providing expert accounting software services"
 background_overlay: "heavy"
 background_blend: "multiply"
 

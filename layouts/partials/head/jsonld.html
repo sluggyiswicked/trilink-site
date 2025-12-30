@@ -1,58 +1,84 @@
+{{/* Organization Schema - All Pages */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "{{ .Site.Params.company.name }}",
+  "url": "{{ .Site.BaseURL }}",
+  "logo": "{{ .Site.BaseURL }}images/logos/trilinklogo.png",
+  "description": "Professional accounting services including bookkeeping, business process automation, and strategic consulting for growing businesses.",
+  "telephone": "{{ .Site.Params.company.phone }}",
+  "email": "{{ .Site.Params.company.email }}",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "{{ .Site.Params.company.streetAddress }}",
+    "addressLocality": "{{ .Site.Params.company.addressLocality }}",
+    "addressRegion": "{{ .Site.Params.company.addressRegion }}",
+    "postalCode": "{{ .Site.Params.company.postalCode }}",
+    "addressCountry": "{{ .Site.Params.company.addressCountry }}"
+  }{{ if or .Site.Params.social.linkedin .Site.Params.social.facebook }},
+  "sameAs": [
+    {{ if .Site.Params.social.linkedin }}"{{ .Site.Params.social.linkedin }}"{{ end }}{{ if and .Site.Params.social.linkedin .Site.Params.social.facebook }},{{ end }}
+    {{ if .Site.Params.social.facebook }}"{{ .Site.Params.social.facebook }}"{{ end }}
+  ]{{ end }}
+}
+</script>
+
+{{/* LocalBusiness Schema - Homepage Only */}}
 {{ if .IsHome }}
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "AccountingService",
   "name": "{{ .Site.Params.company.name }}",
-  "description": "Professional accounting services including bookkeeping, tax preparation, and CFO services for growing businesses",
+  "description": "{{ .Site.Params.company.name }} provides expert bookkeeping, business process automation, and strategic consulting services for growing businesses in the United States.",
   "url": "{{ .Site.BaseURL }}",
-  "logo": "{{ .Site.BaseURL }}images/logo.png",
+  "logo": "{{ .Site.BaseURL }}images/logos/trilinklogo.png",
+  "image": "{{ .Site.BaseURL }}images/heroes/hero-homepage-main.jpg",
   "telephone": "{{ .Site.Params.company.phone }}",
   "email": "{{ .Site.Params.company.email }}",
+  "priceRange": "$$",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "{{ .Site.Params.company.address }}"
+    "streetAddress": "{{ .Site.Params.company.streetAddress }}",
+    "addressLocality": "{{ .Site.Params.company.addressLocality }}",
+    "addressRegion": "{{ .Site.Params.company.addressRegion }}",
+    "postalCode": "{{ .Site.Params.company.postalCode }}",
+    "addressCountry": "{{ .Site.Params.company.addressCountry }}"
   },
-  "sameAs": [
-    "{{ .Site.Params.social.linkedin }}",
-    "{{ .Site.Params.social.facebook }}"
-  ],
-  "serviceType": [
-    "Bookkeeping",
-    "Tax Preparation", 
-    "Fractional CFO Services",
-    "Payroll Services"
-  ],
   "areaServed": {
     "@type": "Country",
     "name": "United States"
   },
   "hasOfferCatalog": {
     "@type": "OfferCatalog",
-    "name": "Accounting Services",
+    "name": "Professional Services",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Bookkeeping Services",
-          "description": "Complete bookkeeping solutions for small and medium businesses"
-        }
-      },
-      {
-        "@type": "Offer", 
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Tax Preparation",
-          "description": "Professional tax preparation and planning services"
+          "name": "Bookkeeping & Accounting Services",
+          "description": "GAAP-aligned bookkeeping, account setup, cleanup, and ongoing financial management",
+          "url": "{{ .Site.BaseURL }}services/bookkeeping-overview/"
         }
       },
       {
         "@type": "Offer",
         "itemOffered": {
-          "@type": "Service", 
-          "name": "Fractional CFO Services",
-          "description": "Part-time CFO services for growing businesses"
+          "@type": "Service",
+          "name": "Business Process Automation",
+          "description": "Intelligent automation for accounting workflows, reducing manual data entry and errors",
+          "url": "{{ .Site.BaseURL }}services/business-process-automation/"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Operations & Growth Strategy",
+          "description": "Strategic consulting for operational optimization and sustainable growth planning",
+          "url": "{{ .Site.BaseURL }}services/operations-growth-strategy/"
         }
       }
     ]
@@ -60,3 +86,47 @@
 }
 </script>
 {{ end }}
+
+{{/* Service Schema - Service Pages Only */}}
+{{ if eq .Section "services" }}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "name": "{{ .Title }}",
+  "description": "{{ .Params.description }}",
+  "url": "{{ .Permalink }}",
+  "provider": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.company.name }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "United States"
+  }{{ if .Params.subtle_background }},
+  "image": "{{ .Site.BaseURL }}{{ strings.TrimPrefix "/" .Params.subtle_background }}"{{ end }}
+}
+</script>
+{{ end }}
+
+{{/* WebPage Schema - All Pages */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebPage",
+  "name": "{{ .Title }}",
+  "description": "{{ .Params.description | default .Site.Params.description }}",
+  "url": "{{ .Permalink }}",
+  "isPartOf": {
+    "@type": "WebSite",
+    "name": "{{ .Site.Params.company.name }}",
+    "url": "{{ .Site.BaseURL }}"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "{{ .Site.Params.company.name }}",
+    "url": "{{ .Site.BaseURL }}"
+  }
+}
+</script>

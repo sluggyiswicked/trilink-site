@@ -1,4 +1,30 @@
 {{ if gt (len .Ancestors) 0 }}
+{{/* BreadcrumbList JSON-LD Schema */}}
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Home",
+      "item": "{{ .Site.BaseURL }}"
+    }{{ $position := 2 }}{{ range .Ancestors.Reverse }},
+    {
+      "@type": "ListItem",
+      "position": {{ $position }},
+      "name": "{{ .Title }}",
+      "item": "{{ .Permalink }}"
+    }{{ $position = add $position 1 }}{{ end }},
+    {
+      "@type": "ListItem",
+      "position": {{ add (len .Ancestors) 1 }},
+      "name": "{{ $.Title }}"
+    }
+  ]
+}
+</script>
 <nav aria-label="Breadcrumb" class="mobile-optimized-breadcrumbs">
   <!-- Mobile: Simple Home > Current Page -->
   <ol class="md:hidden flex items-center space-x-1 text-xs text-white/80">

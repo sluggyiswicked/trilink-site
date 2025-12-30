@@ -5,6 +5,7 @@ weight: 70
 
 # Subtle background system with DALL-E generated image
 subtle_background: "/images/heroes/hero-contact-subtle.jpg"
+hero_alt: "Professional business consultation meeting in modern office"
 background_overlay: "heavy"  # heavy|medium|light
 background_blend: "multiply" # multiply|overlay|soft-light
 

@@ -3,6 +3,11 @@ name = "Trilink Collaborative LLC"
 phone = "+1 (214) 207-0330"
 email = "info@trilinkco.com"
 address = "2904 Wycliff Ave., Dallas, TX 75219"
+streetAddress = "2904 Wycliff Ave."
+addressLocality = "Dallas"
+addressRegion = "TX"
+postalCode = "75219"
+addressCountry = "US"
 
 [social]
 linkedin = ""

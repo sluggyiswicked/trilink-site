@@ -7,8 +7,9 @@ weight: 40
 meta_title: "Pricing - Accounting, Automation & Strategy Services | Trilink Collaborative" 
 meta_description: "Transparent pricing for bookkeeping, business process automation, and growth strategy. Foundation, Operate, Automate, and Strategy packages starting at competitive rates."
 
-# Subtle background system 
+# Subtle background system
 subtle_background: "/images/heroes/hero-trilink-professional.jpg"
+hero_alt: "Transparent pricing for professional accounting and business services"
 background_overlay: "heavy"
 background_blend: "multiply"
 

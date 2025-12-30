@@ -8,6 +8,7 @@ meta_description: "Discover Trilink Collaborative's commitment to providing expe
 
 # Subtle background system
 subtle_background: "/images/heroes/hero-about-30th-anniversary.jpg"
+hero_alt: "Trilink Collaborative celebrating 30 years of accounting excellence"
 background_overlay: "heavy"
 background_blend: "multiply"
 
@@ -29,7 +30,7 @@ cta:
 
 <img src="/images/badges/trilink-30-year-badge.jpg" alt="Trilink Collaborative 30 Years Badge - 2006-2026" class="anniversary-badge">
 
-**Celebrating 30 years in business in 2026**, TriLink Collaborative has been a trusted partner to businesses seeking financial clarity and operational excellence. As a **top-rated QuickBooks ProAdvisor**, we combine deep accounting expertise with cutting-edge technology to deliver measurable success. For us, accounting is more than numbers — it's about building lasting relationships and supporting our clients' long-term growth.
+**Celebrating 30 years in business in 2026**, Trilink Collaborative has been a trusted partner to businesses seeking financial clarity and operational excellence. As a **top-rated QuickBooks ProAdvisor**, we combine deep accounting expertise with cutting-edge technology to deliver measurable success. For us, accounting is more than numbers — it's about building lasting relationships and supporting our clients' long-term growth.
 
 <div style="clear: both;"></div>
 
