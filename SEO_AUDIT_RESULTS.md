@@ -208,7 +208,7 @@ Need to verify:
 
 | Component | ID | Status |
 |-----------|-----|--------|
-| GA4 Property | `G-068KJZFCCM` | ✅ Active |
+| GA4 Property | `G-5VKT2YRELE` | ✅ Active |
 | GTM Container | `GTM-NGZRZMJP` | ✅ Published |
 | Consent Mode | Analytics granted, Ads denied | ✅ Configured |
 
@@ -218,7 +218,7 @@ Need to verify:
    ```toml
    [analytics]
    gtm_container_id = "GTM-NGZRZMJP"
-   ga4_measurement_id = "G-068KJZFCCM"
+   ga4_measurement_id = "G-5VKT2YRELE"
    ```
 
 2. **layouts/partials/head/gtm.html** - Updated Consent Mode v2
@@ -229,7 +229,7 @@ Need to verify:
 
 - **Tag Name:** GA4 - Configuration
 - **Tag Type:** Google Tag
-- **Measurement ID:** G-068KJZFCCM
+- **Measurement ID:** G-5VKT2YRELE
 - **Trigger:** Initialization - All Pages
 - **Published Version:** 3 (Fix GA4 ID)
 
